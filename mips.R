@@ -84,7 +84,6 @@ for (image in levels(dataset$MediaName)){
     num_names <- length(names(participants))
     names(participants)[(num_names-2):num_names] <- c(paste0(image, "_TimeToAns"), paste0(image, "_Ans"), 
                                                         paste0(image, "_Correct"))
-    image_num <- image_num + 1
 }
 # resets strange rownames
 rownames(participants) <- NULL
