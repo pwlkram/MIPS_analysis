@@ -33,7 +33,6 @@ plotOverlappingHist <- function(a, b, colors=c(rgb(1,0,0,0.5),rgb(0,0,1,0.5)),
     plot(bhist, xlim=xlim, ylim=ylim, col=colors[2], add=T)
 }
 
-datafile = "06072016.tsv"
 sink("results.txt")
 if (file.exists(datafile) & file.exists("klucz.csv")){
     sprintf("Reading from %s", x = datafile)
