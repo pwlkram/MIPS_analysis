@@ -1,6 +1,7 @@
 library(reshape)
 library(plyr)
 library(dplyr)
+library(car)
 #SET CORRECT DIRECTIORIES TO TOBII STUDIO SOURCE FILES
 datafile <- "D:\\R\\MIPS\\0616\\06072016.tsv"
 aoi_file <- "D:\\R\\MIPS\\0616\\06072016aois.tsv"
@@ -140,6 +141,20 @@ rm(temp)
 #correct order of columns
 participants_correct_answers <- participants_correct_answers[c("ParticipantName","X.Images.Value", 
                                                                "ct_mr_Correct", "norm_pat_Correct", "ich_stroke_Correct")]
+
+# create data.frame of total times to answer for each participant in each test
+
+temp <- melt(dataset, id.vars = c("StudioTestName", "ParticipantName", "X.Images.Value"), measure.vars = "SegmentDuration")
+participants_total_time <- cast(temp, formula = ParticipantName + X.Images.Value ~ ..., fun.aggregate = sum)
+rm(temp)
+names(participants_total_time)[names(participants_total_time) == "ct_mr_SegmentDuration"] <- "ct_mr_TotalTime"
+names(participants_total_time)[names(participants_total_time) == "norm_pat_SegmentDuration"] <- "norm_pat_TotalTime"
+names(participants_total_time)[names(participants_total_time) == "ich_stroke_SegmentDuration"] <- "ich_stroke_TotalTime"
+
+#correct order of columns
+participants_total_time <- participants_total_time[c("ParticipantName","X.Images.Value", 
+                                                               "ct_mr_TotalTime", "norm_pat_TotalTime", "ich_stroke_TotalTime")]
+
 cat("Number of correct answers by participant\n")
 print(participants_correct_answers)
 cat("\n\n")
@@ -300,6 +315,16 @@ for(test in c("ct_mr", "norm_pat", "ich_stroke")){
     rm(without)
 }
 dev.off()
+
+# time vs correctness
+time_vs_ans <- cbind(participants_correct_answers, participants_total_time[c("ct_mr_TotalTime", "norm_pat_TotalTime", "ich_stroke_TotalTime")])
+time_vs_ans$TotalCorrect <- time_vs_ans$ct_mr_Correct + time_vs_ans$norm_pat_Correct + time_vs_ans$ich_stroke_Correct
+time_vs_ans$TotalTime <- time_vs_ans$ct_mr_TotalTime + time_vs_ans$norm_pat_TotalTime +  + time_vs_ans$ich_stroke_TotalTime
+scatterplot(TotalCorrect ~ TotalTime | X.Images.Value, data = time_vs_ans, ellipse = T)
+scatterplot(ct_mr_Correct ~ ct_mr_TotalTime | X.Images.Value, data = time_vs_ans, ellipse = T)
+scatterplot(norm_pat_Correct ~ norm_pat_TotalTime | X.Images.Value, data = time_vs_ans, ellipse = T)
+scatterplot(ich_stroke_Correct ~ ich_stroke_TotalTime | X.Images.Value, data = time_vs_ans, ellipse = T)
+
 
 
 #read all data with AOIs etc. as full
