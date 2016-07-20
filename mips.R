@@ -1,7 +1,9 @@
 library(reshape)
 library(plyr)
 library(dplyr)
-#set datafile to correct source file
+#SET CORRECT DIRECTIORIES TO TOBII STUDIO SOURCE FILES
+datafile <- "D:\\R\\MIPS\\0616\\06072016.tsv"
+aoi_file <- "D:\\R\\MIPS\\0616\\06072016aois.tsv"
 # function for plotting overlapping histograms by chrisamiller http://stackoverflow.com/questions/3485456/useful-little-functions-in-r
 # slightly moddified to enable more breaks and true overlapping by me (PK)
 plotOverlappingHist <- function(a, b, colors=c(rgb(1,0,0,0.5),rgb(0,0,1,0.5)),
@@ -302,7 +304,7 @@ dev.off()
 
 
 #read all data with AOIs etc. as full
-full <- read.table(file = "06072016aois.tsv", header = TRUE, sep = "\t", fileEncoding = "UTF-8-BOM")
+full <- read.table(file = aoi_file, header = TRUE, sep = "\t", fileEncoding = "UTF-8-BOM")
 
 #total number of fixations for each media for each participant
 ct_mr_tot_fix <- cast(melt(full[full$StudioTestName == "ct_mr",], id.vars = c("ParticipantName", "X.Images.Value", "SegmentName"), measure.vars = "FixationIndex"), formula = ParticipantName + X.Images.Value ~ SegmentName + variable, fun.aggregate = max, na.rm = TRUE)
