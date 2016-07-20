@@ -79,15 +79,12 @@ for (participant in participants$Participant){
 
 # adds three columns for each of 60 images (time to answer, participant's answer and answer correctness)
 
-for (test in names(media_names)){
-    image_num <- 1
-    for (image in media_names[,test]){
-        participants <- cbind(participants, subset(dataset, MediaName == image, select = c(SegmentDuration, KeyPressEvent, Correct)))
-        num_names <- length(names(participants))
-        names(participants)[(num_names-2):num_names] <- c(paste0(test, "_", image_num, "_TimeToAns"), paste0(test, "_", image_num, "_Ans"), 
-                                                           paste0(test, "_", image_num, "_Correct"))
-        image_num <- image_num + 1
-    }
+for (image in levels(dataset$MediaName)){
+    participants <- cbind(participants, subset(dataset, MediaName == image, select = c(SegmentDuration, KeyPressEvent, Correct)))
+    num_names <- length(names(participants))
+    names(participants)[(num_names-2):num_names] <- c(paste0(image, "_TimeToAns"), paste0(image, "_Ans"), 
+                                                        paste0(image, "_Correct"))
+    image_num <- image_num + 1
 }
 # resets strange rownames
 rownames(participants) <- NULL
