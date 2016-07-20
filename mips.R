@@ -58,6 +58,18 @@ subj_no <- length(levels(raw_data$ParticipantName))
 ans_key <- as.character(unlist(list(rep(key$norm_pat, subj_no), rep(key$ct_mr, subj_no), rep(key$ich_stroke, subj_no))))
 # compares participants' answers with the answer key
 dataset <- cbind(raw_data, Correct = ans_key == raw_data$KeyPressEvent)
+
+#change MediaName column of data set from filenames to names such as: ct_mr_01, ich_stroke_18, etc.
+for (i in seq(length(levels(dataset$MediaName)))){
+     levels(dataset$MediaName)[i] <- as.character(media_names$ImageName[media_names$FileName == levels(dataset$MediaName)[i]])
+}
+dataset$MediaName <- factor(dataset$MediaName, levels = c("ct_mr_01", "ct_mr_02", "ct_mr_03", "ct_mr_04", "ct_mr_05", "ct_mr_06", "ct_mr_07", "ct_mr_08", "ct_mr_09", "ct_mr_10",
+                                                 "ct_mr_11", "ct_mr_12", "ct_mr_13", "ct_mr_14", "ct_mr_15", "ct_mr_16", "ct_mr_17", "ct_mr_18", "ct_mr_19", "ct_mr_20", 
+                                                 "norm_pat_01", "norm_pat_02", "norm_pat_03", "norm_pat_04", "norm_pat_05", "norm_pat_06", "norm_pat_07", "norm_pat_08", "norm_pat_09", "norm_pat_10",
+                                                 "norm_pat_11", "norm_pat_12", "norm_pat_13", "norm_pat_14", "norm_pat_15", "norm_pat_16", "norm_pat_17", "norm_pat_18", "norm_pat_19", "norm_pat_20",
+                                                 "ich_stroke_01", "ich_stroke_02", "ich_stroke_03", "ich_stroke_04", "ich_stroke_05", "ich_stroke_06", "ich_stroke_07", "ich_stroke_08", "ich_stroke_09", "ich_stroke_10",
+                                                 "ich_stroke_11", "ich_stroke_12", "ich_stroke_13", "ich_stroke_14", "ich_stroke_15", "ich_stroke_16", "ich_stroke_17", "ich_stroke_18", "ich_stroke_19", "ich_stroke_20"))
+
 # creates first two columns of the data.frame (participants names as row.names and X.Images.Value as With_without)
 participants = data.frame(Participant = levels(dataset$ParticipantName))
 participants <- cbind(participants, With_without = NA)
@@ -67,15 +79,11 @@ for (participant in participants$Participant){
 
 # adds three columns for each of 60 images (time to answer, participant's answer and answer correctness)
 
-for (test in names(media_names)){
-    image_num <- 1
-    for (image in media_names[,test]){
-        participants <- cbind(participants, subset(dataset, MediaName == image, select = c(SegmentDuration, KeyPressEvent, Correct)))
-        num_names <- length(names(participants))
-        names(participants)[(num_names-2):num_names] <- c(paste0(test, "_0", image_num, "_TimeToAns"), paste0(test, "_0", image_num, "_Ans"), 
-                                                           paste0(test, "_0", image_num, "_Correct"))
-        image_num <- image_num + 1
-    }
+for (image in levels(dataset$MediaName)){
+    participants <- cbind(participants, subset(dataset, MediaName == image, select = c(SegmentDuration, KeyPressEvent, Correct)))
+    num_names <- length(names(participants))
+    names(participants)[(num_names-2):num_names] <- c(paste0(image, "_TimeToAns"), paste0(image, "_Ans"), 
+                                                        paste0(image, "_Correct"))
 }
 # resets strange rownames
 rownames(participants) <- NULL
