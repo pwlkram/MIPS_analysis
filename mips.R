@@ -33,7 +33,7 @@ plotOverlappingHist <- function(a, b, colors=c(rgb(1,0,0,0.5),rgb(0,0,1,0.5)),
     plot(bhist, xlim=xlim, ylim=ylim, col=colors[2], add=T)
 }
 
-sink("results.txt")
+sink("results\\results.txt", split = T)
 if (file.exists(datafile) & file.exists("klucz.csv")){
     sprintf("Reading from %s", x = datafile)
 } else{print("At least one of needed files is missing: MediaNames.csv or klucz.csv or datafile. Use setwd() and check datafile name.")
@@ -244,7 +244,7 @@ if (num_plots %% x_dims == 0){
     y_dims <- num_plots %/% x_dims 
 } else {y_dims <- (num_plots%/% x_dims) + 1}
 
-png("participants_correct.png", width = 480 * x_dims, height = 480 * y_dims)
+png("results\\participants_correct.png", width = 480 * x_dims, height = 480 * y_dims)
 par(mfrow = c(y_dims,x_dims))
 for (p in seq(1, num_plots)){
     if (participants_correct_answers$X.Images.Value[p] == "with"){
@@ -262,7 +262,7 @@ for (p in seq(1, num_plots)){
 }
 dev.off()
 
-png("any_ans.png", width = 960, height = 960)
+png("results\\any_ans.png", width = 960, height = 960)
 par(mfrow = c(2, 2))
 without <- dataset[dataset$X.Images.Value == "without",]$SegmentDuration
 with <- dataset[dataset$X.Images.Value == "with",]$SegmentDuration
@@ -282,7 +282,7 @@ for(test in c("ct_mr", "norm_pat", "ich_stroke")){
 dev.off()
 
 
-png("correct_ans.png", width = 960, height = 960)
+png("results\\correct_ans.png", width = 960, height = 960)
 par(mfrow = c(2, 2))
 without <- dataset[dataset$X.Images.Value == "without" & dataset$Correct == TRUE,]$SegmentDuration
 with <- dataset[dataset$X.Images.Value == "with" & dataset$Correct == TRUE,]$SegmentDuration
@@ -426,7 +426,7 @@ ich_stroke_fix_before2[ich_stroke_fix_before2 == Inf] <- NA
 
 
 #images and plots - eyetracking data
-png("ct_mr_tot_fix.png", width = 2000, height = 2000)
+png("results\\ct_mr_tot_fix.png", width = 2000, height = 2000)
 par(mfrow = c(5, 4), cex.axis = 1.5, cex.lab = 1.5)
 for (i in seq(1,20)){
     boxplot(ct_mr_tot_fix[ct_mr_tot_fix$X.Images.Value == "with",i + 2],ct_mr_tot_fix[ct_mr_tot_fix$X.Images.Value == "without",i + 2],
@@ -435,7 +435,7 @@ for (i in seq(1,20)){
 }
 dev.off()
 
-png("norm_pat_tot_fix.png", width = 2000, height = 2000)
+png("results\\norm_pat_tot_fix.png", width = 2000, height = 2000)
 par(mfrow = c(5, 4), cex.axis = 1.5, cex.lab = 1.5)
 for (i in seq(1,20)){
     boxplot(norm_pat_tot_fix[norm_pat_tot_fix$X.Images.Value == "with",i + 2],norm_pat_tot_fix[norm_pat_tot_fix$X.Images.Value == "without",i + 2],
@@ -444,7 +444,7 @@ for (i in seq(1,20)){
 }
 dev.off()
 
-png("ich_stroke_tot_fix.png", width = 2000, height = 2000)
+png("results\\ich_stroke_tot_fix.png", width = 2000, height = 2000)
 par(mfrow = c(5, 4), cex.axis = 1.5, cex.lab = 1.5)
 for (i in seq(1,20)){
     boxplot(ich_stroke_tot_fix[ich_stroke_tot_fix$X.Images.Value == "with",i + 2],ich_stroke_tot_fix[ich_stroke_tot_fix$X.Images.Value == "without",i + 2],
@@ -453,7 +453,7 @@ for (i in seq(1,20)){
 }
 dev.off()
 
-png("norm_pat_fix_before.png", width = 2000, height = 2000)
+png("results\\norm_pat_fix_before.png", width = 2000, height = 2000)
 par(mfrow = c(5, 4), cex.axis = 1.5, cex.lab = 1.5)
 for (i in seq(1,20)){
     boxplot(norm_pat_fix_before2[norm_pat_fix_before2$X.Images.Value == "with",paste0("AOI.norm_pat_",i,".Hit")],norm_pat_fix_before2[norm_pat_fix_before2$X.Images.Value == "without",paste0("AOI.norm_pat_",i,".Hit")],
@@ -462,7 +462,7 @@ for (i in seq(1,20)){
 }
 dev.off()
 
-png("ich_stroke_fix_before.png", width = 2000, height = 2000)
+png("results\\ich_stroke_fix_before.png", width = 2000, height = 2000)
 par(mfrow = c(5, 4), cex.axis = 1.5, cex.lab = 1.5)
 for (i in seq(1,20)){
     boxplot(ich_stroke_fix_before2[ich_stroke_fix_before2$X.Images.Value == "with",paste0("AOI.ich_stroke_",i,".Hit")],ich_stroke_fix_before2[ich_stroke_fix_before2$X.Images.Value == "without",paste0("AOI.ich_stroke_",i,".Hit")],
@@ -616,7 +616,7 @@ shapiro.test(group_without$norm_pat_Correct)
 shapiro.test(group_with$ich_stroke_Correct)
 shapiro.test(group_without$ich_stroke_Correct)
 
-sink("tests.txt")
+sink("results\\tests.txt")
 cat("Number of correct answers in each test \n\n")
 wilcox.test(group_with$ct_mr_Correct, group_without$ct_mr_Correct)
 wilcox.test(group_with$norm_pat_Correct, group_without$norm_pat_Correct)
