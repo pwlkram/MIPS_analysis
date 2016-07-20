@@ -72,8 +72,8 @@ for (test in names(media_names)){
     for (image in media_names[,test]){
         participants <- cbind(participants, subset(dataset, MediaName == image, select = c(SegmentDuration, KeyPressEvent, Correct)))
         num_names <- length(names(participants))
-        names(participants)[(num_names-2):num_names] <- c(paste0(test, "_", image_num, "_TimeToAns"), paste0(test, "_", image_num, "_Ans"), 
-                                                           paste0(test, "_", image_num, "_Correct"))
+        names(participants)[(num_names-2):num_names] <- c(paste0(test, "_0", image_num, "_TimeToAns"), paste0(test, "_0", image_num, "_Ans"), 
+                                                           paste0(test, "_0", image_num, "_Correct"))
         image_num <- image_num + 1
     }
 }
