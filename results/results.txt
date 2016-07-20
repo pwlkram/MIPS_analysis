@@ -1,0 +1,1478 @@
+[1] "Reading from D:\\R\\MIPS\\0616\\06072016.tsv"
+[1] "Number of participants in *with* group: 19"
+[1] "Number of participants in *without* group: 19"
+Number of correct answers in *ct_mr* test:
+
+        ct_mr_1 ct_mr_2 ct_mr_3 ct_mr_4 ct_mr_5 ct_mr_6 ct_mr_7 ct_mr_8 ct_mr_9 ct_mr_10 ct_mr_11 ct_mr_12 ct_mr_13 ct_mr_14 ct_mr_15 ct_mr_16 ct_mr_17
+with         19      18      18      13      12      19      10      17       7       17       18       19       18       15       19       19       18
+without      11       7      10      10       8      13      14      10       8        9       16       12       17       12       12       14       15
+        ct_mr_18 ct_mr_19 ct_mr_20
+with          19       19       19
+without       11       14       15
+
+
+Number of correct answers in *norm_pat* test:
+
+        norm_pat_1 norm_pat_2 norm_pat_3 norm_pat_4 norm_pat_5 norm_pat_6 norm_pat_7 norm_pat_8 norm_pat_9 norm_pat_10 norm_pat_11 norm_pat_12 norm_pat_13
+with            18          9         11         17         18         18         12         17         18          16          17          16           1
+without         15          4          9         15         19         19         15         17         14          17          19          19           4
+        norm_pat_14 norm_pat_15 norm_pat_16 norm_pat_17 norm_pat_18 norm_pat_19 norm_pat_20
+with             12          17          18          17          12          16          14
+without          14          18          17          15          14          19          14
+
+
+Number of correct answers in *ich_stroke* test:
+
+        ich_stroke_1 ich_stroke_2 ich_stroke_3 ich_stroke_4 ich_stroke_5 ich_stroke_6 ich_stroke_7 ich_stroke_8 ich_stroke_9 ich_stroke_10 ich_stroke_11
+with              16           16            8           15           19           18           18           15           10            19            11
+without           12           10           10           11           15           14           13           14           12            14            10
+        ich_stroke_12 ich_stroke_13 ich_stroke_14 ich_stroke_15 ich_stroke_16 ich_stroke_17 ich_stroke_18 ich_stroke_19 ich_stroke_20
+with               18            17            17            13            19            18            12            12            16
+without            13            12            11            13            15            15            11            14            11
+
+
+Number of correct answers by participant
+   ParticipantName X.Images.Value ct_mr_Correct norm_pat_Correct ich_stroke_Correct
+1              P01           with            20               17                 18
+2              P02        without            15               15                 17
+3              P03           with            17               16                 15
+4              P04        without            15               17                  9
+5              P05           with            16               15                 17
+6              P06        without            14               15                 15
+7              P07           with            18               18                 18
+8              P08        without            12               13                 16
+9              P09           with            17               18                 14
+10             P10           with            15               18                 16
+11             P11        without            11               17                 16
+12             P12        without            17               18                 18
+13             P13           with            19               18                 17
+14             P14        without            16               15                 17
+15             P15           with            19               15                 16
+16             P16        without            15               15                  8
+17             P17           with            15               17                 16
+18             P18        without            11               17                 17
+19             P19           with            20               17                 17
+20             P20        without            12               16                  3
+21             P21           with            19               16                 15
+22             P22        without             9               16                 11
+23             P23           with            15               18                 16
+24             P24        without            12               16                  7
+25             P25           with            19               16                 16
+26             P26        without            10               17                 16
+27             P27           with            19               16                 18
+28             P28        without            16               16                 14
+29             P29           with            16               18                 17
+30             P30        without             4               15                 11
+31             P31           with            14                3                 10
+32             P32        without            15               13                 17
+33             P33           with            20               13                 18
+34             P34        without            15               18                  7
+35             P35           with            19               15                 15
+36             P36        without             3               15                 13
+37             P37           with            16               10                 18
+38             P38        without            16               13                 18
+
+
+QUARTILES
+
+CT_MR - number of correct answers in *with* group:
+  0%  25%  50%  75% 100% 
+  14   16   18   19   20 
+
+CT_MR - number of correct answers in *without* groupCT_  0%  25%  50%  75% 100% 
+   3   11   14   15   17 
+
+NORM_PAT - number of correct answers in *with* groupNOR  0%  25%  50%  75% 100% 
+   3   15   16   18   18 
+
+NORM_PAT - number of correct answers in *without* grNORM_P  0%  25%  50%  75% 100% 
+  13   15   16   17   18 
+
+ICH_STROKE - number of correct answers in *with* groICH_S  0%  25%  50%  75% 100% 
+10.0 15.5 16.0 17.5 18.0 
+
+ICH_STROKE - number of correct answers in *without* ICH_STRO  0%  25%  50%  75% 100% 
+   3   10   15   17   18 
+
+Mean time to correct answer in each test  StudioTestName X.Images.Value SegmentDuration
+1          ct_mr           with        2922.486
+2          ct_mr        without        6482.672
+3     ich_stroke           with        7328.629
+4     ich_stroke        without       10109.176
+5       norm_pat           with        5189.612
+6       norm_pat        without        7188.323
+
+Mean time to correct answer in *ct_mr* test:
+
+        ct_mr_1_MeanTimeToCorrAns ct_mr_1_SDofTimeToCorrAns ct_mr_2_MeanTimeToCorrAns ct_mr_2_SDofTimeToCorrAns ct_mr_3_MeanTimeToCorrAns
+with                     6409.421                  6086.887                  4229.111                  2580.109                  3787.944
+without                  9488.182                  4705.659                  8692.143                  6260.736                  7274.400
+        ct_mr_3_SDofTimeToCorrAns ct_mr_4_MeanTimeToCorrAns ct_mr_4_SDofTimeToCorrAns ct_mr_5_MeanTimeToCorrAns ct_mr_5_SDofTimeToCorrAns
+with                     2567.955                  4786.692                  3632.168                  5031.417                  5028.503
+without                  5243.950                  5898.500                  6150.979                  7040.750                  3341.567
+        ct_mr_6_MeanTimeToCorrAns ct_mr_6_SDofTimeToCorrAns ct_mr_7_MeanTimeToCorrAns ct_mr_7_SDofTimeToCorrAns ct_mr_8_MeanTimeToCorrAns
+with                     1741.684                  858.6912                  3712.800                  2230.992                  2177.941
+without                  7427.462                 5569.6309                  5605.214                  3601.045                  6584.800
+        ct_mr_8_SDofTimeToCorrAns ct_mr_9_MeanTimeToCorrAns ct_mr_9_SDofTimeToCorrAns ct_mr_10_MeanTimeToCorrAns ct_mr_10_SDofTimeToCorrAns
+with                     1506.809                  7239.143                  4585.083                   3704.059                   3520.307
+without                  5279.367                 12290.625                  8859.674                   6861.667                   6937.024
+        ct_mr_11_MeanTimeToCorrAns ct_mr_11_SDofTimeToCorrAns ct_mr_12_MeanTimeToCorrAns ct_mr_12_SDofTimeToCorrAns ct_mr_13_MeanTimeToCorrAns
+with                      1815.278                   1043.387                   1849.579                   1135.564                   2537.056
+without                   5125.562                   5203.160                   6980.250                   6147.214                   4363.647
+        ct_mr_13_SDofTimeToCorrAns ct_mr_14_MeanTimeToCorrAns ct_mr_14_SDofTimeToCorrAns ct_mr_15_MeanTimeToCorrAns ct_mr_15_SDofTimeToCorrAns
+with                      1734.831                    2716.40                   2007.015                   2193.895                   1554.550
+without                   3515.970                    8847.25                  12491.282                   9592.417                   9126.675
+        ct_mr_16_MeanTimeToCorrAns ct_mr_16_SDofTimeToCorrAns ct_mr_17_MeanTimeToCorrAns ct_mr_17_SDofTimeToCorrAns ct_mr_18_MeanTimeToCorrAns
+with                      1905.632                   1399.593                   1967.000                   1519.098                   1860.842
+without                   5674.786                   4339.288                   4603.467                   3263.140                   4135.636
+        ct_mr_18_SDofTimeToCorrAns ct_mr_19_MeanTimeToCorrAns ct_mr_19_SDofTimeToCorrAns ct_mr_20_MeanTimeToCorrAns ct_mr_20_SDofTimeToCorrAns
+with                      1631.553                   1505.579                   915.8006                   1690.579                   1343.459
+without                   3426.710                   4514.857                  4488.3088                   4681.267                   6118.008
+
+
+Mean time to correct answer in *norm_pat* test:
+
+        norm_pat_1_MeanTimeToCorrAns norm_pat_1_SDofTimeToCorrAns norm_pat_2_MeanTimeToCorrAns norm_pat_2_SDofTimeToCorrAns norm_pat_3_MeanTimeToCorrAns
+with                        5143.667                     2567.603                     11628.56                     5541.682                     8274.182
+without                     9652.267                     6363.967                      8497.00                     2021.487                    15044.667
+        norm_pat_3_SDofTimeToCorrAns norm_pat_4_MeanTimeToCorrAns norm_pat_4_SDofTimeToCorrAns norm_pat_5_MeanTimeToCorrAns norm_pat_5_SDofTimeToCorrAns
+with                         6444.17                     4593.588                     2831.436                     3649.500                     1323.986
+without                     18385.66                     9387.800                     6297.313                     3392.263                     1856.823
+        norm_pat_6_MeanTimeToCorrAns norm_pat_6_SDofTimeToCorrAns norm_pat_7_MeanTimeToCorrAns norm_pat_7_SDofTimeToCorrAns norm_pat_8_MeanTimeToCorrAns
+with                        4546.444                     4313.348                     9837.583                     7542.154                     2562.765
+without                     5023.579                     3039.607                     9636.333                     6360.961                     5149.882
+        norm_pat_8_SDofTimeToCorrAns norm_pat_9_MeanTimeToCorrAns norm_pat_9_SDofTimeToCorrAns norm_pat_10_MeanTimeToCorrAns norm_pat_10_SDofTimeToCorrAns
+with                        1252.753                     6252.222                     3172.804                      3382.750                      2099.257
+without                     3572.970                     7304.857                     6391.175                      6040.588                      3709.878
+        norm_pat_11_MeanTimeToCorrAns norm_pat_11_SDofTimeToCorrAns norm_pat_12_MeanTimeToCorrAns norm_pat_12_SDofTimeToCorrAns
+with                         6001.529                      3290.102                      2022.500                      1010.296
+without                      8650.158                      4839.027                      2854.684                      1787.841
+        norm_pat_13_MeanTimeToCorrAns norm_pat_13_SDofTimeToCorrAns norm_pat_14_MeanTimeToCorrAns norm_pat_14_SDofTimeToCorrAns
+with                          2834.00                            NA                      9626.417                      6648.247
+without                       7314.75                      6818.539                      8348.286                      3710.624
+        norm_pat_15_MeanTimeToCorrAns norm_pat_15_SDofTimeToCorrAns norm_pat_16_MeanTimeToCorrAns norm_pat_16_SDofTimeToCorrAns
+with                         1846.059                      1260.651                      2008.889                      986.3271
+without                      3162.056                      1905.797                      3682.471                     3111.8503
+        norm_pat_17_MeanTimeToCorrAns norm_pat_17_SDofTimeToCorrAns norm_pat_18_MeanTimeToCorrAns norm_pat_18_SDofTimeToCorrAns
+with                         5218.882                      3521.345                      7889.250                      7217.115
+without                     11737.400                     11036.875                      8439.071                      5317.528
+        norm_pat_19_MeanTimeToCorrAns norm_pat_19_SDofTimeToCorrAns norm_pat_20_MeanTimeToCorrAns norm_pat_20_SDofTimeToCorrAns
+with                         5748.875                      2978.426                      6280.929                      2913.604
+without                      9830.632                     12555.517                      8410.929                      8958.143
+
+
+Mean time to correct answer in *ich_stroke* test:
+
+        ich_stroke_1_MeanTimeToCorrAns ich_stroke_1_SDofTimeToCorrAns ich_stroke_2_MeanTimeToCorrAns ich_stroke_2_SDofTimeToCorrAns
+with                           11434.5                       8370.795                         6870.5                       4334.646
+without                        18065.0                       6796.615                        12810.4                      10336.098
+        ich_stroke_3_MeanTimeToCorrAns ich_stroke_3_SDofTimeToCorrAns ich_stroke_4_MeanTimeToCorrAns ich_stroke_4_SDofTimeToCorrAns
+with                           12250.5                       7991.261                       10948.13                       6972.235
+without                        15910.6                      17987.269                       15331.18                      10386.339
+        ich_stroke_5_MeanTimeToCorrAns ich_stroke_5_SDofTimeToCorrAns ich_stroke_6_MeanTimeToCorrAns ich_stroke_6_SDofTimeToCorrAns
+with                          6229.368                       4362.059                       3531.556                       2555.918
+without                       7515.333                       4439.455                       5926.714                       5680.352
+        ich_stroke_7_MeanTimeToCorrAns ich_stroke_7_SDofTimeToCorrAns ich_stroke_8_MeanTimeToCorrAns ich_stroke_8_SDofTimeToCorrAns
+with                          10072.89                        6533.44                       7417.000                       6716.569
+without                       12745.08                       11438.01                       8058.286                       5911.023
+        ich_stroke_9_MeanTimeToCorrAns ich_stroke_9_SDofTimeToCorrAns ich_stroke_10_MeanTimeToCorrAns ich_stroke_10_SDofTimeToCorrAns
+with                          7154.000                       3526.739                        4039.737                        2962.660
+without                       9680.833                       5043.070                        5334.429                        3345.194
+        ich_stroke_11_MeanTimeToCorrAns ich_stroke_11_SDofTimeToCorrAns ich_stroke_12_MeanTimeToCorrAns ich_stroke_12_SDofTimeToCorrAns
+with                             7850.0                        8445.566                        6146.222                        4175.095
+without                         10411.1                        8226.774                        9906.692                        9841.946
+        ich_stroke_13_MeanTimeToCorrAns ich_stroke_13_SDofTimeToCorrAns ich_stroke_14_MeanTimeToCorrAns ich_stroke_14_SDofTimeToCorrAns
+with                           3039.412                        1361.063                        10617.06                        6889.783
+without                        6270.167                        2931.013                        12049.91                        7499.398
+        ich_stroke_15_MeanTimeToCorrAns ich_stroke_15_SDofTimeToCorrAns ich_stroke_16_MeanTimeToCorrAns ich_stroke_16_SDofTimeToCorrAns
+with                           11658.54                        5998.962                        3052.474                        2041.289
+without                        15383.54                       12850.835                        6304.400                        5710.139
+        ich_stroke_17_MeanTimeToCorrAns ich_stroke_17_SDofTimeToCorrAns ich_stroke_18_MeanTimeToCorrAns ich_stroke_18_SDofTimeToCorrAns
+with                           10541.94                        9198.789                        6818.500                        8139.324
+without                        11264.53                        8667.331                        6055.818                        4444.730
+        ich_stroke_19_MeanTimeToCorrAns ich_stroke_19_SDofTimeToCorrAns ich_stroke_20_MeanTimeToCorrAns ich_stroke_20_SDofTimeToCorrAns
+with                           8084.167                        5087.775                         4044.25                        2064.320
+without                       10661.429                       10747.525                         6320.00                        2757.952
+
+
+       6320.00                        2757.952
+
+
+[1] "Created results.txt in working directory"
+[1] "Created participants_answers.csv in working directory"
+null device 
+          1 
+null device 
+          1 
+null device 
+          1 
+null device 
+          1 
+null device 
+          1 
+null device 
+          1 
+null device 
+          1 
+null device 
+          1 
+[1] 1
+[1] 2
+[1] 1
+[1] 2
+[1] 1
+[1] 2
+[1] 1
+[1] 2
+[1] 3
+[1] 1
+[1] 2
+[1] 1
+[1] 2
+[1] 1
+[1] 2
+[1] 1
+[1] 2
+[1] 1
+[1] 2
+[1] 1
+[1] 2
+[1] 1
+[1] 2
+[1] 1
+[1] 2
+[1] 1
+[1] 2
+[1] 1
+[1] 2
+[1] 1
+[1] 2
+[1] 1
+[1] 2
+[1] 1
+[1] 2
+[1] 1
+[1] 2
+[1] 1
+[1] 2
+[1] 1
+[1] 2
+[1] 1
+[1] 2
+[1] 1
+[1] 2
+[1] 1
+[1] 2
+[1] 1
+[1] 2
+[1] 1
+[1] 2
+[1] 1
+[1] 2
+[1] 1
+[1] 2
+[1] 1
+[1] 2
+[1] 1
+[1] 2
+[1] 1
+[1] 2
+[1] 1
+[1] 2
+[1] 1
+[1] 2
+[1] 3
+[1] 1
+[1] 2
+[1] 1
+[1] 2
+[1] 1
+[1] 2
+[1] 1
+[1] 2
+[1] 1
+[1] 2
+[1] 1
+[1] 2
+[1] 1
+[1] 2
+
+	Shapiro-Wilk normality test
+
+data:  group_with$ct_mr_Correct
+W = 0.89136, p-value = 0.03404
+
+
+	Shapiro-Wilk normality test
+
+data:  group_without$ct_mr_Correct
+W = 0.85236, p-value = 0.007331
+
+
+	Shapiro-Wilk normality test
+
+data:  group_with$norm_pat_Correct
+W = 0.68141, p-value = 3.366e-05
+
+
+	Shapiro-Wilk normality test
+
+data:  group_without$norm_pat_Correct
+W = 0.91296, p-value = 0.0839
+
+
+	Shapiro-Wilk normality test
+
+data:  group_with$ich_stroke_Correct
+W = 0.80741, p-value = 0.001467
+
+
+	Shapiro-Wilk normality test
+
+data:  group_without$ich_stroke_Correct
+W = 0.88062, p-value = 0.02201
+
+     StudioTestName ParticipantName X.Images.Value RecordingName                    MediaName SegmentDuration KeyPressEvent Correct
+1          norm_pat             P01           with        Rec 01       21_ct_norma_025_35.jpg            4108       Capital    TRUE
+2          norm_pat             P01           with        Rec 01       22_mr_norma_026_33.jpg           17014       Capital    TRUE
+3          norm_pat             P01           with        Rec 01     23_ct_stroke_034_110.jpg            4247       Capital   FALSE
+4          norm_pat             P01           with        Rec 01     24_mr_stroke_019_138.jpg            7903        Return    TRUE
+5          norm_pat             P01           with        Rec 01     25_ct_stroke_020_134.jpg            4648        Return    TRUE
+6          norm_pat             P01           with        Rec 01          26_ct_ich_013_5.jpg            1213        Return    TRUE
+7          norm_pat             P01           with        Rec 01         27_ct_ich_037_52.jpg            5560        Return    TRUE
+8          norm_pat             P01           with        Rec 01         28_mr_ich_008_30.jpg            3221        Return    TRUE
+9          norm_pat             P01           with        Rec 01        29_mr_norma_013_9.jpg           10214       Capital    TRUE
+10         norm_pat             P01           with        Rec 01         30_ct_ich_021_22.jpg            1420        Return    TRUE
+11         norm_pat             P01           with        Rec 01     31_mr_norma_001_170S.jpg            5656       Capital    TRUE
+12         norm_pat             P01           with        Rec 01         32_ct_ich_038_53.jpg            1319        Return    TRUE
+13         norm_pat             P01           with        Rec 01     33_ct_stroke_016_145.jpg            6672       Capital   FALSE
+14         norm_pat             P01           with        Rec 01        34_mr_norma_010_6.jpg            7850       Capital    TRUE
+15         norm_pat             P01           with        Rec 01         35_ct_ich_034_49.jpg            1155        Return    TRUE
+16         norm_pat             P01           with        Rec 01     36_mr_stroke_005_175.jpg            1503        Return    TRUE
+17         norm_pat             P01           with        Rec 01     37_mr_stroke_013_147.jpg            4760        Return    TRUE
+18         norm_pat             P01           with        Rec 01          38_ct_ich_012_5.jpg            4521        Return    TRUE
+19         norm_pat             P01           with        Rec 01       39_mr_norma_038_50.jpg            6162       Capital    TRUE
+20         norm_pat             P01           with        Rec 01       40_ct_norma_026_35.jpg           11377        Return   FALSE
+41         norm_pat             P03           with        Rec 03       21_ct_norma_025_35.jpg            5199       Capital    TRUE
+42         norm_pat             P03           with        Rec 03       22_mr_norma_026_33.jpg            4020        Return   FALSE
+43         norm_pat             P03           with        Rec 03     23_ct_stroke_034_110.jpg            8579        Return    TRUE
+44         norm_pat             P03           with        Rec 03     24_mr_stroke_019_138.jpg            5779       Capital   FALSE
+45         norm_pat             P03           with        Rec 03     25_ct_stroke_020_134.jpg            2034        Return    TRUE
+46         norm_pat             P03           with        Rec 03          26_ct_ich_013_5.jpg            4714        Return    TRUE
+47         norm_pat             P03           with        Rec 03         27_ct_ich_037_52.jpg            3203        Return    TRUE
+48         norm_pat             P03           with        Rec 03         28_mr_ich_008_30.jpg            2178        Return    TRUE
+49         norm_pat             P03           with        Rec 03        29_mr_norma_013_9.jpg            7546       Capital    TRUE
+50         norm_pat             P03           with        Rec 03         30_ct_ich_021_22.jpg            3739        Return    TRUE
+51         norm_pat             P03           with        Rec 03     31_mr_norma_001_170S.jpg           14342        Return   FALSE
+52         norm_pat             P03           with        Rec 03         32_ct_ich_038_53.jpg            1202        Return    TRUE
+53         norm_pat             P03           with        Rec 03     33_ct_stroke_016_145.jpg            5482       Capital   FALSE
+54         norm_pat             P03           with        Rec 03        34_mr_norma_010_6.jpg            6655       Capital    TRUE
+55         norm_pat             P03           with        Rec 03         35_ct_ich_034_49.jpg             845        Return    TRUE
+56         norm_pat             P03           with        Rec 03     36_mr_stroke_005_175.jpg            2168        Return    TRUE
+57         norm_pat             P03           with        Rec 03     37_mr_stroke_013_147.jpg            4869        Return    TRUE
+58         norm_pat             P03           with        Rec 03          38_ct_ich_012_5.jpg            3899        Return    TRUE
+59         norm_pat             P03           with        Rec 03       39_mr_norma_038_50.jpg            6118       Capital    TRUE
+60         norm_pat             P03           with        Rec 03       40_ct_norma_026_35.jpg            7219       Capital    TRUE
+81         norm_pat             P05           with        Rec 05       21_ct_norma_025_35.jpg            2972       Capital    TRUE
+82         norm_pat             P05           with        Rec 05       22_mr_norma_026_33.jpg            2110        Return   FALSE
+83         norm_pat             P05           with        Rec 05     23_ct_stroke_034_110.jpg            2287        Return    TRUE
+84         norm_pat             P05           with        Rec 05     24_mr_stroke_019_138.jpg            1606        Return    TRUE
+85         norm_pat             P05           with        Rec 05     25_ct_stroke_020_134.jpg            2664        Return    TRUE
+86         norm_pat             P05           with        Rec 05          26_ct_ich_013_5.jpg            1030        Return    TRUE
+87         norm_pat             P05           with        Rec 05         27_ct_ich_037_52.jpg            1920        Return    TRUE
+88         norm_pat             P05           with        Rec 05         28_mr_ich_008_30.jpg            1315        Return    TRUE
+89         norm_pat             P05           with        Rec 05        29_mr_norma_013_9.jpg            1719       Capital    TRUE
+90         norm_pat             P05           with        Rec 05         30_ct_ich_021_22.jpg            1155        Return    TRUE
+91         norm_pat             P05           with        Rec 05     31_mr_norma_001_170S.jpg            2267       Capital    TRUE
+92         norm_pat             P05           with        Rec 05         32_ct_ich_038_53.jpg             834        Return    TRUE
+93         norm_pat             P05           with        Rec 05     33_ct_stroke_016_145.jpg            1818       Capital   FALSE
+94         norm_pat             P05           with        Rec 05        34_mr_norma_010_6.jpg            3123        Return   FALSE
+95         norm_pat             P05           with        Rec 05         35_ct_ich_034_49.jpg            1919        Return    TRUE
+96         norm_pat             P05           with        Rec 05     36_mr_stroke_005_175.jpg            1124        Return    TRUE
+97         norm_pat             P05           with        Rec 05     37_mr_stroke_013_147.jpg            2280        Return    TRUE
+98         norm_pat             P05           with        Rec 05          38_ct_ich_012_5.jpg            2224       Capital   FALSE
+99         norm_pat             P05           with        Rec 05       39_mr_norma_038_50.jpg            3636        Return   FALSE
+100        norm_pat             P05           with        Rec 05       40_ct_norma_026_35.jpg            1753       Capital    TRUE
+121        norm_pat             P07           with        Rec 07       21_ct_norma_025_35.jpg            3726       Capital    TRUE
+122        norm_pat             P07           with        Rec 07       22_mr_norma_026_33.jpg            4316       Capital    TRUE
+123        norm_pat             P07           with        Rec 07     23_ct_stroke_034_110.jpg            9736        Return    TRUE
+124        norm_pat             P07           with        Rec 07     24_mr_stroke_019_138.jpg            1253        Return    TRUE
+125        norm_pat             P07           with        Rec 07     25_ct_stroke_020_134.jpg            3801        Return    TRUE
+126        norm_pat             P07           with        Rec 07          26_ct_ich_013_5.jpg            2930        Return    TRUE
+127        norm_pat             P07           with        Rec 07         27_ct_ich_037_52.jpg           14111       Capital   FALSE
+128        norm_pat             P07           with        Rec 07         28_mr_ich_008_30.jpg            1552        Return    TRUE
+129        norm_pat             P07           with        Rec 07        29_mr_norma_013_9.jpg            4873       Capital    TRUE
+130        norm_pat             P07           with        Rec 07         30_ct_ich_021_22.jpg            3757        Return    TRUE
+131        norm_pat             P07           with        Rec 07     31_mr_norma_001_170S.jpg            6071       Capital    TRUE
+132        norm_pat             P07           with        Rec 07         32_ct_ich_038_53.jpg            1254        Return    TRUE
+133        norm_pat             P07           with        Rec 07     33_ct_stroke_016_145.jpg            4380       Capital   FALSE
+134        norm_pat             P07           with        Rec 07        34_mr_norma_010_6.jpg            4153       Capital    TRUE
+135        norm_pat             P07           with        Rec 07         35_ct_ich_034_49.jpg            1212        Return    TRUE
+136        norm_pat             P07           with        Rec 07     36_mr_stroke_005_175.jpg            1240        Return    TRUE
+137        norm_pat             P07           with        Rec 07     37_mr_stroke_013_147.jpg           13741        Return    TRUE
+138        norm_pat             P07           with        Rec 07          38_ct_ich_012_5.jpg            8028        Return    TRUE
+139        norm_pat             P07           with        Rec 07       39_mr_norma_038_50.jpg            6654       Capital    TRUE
+140        norm_pat             P07           with        Rec 07       40_ct_norma_026_35.jpg            8377       Capital    TRUE
+161        norm_pat             P09           with        Rec 09       21_ct_norma_025_35.jpg            6430       Capital    TRUE
+162        norm_pat             P09           with        Rec 09       22_mr_norma_026_33.jpg            8475       Capital    TRUE
+163        norm_pat             P09           with        Rec 09     23_ct_stroke_034_110.jpg            3802       Capital   FALSE
+164        norm_pat             P09           with        Rec 09     24_mr_stroke_019_138.jpg            2342        Return    TRUE
+165        norm_pat             P09           with        Rec 09     25_ct_stroke_020_134.jpg            3055        Return    TRUE
+166        norm_pat             P09           with        Rec 09          26_ct_ich_013_5.jpg            1488        Return    TRUE
+167        norm_pat             P09           with        Rec 09         27_ct_ich_037_52.jpg           27662        Return    TRUE
+168        norm_pat             P09           with        Rec 09         28_mr_ich_008_30.jpg            1335        Return    TRUE
+169        norm_pat             P09           with        Rec 09        29_mr_norma_013_9.jpg           12781       Capital    TRUE
+170        norm_pat             P09           with        Rec 09         30_ct_ich_021_22.jpg            3945        Return    TRUE
+171        norm_pat             P09           with        Rec 09     31_mr_norma_001_170S.jpg            3156       Capital    TRUE
+172        norm_pat             P09           with        Rec 09         32_ct_ich_038_53.jpg            3021        Return    TRUE
+173        norm_pat             P09           with        Rec 09     33_ct_stroke_016_145.jpg            2695       Capital   FALSE
+174        norm_pat             P09           with        Rec 09        34_mr_norma_010_6.jpg           25860       Capital    TRUE
+175        norm_pat             P09           with        Rec 09         35_ct_ich_034_49.jpg            1183        Return    TRUE
+176        norm_pat             P09           with        Rec 09     36_mr_stroke_005_175.jpg            1085        Return    TRUE
+177        norm_pat             P09           with        Rec 09     37_mr_stroke_013_147.jpg            7419        Return    TRUE
+178        norm_pat             P09           with        Rec 09          38_ct_ich_012_5.jpg           28607        Return    TRUE
+179        norm_pat             P09           with        Rec 09       39_mr_norma_038_50.jpg            3443       Capital    TRUE
+180        norm_pat             P09           with        Rec 09       40_ct_norma_026_35.jpg            1915       Capital    TRUE
+181        norm_pat             P10           with        Rec 10       21_ct_norma_025_35.jpg            3056       Capital    TRUE
+182        norm_pat             P10           with        Rec 10       22_mr_norma_026_33.jpg            5713       Capital    TRUE
+183        norm_pat             P10           with        Rec 10     23_ct_stroke_034_110.jpg            4532        Return    TRUE
+184        norm_pat             P10           with        Rec 10     24_mr_stroke_019_138.jpg            6116        Return    TRUE
+185        norm_pat             P10           with        Rec 10     25_ct_stroke_020_134.jpg            2473        Return    TRUE
+186        norm_pat             P10           with        Rec 10          26_ct_ich_013_5.jpg            1188        Return    TRUE
+187        norm_pat             P10           with        Rec 10         27_ct_ich_037_52.jpg            4956        Return    TRUE
+188        norm_pat             P10           with        Rec 10         28_mr_ich_008_30.jpg            2777        Return    TRUE
+189        norm_pat             P10           with        Rec 10        29_mr_norma_013_9.jpg            3984       Capital    TRUE
+190        norm_pat             P10           with        Rec 10         30_ct_ich_021_22.jpg            1254        Return    TRUE
+191        norm_pat             P10           with        Rec 10     31_mr_norma_001_170S.jpg            3870       Capital    TRUE
+192        norm_pat             P10           with        Rec 10         32_ct_ich_038_53.jpg            2296        Return    TRUE
+193        norm_pat             P10           with        Rec 10     33_ct_stroke_016_145.jpg            1587       Capital   FALSE
+194        norm_pat             P10           with        Rec 10        34_mr_norma_010_6.jpg            5258        Return   FALSE
+195        norm_pat             P10           with        Rec 10         35_ct_ich_034_49.jpg            1933        Return    TRUE
+196        norm_pat             P10           with        Rec 10     36_mr_stroke_005_175.jpg            1694        Return    TRUE
+197        norm_pat             P10           with        Rec 10     37_mr_stroke_013_147.jpg            3834        Return    TRUE
+198        norm_pat             P10           with        Rec 10          38_ct_ich_012_5.jpg            3415        Return    TRUE
+199        norm_pat             P10           with        Rec 10       39_mr_norma_038_50.jpg            4855       Capital    TRUE
+200        norm_pat             P10           with        Rec 10       40_ct_norma_026_35.jpg            3504       Capital    TRUE
+241        norm_pat             P13           with        Rec 13       21_ct_norma_025_35.jpg            5128       Capital    TRUE
+242        norm_pat             P13           with        Rec 13       22_mr_norma_026_33.jpg           12878        Return   FALSE
+243        norm_pat             P13           with        Rec 13     23_ct_stroke_034_110.jpg           10099        Return    TRUE
+244        norm_pat             P13           with        Rec 13     24_mr_stroke_019_138.jpg            3423        Return    TRUE
+245        norm_pat             P13           with        Rec 13     25_ct_stroke_020_134.jpg            2980        Return    TRUE
+246        norm_pat             P13           with        Rec 13          26_ct_ich_013_5.jpg            9276        Return    TRUE
+247        norm_pat             P13           with        Rec 13         27_ct_ich_037_52.jpg           10499        Return    TRUE
+248        norm_pat             P13           with        Rec 13         28_mr_ich_008_30.jpg            1432        Return    TRUE
+249        norm_pat             P13           with        Rec 13        29_mr_norma_013_9.jpg            3904       Capital    TRUE
+250        norm_pat             P13           with        Rec 13         30_ct_ich_021_22.jpg            2531        Return    TRUE
+251        norm_pat             P13           with        Rec 13     31_mr_norma_001_170S.jpg            3041       Capital    TRUE
+252        norm_pat             P13           with        Rec 13         32_ct_ich_038_53.jpg            1105        Return    TRUE
+253        norm_pat             P13           with        Rec 13     33_ct_stroke_016_145.jpg            4765       Capital   FALSE
+254        norm_pat             P13           with        Rec 13        34_mr_norma_010_6.jpg            9633       Capital    TRUE
+255        norm_pat             P13           with        Rec 13         35_ct_ich_034_49.jpg            1021        Return    TRUE
+256        norm_pat             P13           with        Rec 13     36_mr_stroke_005_175.jpg            2448        Return    TRUE
+257        norm_pat             P13           with        Rec 13     37_mr_stroke_013_147.jpg            4180        Return    TRUE
+258        norm_pat             P13           with        Rec 13          38_ct_ich_012_5.jpg            2451        Return    TRUE
+259        norm_pat             P13           with        Rec 13       39_mr_norma_038_50.jpg            6943       Capital    TRUE
+260        norm_pat             P13           with        Rec 13       40_ct_norma_026_35.jpg            5783       Capital    TRUE
+281        norm_pat             P15           with        Rec 15       21_ct_norma_025_35.jpg            1707       Capital    TRUE
+282        norm_pat             P15           with        Rec 15       22_mr_norma_026_33.jpg            5734        Return   FALSE
+283        norm_pat             P15           with        Rec 15     23_ct_stroke_034_110.jpg            1477       Capital   FALSE
+284        norm_pat             P15           with        Rec 15     24_mr_stroke_019_138.jpg            1376        Return    TRUE
+285        norm_pat             P15           with        Rec 15     25_ct_stroke_020_134.jpg            4471        Return    TRUE
+286        norm_pat             P15           with        Rec 15          26_ct_ich_013_5.jpg            1240        Return    TRUE
+287        norm_pat             P15           with        Rec 15         27_ct_ich_037_52.jpg            4742        Return    TRUE
+288        norm_pat             P15           with        Rec 15         28_mr_ich_008_30.jpg             739        Return    TRUE
+289        norm_pat             P15           with        Rec 15        29_mr_norma_013_9.jpg            5288       Capital    TRUE
+290        norm_pat             P15           with        Rec 15         30_ct_ich_021_22.jpg            1410        Return    TRUE
+291        norm_pat             P15           with        Rec 15     31_mr_norma_001_170S.jpg            3489       Capital    TRUE
+292        norm_pat             P15           with        Rec 15         32_ct_ich_038_53.jpg            1026       Capital   FALSE
+293        norm_pat             P15           with        Rec 15     33_ct_stroke_016_145.jpg            1527       Capital   FALSE
+294        norm_pat             P15           with        Rec 15        34_mr_norma_010_6.jpg            3243       Capital    TRUE
+295        norm_pat             P15           with        Rec 15         35_ct_ich_034_49.jpg             801        Return    TRUE
+296        norm_pat             P15           with        Rec 15     36_mr_stroke_005_175.jpg             784        Return    TRUE
+297        norm_pat             P15           with        Rec 15     37_mr_stroke_013_147.jpg            1259        Return    TRUE
+298        norm_pat             P15           with        Rec 15          38_ct_ich_012_5.jpg            3712       Capital   FALSE
+299        norm_pat             P15           with        Rec 15       39_mr_norma_038_50.jpg            2548       Capital    TRUE
+300        norm_pat             P15           with        Rec 15       40_ct_norma_026_35.jpg            5907       Capital    TRUE
+321        norm_pat             P17           with        Rec 17       21_ct_norma_025_35.jpg            1605       Capital    TRUE
+322        norm_pat             P17           with        Rec 17       22_mr_norma_026_33.jpg            3215        Return   FALSE
+323        norm_pat             P17           with        Rec 17     23_ct_stroke_034_110.jpg            1993        Return    TRUE
+324        norm_pat             P17           with        Rec 17     24_mr_stroke_019_138.jpg            2698        Return    TRUE
+325        norm_pat             P17           with        Rec 17     25_ct_stroke_020_134.jpg            3168        Return    TRUE
+326        norm_pat             P17           with        Rec 17          26_ct_ich_013_5.jpg            2147        Return    TRUE
+327        norm_pat             P17           with        Rec 17         27_ct_ich_037_52.jpg            2504       Capital   FALSE
+328        norm_pat             P17           with        Rec 17         28_mr_ich_008_30.jpg            4718        Return    TRUE
+329        norm_pat             P17           with        Rec 17        29_mr_norma_013_9.jpg            7008       Capital    TRUE
+330        norm_pat             P17           with        Rec 17         30_ct_ich_021_22.jpg            5111        Return    TRUE
+331        norm_pat             P17           with        Rec 17     31_mr_norma_001_170S.jpg            8794       Capital    TRUE
+332        norm_pat             P17           with        Rec 17         32_ct_ich_038_53.jpg            3157        Return    TRUE
+333        norm_pat             P17           with        Rec 17     33_ct_stroke_016_145.jpg            9500       Capital   FALSE
+334        norm_pat             P17           with        Rec 17        34_mr_norma_010_6.jpg           10944       Capital    TRUE
+335        norm_pat             P17           with        Rec 17         35_ct_ich_034_49.jpg            3002        Return    TRUE
+336        norm_pat             P17           with        Rec 17     36_mr_stroke_005_175.jpg            1964        Return    TRUE
+337        norm_pat             P17           with        Rec 17     37_mr_stroke_013_147.jpg            2766        Return    TRUE
+338        norm_pat             P17           with        Rec 17          38_ct_ich_012_5.jpg            9512        Return    TRUE
+339        norm_pat             P17           with        Rec 17       39_mr_norma_038_50.jpg            8892       Capital    TRUE
+340        norm_pat             P17           with        Rec 17       40_ct_norma_026_35.jpg            7945       Capital    TRUE
+361        norm_pat             P19           with        Rec 19       21_ct_norma_025_35.jpg            3303       Capital    TRUE
+362        norm_pat             P19           with        Rec 19       22_mr_norma_026_33.jpg            8939       Capital    TRUE
+363        norm_pat             P19           with        Rec 19     23_ct_stroke_034_110.jpg            7934       Capital   FALSE
+364        norm_pat             P19           with        Rec 19     24_mr_stroke_019_138.jpg           11343        Return    TRUE
+365        norm_pat             P19           with        Rec 19     25_ct_stroke_020_134.jpg            4399        Return    TRUE
+366        norm_pat             P19           with        Rec 19          26_ct_ich_013_5.jpg            4748        Return    TRUE
+367        norm_pat             P19           with        Rec 19         27_ct_ich_037_52.jpg           10378        Return    TRUE
+368        norm_pat             P19           with        Rec 19         28_mr_ich_008_30.jpg            2702        Return    TRUE
+369        norm_pat             P19           with        Rec 19        29_mr_norma_013_9.jpg            2024       Capital    TRUE
+370        norm_pat             P19           with        Rec 19         30_ct_ich_021_22.jpg            1709        Return    TRUE
+371        norm_pat             P19           with        Rec 19     31_mr_norma_001_170S.jpg            3938       Capital    TRUE
+372        norm_pat             P19           with        Rec 19         32_ct_ich_038_53.jpg            1353        Return    TRUE
+373        norm_pat             P19           with        Rec 19     33_ct_stroke_016_145.jpg            2781       Capital   FALSE
+374        norm_pat             P19           with        Rec 19        34_mr_norma_010_6.jpg            4948       Capital    TRUE
+375        norm_pat             P19           with        Rec 19         35_ct_ich_034_49.jpg            1053        Return    TRUE
+376        norm_pat             P19           with        Rec 19     36_mr_stroke_005_175.jpg            1970        Return    TRUE
+377        norm_pat             P19           with        Rec 19     37_mr_stroke_013_147.jpg           13303        Return    TRUE
+378        norm_pat             P19           with        Rec 19          38_ct_ich_012_5.jpg           10706       Capital   FALSE
+379        norm_pat             P19           with        Rec 19       39_mr_norma_038_50.jpg            5142       Capital    TRUE
+380        norm_pat             P19           with        Rec 19       40_ct_norma_026_35.jpg           10530       Capital    TRUE
+401        norm_pat             P21           with        Rec 21       21_ct_norma_025_35.jpg            3424       Capital    TRUE
+402        norm_pat             P21           with        Rec 21       22_mr_norma_026_33.jpg           16730       Capital    TRUE
+403        norm_pat             P21           with        Rec 21     23_ct_stroke_034_110.jpg            9065       Capital   FALSE
+404        norm_pat             P21           with        Rec 21     24_mr_stroke_019_138.jpg            2309        Return    TRUE
+405        norm_pat             P21           with        Rec 21     25_ct_stroke_020_134.jpg            1954        Return    TRUE
+406        norm_pat             P21           with        Rec 21          26_ct_ich_013_5.jpg            2222        Return    TRUE
+407        norm_pat             P21           with        Rec 21         27_ct_ich_037_52.jpg           14307       Capital   FALSE
+408        norm_pat             P21           with        Rec 21         28_mr_ich_008_30.jpg            4974        Return    TRUE
+409        norm_pat             P21           with        Rec 21        29_mr_norma_013_9.jpg            5153       Capital    TRUE
+410        norm_pat             P21           with        Rec 21         30_ct_ich_021_22.jpg            1896        Return    TRUE
+411        norm_pat             P21           with        Rec 21     31_mr_norma_001_170S.jpg            4413       Capital    TRUE
+412        norm_pat             P21           with        Rec 21         32_ct_ich_038_53.jpg            1050        Return    TRUE
+413        norm_pat             P21           with        Rec 21     33_ct_stroke_016_145.jpg            3699       Capital   FALSE
+414        norm_pat             P21           with        Rec 21        34_mr_norma_010_6.jpg            9437        Return   FALSE
+415        norm_pat             P21           with        Rec 21         35_ct_ich_034_49.jpg             989        Return    TRUE
+416        norm_pat             P21           with        Rec 21     36_mr_stroke_005_175.jpg             873        Return    TRUE
+417        norm_pat             P21           with        Rec 21     37_mr_stroke_013_147.jpg            1546        Return    TRUE
+418        norm_pat             P21           with        Rec 21          38_ct_ich_012_5.jpg            7458        Return    TRUE
+419        norm_pat             P21           with        Rec 21       39_mr_norma_038_50.jpg            2852       Capital    TRUE
+420        norm_pat             P21           with        Rec 21       40_ct_norma_026_35.jpg            7591       Capital    TRUE
+441        norm_pat             P23           with        Rec 23       21_ct_norma_025_35.jpg            6148       Capital    TRUE
+442        norm_pat             P23           with        Rec 23       22_mr_norma_026_33.jpg           17935       Capital    TRUE
+443        norm_pat             P23           with        Rec 23     23_ct_stroke_034_110.jpg            7766        Return    TRUE
+444        norm_pat             P23           with        Rec 23     24_mr_stroke_019_138.jpg            3324        Return    TRUE
+445        norm_pat             P23           with        Rec 23     25_ct_stroke_020_134.jpg            6340        Return    TRUE
+446        norm_pat             P23           with        Rec 23          26_ct_ich_013_5.jpg            6237        Return    TRUE
+447        norm_pat             P23           with        Rec 23         27_ct_ich_037_52.jpg            7124        Return    TRUE
+448        norm_pat             P23           with        Rec 23         28_mr_ich_008_30.jpg            3808        Return    TRUE
+449        norm_pat             P23           with        Rec 23        29_mr_norma_013_9.jpg           11158       Capital    TRUE
+450        norm_pat             P23           with        Rec 23         30_ct_ich_021_22.jpg            8749        Return    TRUE
+451        norm_pat             P23           with        Rec 23     31_mr_norma_001_170S.jpg            7281       Capital    TRUE
+452        norm_pat             P23           with        Rec 23         32_ct_ich_038_53.jpg            3457        Return    TRUE
+453        norm_pat             P23           with        Rec 23     33_ct_stroke_016_145.jpg            9898       Capital   FALSE
+454        norm_pat             P23           with        Rec 23        34_mr_norma_010_6.jpg           11240       Capital    TRUE
+455        norm_pat             P23           with        Rec 23         35_ct_ich_034_49.jpg            2817        Return    TRUE
+456        norm_pat             P23           with        Rec 23     36_mr_stroke_005_175.jpg            4993        Return    TRUE
+457        norm_pat             P23           with        Rec 23     37_mr_stroke_013_147.jpg            6846        Return    TRUE
+458        norm_pat             P23           with        Rec 23          38_ct_ich_012_5.jpg            5054        Return    TRUE
+459        norm_pat             P23           with        Rec 23       39_mr_norma_038_50.jpg           12159       Capital    TRUE
+460        norm_pat             P23           with        Rec 23       40_ct_norma_026_35.jpg           12904        Return   FALSE
+481        norm_pat             P25           with        Rec 25       21_ct_norma_025_35.jpg            6650       Capital    TRUE
+482        norm_pat             P25           with        Rec 25       22_mr_norma_026_33.jpg            5029        Return   FALSE
+483        norm_pat             P25           with        Rec 25     23_ct_stroke_034_110.jpg            6593        Return    TRUE
+484        norm_pat             P25           with        Rec 25     24_mr_stroke_019_138.jpg            7155        Return    TRUE
+485        norm_pat             P25           with        Rec 25     25_ct_stroke_020_134.jpg            2741        Return    TRUE
+486        norm_pat             P25           with        Rec 25          26_ct_ich_013_5.jpg            5593        Return    TRUE
+487        norm_pat             P25           with        Rec 25         27_ct_ich_037_52.jpg           12272        Return    TRUE
+488        norm_pat             P25           with        Rec 25         28_mr_ich_008_30.jpg            3522        Return    TRUE
+489        norm_pat             P25           with        Rec 25        29_mr_norma_013_9.jpg            5471       Capital    TRUE
+490        norm_pat             P25           with        Rec 25         30_ct_ich_021_22.jpg            5133        Return    TRUE
+491        norm_pat             P25           with        Rec 25     31_mr_norma_001_170S.jpg           12800       Capital    TRUE
+492        norm_pat             P25           with        Rec 25         32_ct_ich_038_53.jpg            4032        Return    TRUE
+493        norm_pat             P25           with        Rec 25     33_ct_stroke_016_145.jpg            6236       Capital   FALSE
+494        norm_pat             P25           with        Rec 25        34_mr_norma_010_6.jpg           10244        Return   FALSE
+495        norm_pat             P25           with        Rec 25         35_ct_ich_034_49.jpg            2785        Return    TRUE
+496        norm_pat             P25           with        Rec 25     36_mr_stroke_005_175.jpg            2753        Return    TRUE
+497        norm_pat             P25           with        Rec 25     37_mr_stroke_013_147.jpg            4159        Return    TRUE
+498        norm_pat             P25           with        Rec 25          38_ct_ich_012_5.jpg           12019       Capital   FALSE
+499        norm_pat             P25           with        Rec 25       39_mr_norma_038_50.jpg            6974       Capital    TRUE
+500        norm_pat             P25           with        Rec 25       40_ct_norma_026_35.jpg            6561       Capital    TRUE
+521        norm_pat             P27           with        Rec 27       21_ct_norma_025_35.jpg            7979       Capital    TRUE
+522        norm_pat             P27           with        Rec 27       22_mr_norma_026_33.jpg           17385       Capital    TRUE
+523        norm_pat             P27           with        Rec 27     23_ct_stroke_034_110.jpg           25368        Return    TRUE
+524        norm_pat             P27           with        Rec 27     24_mr_stroke_019_138.jpg            4371        Return    TRUE
+525        norm_pat             P27           with        Rec 27     25_ct_stroke_020_134.jpg            6556        Return    TRUE
+526        norm_pat             P27           with        Rec 27          26_ct_ich_013_5.jpg            3979        Return    TRUE
+527        norm_pat             P27           with        Rec 27         27_ct_ich_037_52.jpg           13924       Capital   FALSE
+528        norm_pat             P27           with        Rec 27         28_mr_ich_008_30.jpg            2152        Return    TRUE
+529        norm_pat             P27           with        Rec 27        29_mr_norma_013_9.jpg           10305       Capital    TRUE
+530        norm_pat             P27           with        Rec 27         30_ct_ich_021_22.jpg            3190        Return    TRUE
+531        norm_pat             P27           with        Rec 27     31_mr_norma_001_170S.jpg           12063       Capital    TRUE
+532        norm_pat             P27           with        Rec 27         32_ct_ich_038_53.jpg            1786        Return    TRUE
+533        norm_pat             P27           with        Rec 27     33_ct_stroke_016_145.jpg            7657       Capital   FALSE
+534        norm_pat             P27           with        Rec 27        34_mr_norma_010_6.jpg           23827        Return   FALSE
+535        norm_pat             P27           with        Rec 27         35_ct_ich_034_49.jpg            2028        Return    TRUE
+536        norm_pat             P27           with        Rec 27     36_mr_stroke_005_175.jpg            2562        Return    TRUE
+537        norm_pat             P27           with        Rec 27     37_mr_stroke_013_147.jpg            3704        Return    TRUE
+538        norm_pat             P27           with        Rec 27          38_ct_ich_012_5.jpg            9351       Capital   FALSE
+539        norm_pat             P27           with        Rec 27       39_mr_norma_038_50.jpg           10727       Capital    TRUE
+540        norm_pat             P27           with        Rec 27       40_ct_norma_026_35.jpg           10535       Capital    TRUE
+561        norm_pat             P29           with        Rec 29       21_ct_norma_025_35.jpg            6222       Capital    TRUE
+562        norm_pat             P29           with        Rec 29       22_mr_norma_026_33.jpg            8150       Capital    TRUE
+563        norm_pat             P29           with        Rec 29     23_ct_stroke_034_110.jpg            5490       Capital   FALSE
+564        norm_pat             P29           with        Rec 29     24_mr_stroke_019_138.jpg            8203        Return    TRUE
+565        norm_pat             P29           with        Rec 29     25_ct_stroke_020_134.jpg            2363        Return    TRUE
+566        norm_pat             P29           with        Rec 29          26_ct_ich_013_5.jpg            2707        Return    TRUE
+567        norm_pat             P29           with        Rec 29         27_ct_ich_037_52.jpg            9011        Return    TRUE
+568        norm_pat             P29           with        Rec 29         28_mr_ich_008_30.jpg            1083        Return    TRUE
+569        norm_pat             P29           with        Rec 29        29_mr_norma_013_9.jpg            6395       Capital    TRUE
+570        norm_pat             P29           with        Rec 29         30_ct_ich_021_22.jpg            3001        Return    TRUE
+571        norm_pat             P29           with        Rec 29     31_mr_norma_001_170S.jpg            3437       Capital    TRUE
+572        norm_pat             P29           with        Rec 29         32_ct_ich_038_53.jpg            1935        Return    TRUE
+573        norm_pat             P29           with        Rec 29     33_ct_stroke_016_145.jpg            4530       Capital   FALSE
+574        norm_pat             P29           with        Rec 29        34_mr_norma_010_6.jpg            5528       Capital    TRUE
+575        norm_pat             P29           with        Rec 29         35_ct_ich_034_49.jpg             829        Return    TRUE
+576        norm_pat             P29           with        Rec 29     36_mr_stroke_005_175.jpg            2467        Return    TRUE
+577        norm_pat             P29           with        Rec 29     37_mr_stroke_013_147.jpg            5677        Return    TRUE
+578        norm_pat             P29           with        Rec 29          38_ct_ich_012_5.jpg            3223        Return    TRUE
+579        norm_pat             P29           with        Rec 29       39_mr_norma_038_50.jpg            3679       Capital    TRUE
+580        norm_pat             P29           with        Rec 29       40_ct_norma_026_35.jpg            2494       Capital    TRUE
+601        norm_pat             P31           with        Rec 31       21_ct_norma_025_35.jpg            4256        Return   FALSE
+602        norm_pat             P31           with        Rec 31       22_mr_norma_026_33.jpg            7201        Return   FALSE
+603        norm_pat             P31           with        Rec 31     23_ct_stroke_034_110.jpg            3712        Return    TRUE
+604        norm_pat             P31           with        Rec 31     24_mr_stroke_019_138.jpg            1344       Capital   FALSE
+605        norm_pat             P31           with        Rec 31     25_ct_stroke_020_134.jpg            4792       Capital   FALSE
+606        norm_pat             P31           with        Rec 31          26_ct_ich_013_5.jpg            3054       Capital   FALSE
+607        norm_pat             P31           with        Rec 31         27_ct_ich_037_52.jpg            9535       Capital   FALSE
+608        norm_pat             P31           with        Rec 31         28_mr_ich_008_30.jpg            1184       Capital   FALSE
+609        norm_pat             P31           with        Rec 31        29_mr_norma_013_9.jpg            8080        Return   FALSE
+610        norm_pat             P31           with        Rec 31         30_ct_ich_021_22.jpg            2401       Capital   FALSE
+611        norm_pat             P31           with        Rec 31     31_mr_norma_001_170S.jpg            9101        Return   FALSE
+612        norm_pat             P31           with        Rec 31         32_ct_ich_038_53.jpg            1546       Capital   FALSE
+613        norm_pat             P31           with        Rec 31     33_ct_stroke_016_145.jpg            2834        Return    TRUE
+614        norm_pat             P31           with        Rec 31        34_mr_norma_010_6.jpg           12047        Return   FALSE
+615        norm_pat             P31           with        Rec 31         35_ct_ich_034_49.jpg            1242       Capital   FALSE
+616        norm_pat             P31           with        Rec 31     36_mr_stroke_005_175.jpg             943       Capital   FALSE
+617        norm_pat             P31           with        Rec 31     37_mr_stroke_013_147.jpg            8863       Capital   FALSE
+618        norm_pat             P31           with        Rec 31          38_ct_ich_012_5.jpg            5346        Return    TRUE
+619        norm_pat             P31           with        Rec 31       39_mr_norma_038_50.jpg            3189        Return   FALSE
+620        norm_pat             P31           with        Rec 31       40_ct_norma_026_35.jpg            4086        Return   FALSE
+641        norm_pat             P33           with        Rec 33       21_ct_norma_025_35.jpg            8416       Capital    TRUE
+642        norm_pat             P33           with        Rec 33       22_mr_norma_026_33.jpg            8076        Return   FALSE
+643        norm_pat             P33           with        Rec 33     23_ct_stroke_034_110.jpg           10351        Return    TRUE
+644        norm_pat             P33           with        Rec 33     24_mr_stroke_019_138.jpg            5264        Return    TRUE
+645        norm_pat             P33           with        Rec 33     25_ct_stroke_020_134.jpg            3825        Return    TRUE
+646        norm_pat             P33           with        Rec 33          26_ct_ich_013_5.jpg           19093        Return    TRUE
+647        norm_pat             P33           with        Rec 33         27_ct_ich_037_52.jpg           20724        Return    TRUE
+648        norm_pat             P33           with        Rec 33         28_mr_ich_008_30.jpg            2873        Return    TRUE
+649        norm_pat             P33           with        Rec 33        29_mr_norma_013_9.jpg            2664       Capital    TRUE
+650        norm_pat             P33           with        Rec 33         30_ct_ich_021_22.jpg           17902       Capital   FALSE
+651        norm_pat             P33           with        Rec 33     31_mr_norma_001_170S.jpg            6521       Capital    TRUE
+652        norm_pat             P33           with        Rec 33         32_ct_ich_038_53.jpg           23232       Capital   FALSE
+653        norm_pat             P33           with        Rec 33     33_ct_stroke_016_145.jpg            5775       Capital   FALSE
+654        norm_pat             P33           with        Rec 33        34_mr_norma_010_6.jpg            9513        Return   FALSE
+655        norm_pat             P33           with        Rec 33         35_ct_ich_034_49.jpg           17480       Capital   FALSE
+656        norm_pat             P33           with        Rec 33     36_mr_stroke_005_175.jpg            1644        Return    TRUE
+657        norm_pat             P33           with        Rec 33     37_mr_stroke_013_147.jpg            4304        Return    TRUE
+658        norm_pat             P33           with        Rec 33          38_ct_ich_012_5.jpg            3601       Capital   FALSE
+659        norm_pat             P33           with        Rec 33       39_mr_norma_038_50.jpg            1508       Capital    TRUE
+660        norm_pat             P33           with        Rec 33       40_ct_norma_026_35.jpg            7819       Capital    TRUE
+681        norm_pat             P35           with        Rec 35       21_ct_norma_025_35.jpg            4720       Capital    TRUE
+682        norm_pat             P35           with        Rec 35       22_mr_norma_026_33.jpg            2933        Return   FALSE
+683        norm_pat             P35           with        Rec 35     23_ct_stroke_034_110.jpg            7671       Capital   FALSE
+684        norm_pat             P35           with        Rec 35     24_mr_stroke_019_138.jpg            5711        Return    TRUE
+685        norm_pat             P35           with        Rec 35     25_ct_stroke_020_134.jpg            4266        Return    TRUE
+686        norm_pat             P35           with        Rec 35          26_ct_ich_013_5.jpg            5163        Return    TRUE
+687        norm_pat             P35           with        Rec 35         27_ct_ich_037_52.jpg           12191       Capital   FALSE
+688        norm_pat             P35           with        Rec 35         28_mr_ich_008_30.jpg            3186        Return    TRUE
+689        norm_pat             P35           with        Rec 35        29_mr_norma_013_9.jpg            7319       Capital    TRUE
+690        norm_pat             P35           with        Rec 35         30_ct_ich_021_22.jpg            6124        Return    TRUE
+691        norm_pat             P35           with        Rec 35     31_mr_norma_001_170S.jpg            4438       Capital    TRUE
+692        norm_pat             P35           with        Rec 35         32_ct_ich_038_53.jpg            1488        Return    TRUE
+693        norm_pat             P35           with        Rec 35     33_ct_stroke_016_145.jpg            4798       Capital   FALSE
+694        norm_pat             P35           with        Rec 35        34_mr_norma_010_6.jpg            6500       Capital    TRUE
+695        norm_pat             P35           with        Rec 35         35_ct_ich_034_49.jpg            2002        Return    TRUE
+696        norm_pat             P35           with        Rec 35     36_mr_stroke_005_175.jpg            1966        Return    TRUE
+697        norm_pat             P35           with        Rec 35     37_mr_stroke_013_147.jpg            4074        Return    TRUE
+698        norm_pat             P35           with        Rec 35          38_ct_ich_012_5.jpg           13157        Return    TRUE
+699        norm_pat             P35           with        Rec 35       39_mr_norma_038_50.jpg            3326       Capital    TRUE
+700        norm_pat             P35           with        Rec 35       40_ct_norma_026_35.jpg            7672        Return   FALSE
+721        norm_pat             P37           with        Rec 37       21_ct_norma_025_35.jpg           11793       Capital    TRUE
+722        norm_pat             P37           with        Rec 37       22_mr_norma_026_33.jpg           13050        Return   FALSE
+723        norm_pat             P37           with        Rec 37     23_ct_stroke_034_110.jpg           19526       Capital   FALSE
+724        norm_pat             P37           with        Rec 37     24_mr_stroke_019_138.jpg            3694        Return    TRUE
+725        norm_pat             P37           with        Rec 37     25_ct_stroke_020_134.jpg            3953        Return    TRUE
+726        norm_pat             P37           with        Rec 37          26_ct_ich_013_5.jpg            6868        Return    TRUE
+727        norm_pat             P37           with        Rec 37         27_ct_ich_037_52.jpg           17650          None   FALSE
+728        norm_pat             P37           with        Rec 37         28_mr_ich_008_30.jpg            6052          None   FALSE
+729        norm_pat             P37           with        Rec 37        29_mr_norma_013_9.jpg            4734       Capital    TRUE
+730        norm_pat             P37           with        Rec 37         30_ct_ich_021_22.jpg            1939          None   FALSE
+731        norm_pat             P37           with        Rec 37     31_mr_norma_001_170S.jpg           10791       Capital    TRUE
+732        norm_pat             P37           with        Rec 37         32_ct_ich_038_53.jpg            3071        Return    TRUE
+733        norm_pat             P37           with        Rec 37     33_ct_stroke_016_145.jpg           12856       Capital   FALSE
+734        norm_pat             P37           with        Rec 37        34_mr_norma_010_6.jpg           18963       Capital    TRUE
+735        norm_pat             P37           with        Rec 37         35_ct_ich_034_49.jpg            5809        Return    TRUE
+736        norm_pat             P37           with        Rec 37     36_mr_stroke_005_175.jpg            2922        Return    TRUE
+737        norm_pat             P37           with        Rec 37     37_mr_stroke_013_147.jpg           17192       Capital   FALSE
+738        norm_pat             P37           with        Rec 37          38_ct_ich_012_5.jpg            9494       Capital   FALSE
+739        norm_pat             P37           with        Rec 37       39_mr_norma_038_50.jpg           16082        Return   FALSE
+740        norm_pat             P37           with        Rec 37       40_ct_norma_026_35.jpg            8073        Return   FALSE
+761           ct_mr             P01           with        Rec 01         1_ct_norma_013_2.jpg            8536       Capital    TRUE
+762           ct_mr             P01           with        Rec 01       2_ct_norma_010_80S.jpg            8643       Capital    TRUE
+763           ct_mr             P01           with        Rec 01      3_ct_stroke_039_101.jpg            2668       Capital    TRUE
+764           ct_mr             P01           with        Rec 01           4_ct_ich_007_5.jpg           14612       Capital    TRUE
+765           ct_mr             P01           with        Rec 01          5_ct_ich_024_28.jpg            3595       Capital    TRUE
+766           ct_mr             P01           with        Rec 01      6_mr_stroke_035_106.jpg            1595        Return    TRUE
+767           ct_mr             P01           with        Rec 01      7_ct_stroke_015_151.jpg            3050       Capital    TRUE
+768           ct_mr             P01           with        Rec 01         8_ct_norma_014_4.jpg            1670       Capital    TRUE
+769           ct_mr             P01           with        Rec 01          9_ct_ich_040_57.jpg            5376       Capital    TRUE
+770           ct_mr             P01           with        Rec 01        10_ct_ich_005_178.jpg             961       Capital    TRUE
+771           ct_mr             P01           with        Rec 01     11_ct_stroke_005_180.jpg             707       Capital    TRUE
+772           ct_mr             P01           with        Rec 01         12_mr_ich_005_25.jpg             836        Return    TRUE
+773           ct_mr             P01           with        Rec 01     13_mr_stroke_033_111.jpg             886        Return    TRUE
+774           ct_mr             P01           with        Rec 01     14_ct_stroke_036_107.jpg             959       Capital    TRUE
+775           ct_mr             P01           with        Rec 01       15_mr_norma_030_39.jpg            2870        Return    TRUE
+776           ct_mr             P01           with        Rec 01       16_ct_norma_029_42.jpg            1810       Capital    TRUE
+777           ct_mr             P01           with        Rec 01     17_ct_stroke_035_108.jpg            2894       Capital    TRUE
+778           ct_mr             P01           with        Rec 01        18_mr_norma_012_8.jpg             771        Return    TRUE
+779           ct_mr             P01           with        Rec 01       19_mr_norma_015_12.jpg             676        Return    TRUE
+780           ct_mr             P01           with        Rec 01     20_ct_stroke_026_123.jpg             748       Capital    TRUE
+801           ct_mr             P03           with        Rec 03         1_ct_norma_013_2.jpg           23100       Capital    TRUE
+802           ct_mr             P03           with        Rec 03       2_ct_norma_010_80S.jpg            5485       Capital    TRUE
+803           ct_mr             P03           with        Rec 03      3_ct_stroke_039_101.jpg            4520       Capital    TRUE
+804           ct_mr             P03           with        Rec 03           4_ct_ich_007_5.jpg            2275        Return   FALSE
+805           ct_mr             P03           with        Rec 03          5_ct_ich_024_28.jpg            3193       Capital    TRUE
+806           ct_mr             P03           with        Rec 03      6_mr_stroke_035_106.jpg            1965        Return    TRUE
+807           ct_mr             P03           with        Rec 03      7_ct_stroke_015_151.jpg            4534        Return   FALSE
+808           ct_mr             P03           with        Rec 03         8_ct_norma_014_4.jpg            2459       Capital    TRUE
+809           ct_mr             P03           with        Rec 03          9_ct_ich_040_57.jpg            2740        Return   FALSE
+810           ct_mr             P03           with        Rec 03        10_ct_ich_005_178.jpg            1883       Capital    TRUE
+811           ct_mr             P03           with        Rec 03     11_ct_stroke_005_180.jpg            1951       Capital    TRUE
+812           ct_mr             P03           with        Rec 03         12_mr_ich_005_25.jpg            1459        Return    TRUE
+813           ct_mr             P03           with        Rec 03     13_mr_stroke_033_111.jpg            3931        Return    TRUE
+814           ct_mr             P03           with        Rec 03     14_ct_stroke_036_107.jpg            3390       Capital    TRUE
+815           ct_mr             P03           with        Rec 03       15_mr_norma_030_39.jpg            1541        Return    TRUE
+816           ct_mr             P03           with        Rec 03       16_ct_norma_029_42.jpg            2194       Capital    TRUE
+817           ct_mr             P03           with        Rec 03     17_ct_stroke_035_108.jpg            2670       Capital    TRUE
+818           ct_mr             P03           with        Rec 03        18_mr_norma_012_8.jpg            2588        Return    TRUE
+819           ct_mr             P03           with        Rec 03       19_mr_norma_015_12.jpg            1970        Return    TRUE
+820           ct_mr             P03           with        Rec 03     20_ct_stroke_026_123.jpg            3341       Capital    TRUE
+841           ct_mr             P05           with        Rec 05         1_ct_norma_013_2.jpg           20975       Capital    TRUE
+842           ct_mr             P05           with        Rec 05       2_ct_norma_010_80S.jpg            2491       Capital    TRUE
+843           ct_mr             P05           with        Rec 05      3_ct_stroke_039_101.jpg            2273       Capital    TRUE
+844           ct_mr             P05           with        Rec 05           4_ct_ich_007_5.jpg            1520        Return   FALSE
+845           ct_mr             P05           with        Rec 05          5_ct_ich_024_28.jpg            2134       Capital    TRUE
+846           ct_mr             P05           with        Rec 05      6_mr_stroke_035_106.jpg            1059        Return    TRUE
+847           ct_mr             P05           with        Rec 05      7_ct_stroke_015_151.jpg            2239        Return   FALSE
+848           ct_mr             P05           with        Rec 05         8_ct_norma_014_4.jpg            1167       Capital    TRUE
+849           ct_mr             P05           with        Rec 05          9_ct_ich_040_57.jpg            1419        Return   FALSE
+850           ct_mr             P05           with        Rec 05        10_ct_ich_005_178.jpg            2887       Capital    TRUE
+851           ct_mr             P05           with        Rec 05     11_ct_stroke_005_180.jpg            1765       Capital    TRUE
+852           ct_mr             P05           with        Rec 05         12_mr_ich_005_25.jpg            2874        Return    TRUE
+853           ct_mr             P05           with        Rec 05     13_mr_stroke_033_111.jpg            1853        Return    TRUE
+854           ct_mr             P05           with        Rec 05     14_ct_stroke_036_107.jpg            2966        Return   FALSE
+855           ct_mr             P05           with        Rec 05       15_mr_norma_030_39.jpg            2192        Return    TRUE
+856           ct_mr             P05           with        Rec 05       16_ct_norma_029_42.jpg             860       Capital    TRUE
+857           ct_mr             P05           with        Rec 05     17_ct_stroke_035_108.jpg            1571       Capital    TRUE
+858           ct_mr             P05           with        Rec 05        18_mr_norma_012_8.jpg            1627        Return    TRUE
+859           ct_mr             P05           with        Rec 05       19_mr_norma_015_12.jpg            1545        Return    TRUE
+860           ct_mr             P05           with        Rec 05     20_ct_stroke_026_123.jpg            3269       Capital    TRUE
+881           ct_mr             P07           with        Rec 07         1_ct_norma_013_2.jpg            3000       Capital    TRUE
+882           ct_mr             P07           with        Rec 07       2_ct_norma_010_80S.jpg            2009       Capital    TRUE
+883           ct_mr             P07           with        Rec 07      3_ct_stroke_039_101.jpg            1232       Capital    TRUE
+884           ct_mr             P07           with        Rec 07           4_ct_ich_007_5.jpg             636        Return   FALSE
+885           ct_mr             P07           with        Rec 07          5_ct_ich_024_28.jpg            1249       Capital    TRUE
+886           ct_mr             P07           with        Rec 07      6_mr_stroke_035_106.jpg             920        Return    TRUE
+887           ct_mr             P07           with        Rec 07      7_ct_stroke_015_151.jpg            4294       Capital    TRUE
+888           ct_mr             P07           with        Rec 07         8_ct_norma_014_4.jpg            1531       Capital    TRUE
+889           ct_mr             P07           with        Rec 07          9_ct_ich_040_57.jpg             944        Return   FALSE
+890           ct_mr             P07           with        Rec 07        10_ct_ich_005_178.jpg            2877       Capital    TRUE
+891           ct_mr             P07           with        Rec 07     11_ct_stroke_005_180.jpg             950       Capital    TRUE
+892           ct_mr             P07           with        Rec 07         12_mr_ich_005_25.jpg             844        Return    TRUE
+893           ct_mr             P07           with        Rec 07     13_mr_stroke_033_111.jpg            1657        Return    TRUE
+894           ct_mr             P07           with        Rec 07     14_ct_stroke_036_107.jpg            1392       Capital    TRUE
+895           ct_mr             P07           with        Rec 07       15_mr_norma_030_39.jpg             953        Return    TRUE
+896           ct_mr             P07           with        Rec 07       16_ct_norma_029_42.jpg             880       Capital    TRUE
+897           ct_mr             P07           with        Rec 07     17_ct_stroke_035_108.jpg             984       Capital    TRUE
+898           ct_mr             P07           with        Rec 07        18_mr_norma_012_8.jpg             887        Return    TRUE
+899           ct_mr             P07           with        Rec 07       19_mr_norma_015_12.jpg             758        Return    TRUE
+900           ct_mr             P07           with        Rec 07     20_ct_stroke_026_123.jpg             963       Capital    TRUE
+921           ct_mr             P09           with        Rec 09         1_ct_norma_013_2.jpg            1566       Capital    TRUE
+922           ct_mr             P09           with        Rec 09       2_ct_norma_010_80S.jpg            1995       Capital    TRUE
+923           ct_mr             P09           with        Rec 09      3_ct_stroke_039_101.jpg            1632       Capital    TRUE
+924           ct_mr             P09           with        Rec 09           4_ct_ich_007_5.jpg            1724       Capital    TRUE
+925           ct_mr             P09           with        Rec 09          5_ct_ich_024_28.jpg           17959       Capital    TRUE
+926           ct_mr             P09           with        Rec 09      6_mr_stroke_035_106.jpg            1670        Return    TRUE
+927           ct_mr             P09           with        Rec 09      7_ct_stroke_015_151.jpg           13399        Return   FALSE
+928           ct_mr             P09           with        Rec 09         8_ct_norma_014_4.jpg            1057       Capital    TRUE
+929           ct_mr             P09           with        Rec 09          9_ct_ich_040_57.jpg            2212        Return   FALSE
+930           ct_mr             P09           with        Rec 09        10_ct_ich_005_178.jpg            3928       Capital    TRUE
+931           ct_mr             P09           with        Rec 09     11_ct_stroke_005_180.jpg             780       Capital    TRUE
+932           ct_mr             P09           with        Rec 09         12_mr_ich_005_25.jpg             711        Return    TRUE
+933           ct_mr             P09           with        Rec 09     13_mr_stroke_033_111.jpg            4725       Capital   FALSE
+934           ct_mr             P09           with        Rec 09     14_ct_stroke_036_107.jpg            8341       Capital    TRUE
+935           ct_mr             P09           with        Rec 09       15_mr_norma_030_39.jpg             775        Return    TRUE
+936           ct_mr             P09           with        Rec 09       16_ct_norma_029_42.jpg            2326       Capital    TRUE
+937           ct_mr             P09           with        Rec 09     17_ct_stroke_035_108.jpg             762       Capital    TRUE
+938           ct_mr             P09           with        Rec 09        18_mr_norma_012_8.jpg             681        Return    TRUE
+939           ct_mr             P09           with        Rec 09       19_mr_norma_015_12.jpg             804        Return    TRUE
+940           ct_mr             P09           with        Rec 09     20_ct_stroke_026_123.jpg             730       Capital    TRUE
+941           ct_mr             P10           with        Rec 10         1_ct_norma_013_2.jpg            4823       Capital    TRUE
+942           ct_mr             P10           with        Rec 10       2_ct_norma_010_80S.jpg            7242        Return   FALSE
+943           ct_mr             P10           with        Rec 10      3_ct_stroke_039_101.jpg            4492        Return   FALSE
+944           ct_mr             P10           with        Rec 10           4_ct_ich_007_5.jpg            4616       Capital    TRUE
+945           ct_mr             P10           with        Rec 10          5_ct_ich_024_28.jpg            2202        Return   FALSE
+946           ct_mr             P10           with        Rec 10      6_mr_stroke_035_106.jpg            3032        Return    TRUE
+947           ct_mr             P10           with        Rec 10      7_ct_stroke_015_151.jpg            3314        Return   FALSE
+948           ct_mr             P10           with        Rec 10         8_ct_norma_014_4.jpg            7811        Return   FALSE
+949           ct_mr             P10           with        Rec 10          9_ct_ich_040_57.jpg            4626       Capital    TRUE
+950           ct_mr             P10           with        Rec 10        10_ct_ich_005_178.jpg            2815       Capital    TRUE
+951           ct_mr             P10           with        Rec 10     11_ct_stroke_005_180.jpg            1212       Capital    TRUE
+952           ct_mr             P10           with        Rec 10         12_mr_ich_005_25.jpg             762        Return    TRUE
+953           ct_mr             P10           with        Rec 10     13_mr_stroke_033_111.jpg             837        Return    TRUE
+954           ct_mr             P10           with        Rec 10     14_ct_stroke_036_107.jpg            3648       Capital    TRUE
+955           ct_mr             P10           with        Rec 10       15_mr_norma_030_39.jpg            2068        Return    TRUE
+956           ct_mr             P10           with        Rec 10       16_ct_norma_029_42.jpg            1361       Capital    TRUE
+957           ct_mr             P10           with        Rec 10     17_ct_stroke_035_108.jpg            2819       Capital    TRUE
+958           ct_mr             P10           with        Rec 10        18_mr_norma_012_8.jpg             584        Return    TRUE
+959           ct_mr             P10           with        Rec 10       19_mr_norma_015_12.jpg             787        Return    TRUE
+960           ct_mr             P10           with        Rec 10     20_ct_stroke_026_123.jpg            1211       Capital    TRUE
+1001          ct_mr             P13           with        Rec 13         1_ct_norma_013_2.jpg            1883       Capital    TRUE
+1002          ct_mr             P13           with        Rec 13       2_ct_norma_010_80S.jpg            1206       Capital    TRUE
+1003          ct_mr             P13           with        Rec 13      3_ct_stroke_039_101.jpg            2102       Capital    TRUE
+1004          ct_mr             P13           with        Rec 13           4_ct_ich_007_5.jpg            5587       Capital    TRUE
+1005          ct_mr             P13           with        Rec 13          5_ct_ich_024_28.jpg           13679        Return   FALSE
+1006          ct_mr             P13           with        Rec 13      6_mr_stroke_035_106.jpg             945        Return    TRUE
+1007          ct_mr             P13           with        Rec 13      7_ct_stroke_015_151.jpg            5972       Capital    TRUE
+1008          ct_mr             P13           with        Rec 13         8_ct_norma_014_4.jpg            1795       Capital    TRUE
+1009          ct_mr             P13           with        Rec 13          9_ct_ich_040_57.jpg           16420       Capital    TRUE
+1010          ct_mr             P13           with        Rec 13        10_ct_ich_005_178.jpg            1519       Capital    TRUE
+1011          ct_mr             P13           with        Rec 13     11_ct_stroke_005_180.jpg             868       Capital    TRUE
+1012          ct_mr             P13           with        Rec 13         12_mr_ich_005_25.jpg            1002        Return    TRUE
+1013          ct_mr             P13           with        Rec 13     13_mr_stroke_033_111.jpg            1139        Return    TRUE
+1014          ct_mr             P13           with        Rec 13     14_ct_stroke_036_107.jpg            1471       Capital    TRUE
+1015          ct_mr             P13           with        Rec 13       15_mr_norma_030_39.jpg            4187        Return    TRUE
+1016          ct_mr             P13           with        Rec 13       16_ct_norma_029_42.jpg            1112       Capital    TRUE
+1017          ct_mr             P13           with        Rec 13     17_ct_stroke_035_108.jpg             805       Capital    TRUE
+1018          ct_mr             P13           with        Rec 13        18_mr_norma_012_8.jpg            1050        Return    TRUE
+1019          ct_mr             P13           with        Rec 13       19_mr_norma_015_12.jpg             951        Return    TRUE
+1020          ct_mr             P13           with        Rec 13     20_ct_stroke_026_123.jpg             900       Capital    TRUE
+1041          ct_mr             P15           with        Rec 15         1_ct_norma_013_2.jpg            3279       Capital    TRUE
+1042          ct_mr             P15           with        Rec 15       2_ct_norma_010_80S.jpg            5436       Capital    TRUE
+1043          ct_mr             P15           with        Rec 15      3_ct_stroke_039_101.jpg            1937       Capital    TRUE
+1044          ct_mr             P15           with        Rec 15           4_ct_ich_007_5.jpg            2282       Capital    TRUE
+1045          ct_mr             P15           with        Rec 15          5_ct_ich_024_28.jpg            1111       Capital    TRUE
+1046          ct_mr             P15           with        Rec 15      6_mr_stroke_035_106.jpg             761        Return    TRUE
+1047          ct_mr             P15           with        Rec 15      7_ct_stroke_015_151.jpg            3172       Capital    TRUE
+1048          ct_mr             P15           with        Rec 15         8_ct_norma_014_4.jpg             900       Capital    TRUE
+1049          ct_mr             P15           with        Rec 15          9_ct_ich_040_57.jpg            3808        Return   FALSE
+1050          ct_mr             P15           with        Rec 15        10_ct_ich_005_178.jpg            1656       Capital    TRUE
+1051          ct_mr             P15           with        Rec 15     11_ct_stroke_005_180.jpg             814       Capital    TRUE
+1052          ct_mr             P15           with        Rec 15         12_mr_ich_005_25.jpg            2182        Return    TRUE
+1053          ct_mr             P15           with        Rec 15     13_mr_stroke_033_111.jpg            2493        Return    TRUE
+1054          ct_mr             P15           with        Rec 15     14_ct_stroke_036_107.jpg            1795       Capital    TRUE
+1055          ct_mr             P15           with        Rec 15       15_mr_norma_030_39.jpg            1333        Return    TRUE
+1056          ct_mr             P15           with        Rec 15       16_ct_norma_029_42.jpg            1071       Capital    TRUE
+1057          ct_mr             P15           with        Rec 15     17_ct_stroke_035_108.jpg             933       Capital    TRUE
+1058          ct_mr             P15           with        Rec 15        18_mr_norma_012_8.jpg             857        Return    TRUE
+1059          ct_mr             P15           with        Rec 15       19_mr_norma_015_12.jpg             695        Return    TRUE
+1060          ct_mr             P15           with        Rec 15     20_ct_stroke_026_123.jpg             943       Capital    TRUE
+1081          ct_mr             P17           with        Rec 17         1_ct_norma_013_2.jpg            2711       Capital    TRUE
+1082          ct_mr             P17           with        Rec 17       2_ct_norma_010_80S.jpg            2043       Capital    TRUE
+1083          ct_mr             P17           with        Rec 17      3_ct_stroke_039_101.jpg            5698       Capital    TRUE
+1084          ct_mr             P17           with        Rec 17           4_ct_ich_007_5.jpg            3755       Capital    TRUE
+1085          ct_mr             P17           with        Rec 17          5_ct_ich_024_28.jpg            1911        Return   FALSE
+1086          ct_mr             P17           with        Rec 17      6_mr_stroke_035_106.jpg            1965        Return    TRUE
+1087          ct_mr             P17           with        Rec 17      7_ct_stroke_015_151.jpg            5141        Return   FALSE
+1088          ct_mr             P17           with        Rec 17         8_ct_norma_014_4.jpg            4567        Return   FALSE
+1089          ct_mr             P17           with        Rec 17          9_ct_ich_040_57.jpg            6753       Capital    TRUE
+1090          ct_mr             P17           with        Rec 17        10_ct_ich_005_178.jpg            1834        Return   FALSE
+1091          ct_mr             P17           with        Rec 17     11_ct_stroke_005_180.jpg            4284       Capital    TRUE
+1092          ct_mr             P17           with        Rec 17         12_mr_ich_005_25.jpg            3060        Return    TRUE
+1093          ct_mr             P17           with        Rec 17     13_mr_stroke_033_111.jpg            1932        Return    TRUE
+1094          ct_mr             P17           with        Rec 17     14_ct_stroke_036_107.jpg            2690        Return   FALSE
+1095          ct_mr             P17           with        Rec 17       15_mr_norma_030_39.jpg            6184        Return    TRUE
+1096          ct_mr             P17           with        Rec 17       16_ct_norma_029_42.jpg            3775       Capital    TRUE
+1097          ct_mr             P17           with        Rec 17     17_ct_stroke_035_108.jpg            1600       Capital    TRUE
+1098          ct_mr             P17           with        Rec 17        18_mr_norma_012_8.jpg            5829        Return    TRUE
+1099          ct_mr             P17           with        Rec 17       19_mr_norma_015_12.jpg            3050        Return    TRUE
+1100          ct_mr             P17           with        Rec 17     20_ct_stroke_026_123.jpg            1558       Capital    TRUE
+1121          ct_mr             P19           with        Rec 19         1_ct_norma_013_2.jpg            3504       Capital    TRUE
+1122          ct_mr             P19           with        Rec 19       2_ct_norma_010_80S.jpg            8314       Capital    TRUE
+1123          ct_mr             P19           with        Rec 19      3_ct_stroke_039_101.jpg            7657       Capital    TRUE
+1124          ct_mr             P19           with        Rec 19           4_ct_ich_007_5.jpg            7773       Capital    TRUE
+1125          ct_mr             P19           with        Rec 19          5_ct_ich_024_28.jpg           10239       Capital    TRUE
+1126          ct_mr             P19           with        Rec 19      6_mr_stroke_035_106.jpg            2545        Return    TRUE
+1127          ct_mr             P19           with        Rec 19      7_ct_stroke_015_151.jpg            8144       Capital    TRUE
+1128          ct_mr             P19           with        Rec 19         8_ct_norma_014_4.jpg            5126       Capital    TRUE
+1129          ct_mr             P19           with        Rec 19          9_ct_ich_040_57.jpg            8712       Capital    TRUE
+1130          ct_mr             P19           with        Rec 19        10_ct_ich_005_178.jpg           16559       Capital    TRUE
+1131          ct_mr             P19           with        Rec 19     11_ct_stroke_005_180.jpg            3410       Capital    TRUE
+1132          ct_mr             P19           with        Rec 19         12_mr_ich_005_25.jpg            3982        Return    TRUE
+1133          ct_mr             P19           with        Rec 19     13_mr_stroke_033_111.jpg            2990        Return    TRUE
+1134          ct_mr             P19           with        Rec 19     14_ct_stroke_036_107.jpg            2178       Capital    TRUE
+1135          ct_mr             P19           with        Rec 19       15_mr_norma_030_39.jpg            3036        Return    TRUE
+1136          ct_mr             P19           with        Rec 19       16_ct_norma_029_42.jpg            2880       Capital    TRUE
+1137          ct_mr             P19           with        Rec 19     17_ct_stroke_035_108.jpg            1575       Capital    TRUE
+1138          ct_mr             P19           with        Rec 19        18_mr_norma_012_8.jpg            1305        Return    TRUE
+1139          ct_mr             P19           with        Rec 19       19_mr_norma_015_12.jpg            1526        Return    TRUE
+1140          ct_mr             P19           with        Rec 19     20_ct_stroke_026_123.jpg            1272       Capital    TRUE
+1161          ct_mr             P21           with        Rec 21         1_ct_norma_013_2.jpg            2173       Capital    TRUE
+1162          ct_mr             P21           with        Rec 21       2_ct_norma_010_80S.jpg            4152       Capital    TRUE
+1163          ct_mr             P21           with        Rec 21      3_ct_stroke_039_101.jpg            1802       Capital    TRUE
+1164          ct_mr             P21           with        Rec 21           4_ct_ich_007_5.jpg            1215       Capital    TRUE
+1165          ct_mr             P21           with        Rec 21          5_ct_ich_024_28.jpg            1361       Capital    TRUE
+1166          ct_mr             P21           with        Rec 21      6_mr_stroke_035_106.jpg             834        Return    TRUE
+1167          ct_mr             P21           with        Rec 21      7_ct_stroke_015_151.jpg            1823       Capital    TRUE
+1168          ct_mr             P21           with        Rec 21         8_ct_norma_014_4.jpg            1143       Capital    TRUE
+1169          ct_mr             P21           with        Rec 21          9_ct_ich_040_57.jpg             954        Return   FALSE
+1170          ct_mr             P21           with        Rec 21        10_ct_ich_005_178.jpg            4326       Capital    TRUE
+1171          ct_mr             P21           with        Rec 21     11_ct_stroke_005_180.jpg            1280       Capital    TRUE
+1172          ct_mr             P21           with        Rec 21         12_mr_ich_005_25.jpg            3633        Return    TRUE
+1173          ct_mr             P21           with        Rec 21     13_mr_stroke_033_111.jpg            1703        Return    TRUE
+1174          ct_mr             P21           with        Rec 21     14_ct_stroke_036_107.jpg            2461       Capital    TRUE
+1175          ct_mr             P21           with        Rec 21       15_mr_norma_030_39.jpg            1174        Return    TRUE
+1176          ct_mr             P21           with        Rec 21       16_ct_norma_029_42.jpg             862       Capital    TRUE
+1177          ct_mr             P21           with        Rec 21     17_ct_stroke_035_108.jpg             783       Capital    TRUE
+1178          ct_mr             P21           with        Rec 21        18_mr_norma_012_8.jpg            1452        Return    TRUE
+1179          ct_mr             P21           with        Rec 21       19_mr_norma_015_12.jpg            1950        Return    TRUE
+1180          ct_mr             P21           with        Rec 21     20_ct_stroke_026_123.jpg            1090       Capital    TRUE
+1201          ct_mr             P23           with        Rec 23         1_ct_norma_013_2.jpg           12524       Capital    TRUE
+1202          ct_mr             P23           with        Rec 23       2_ct_norma_010_80S.jpg            7589       Capital    TRUE
+1203          ct_mr             P23           with        Rec 23      3_ct_stroke_039_101.jpg            5702       Capital    TRUE
+1204          ct_mr             P23           with        Rec 23           4_ct_ich_007_5.jpg            4287        Return   FALSE
+1205          ct_mr             P23           with        Rec 23          5_ct_ich_024_28.jpg            4750       Capital    TRUE
+1206          ct_mr             P23           with        Rec 23      6_mr_stroke_035_106.jpg            3709        Return    TRUE
+1207          ct_mr             P23           with        Rec 23      7_ct_stroke_015_151.jpg            5187        Return   FALSE
+1208          ct_mr             P23           with        Rec 23         8_ct_norma_014_4.jpg            5379       Capital    TRUE
+1209          ct_mr             P23           with        Rec 23          9_ct_ich_040_57.jpg            6066        Return   FALSE
+1210          ct_mr             P23           with        Rec 23        10_ct_ich_005_178.jpg            5681       Capital    TRUE
+1211          ct_mr             P23           with        Rec 23     11_ct_stroke_005_180.jpg            4454        Return   FALSE
+1212          ct_mr             P23           with        Rec 23         12_mr_ich_005_25.jpg            4098        Return    TRUE
+1213          ct_mr             P23           with        Rec 23     13_mr_stroke_033_111.jpg            5492        Return    TRUE
+1214          ct_mr             P23           with        Rec 23     14_ct_stroke_036_107.jpg            5692       Capital    TRUE
+1215          ct_mr             P23           with        Rec 23       15_mr_norma_030_39.jpg            5079        Return    TRUE
+1216          ct_mr             P23           with        Rec 23       16_ct_norma_029_42.jpg            6145       Capital    TRUE
+1217          ct_mr             P23           with        Rec 23     17_ct_stroke_035_108.jpg            5564        Return   FALSE
+1218          ct_mr             P23           with        Rec 23        18_mr_norma_012_8.jpg            5950        Return    TRUE
+1219          ct_mr             P23           with        Rec 23       19_mr_norma_015_12.jpg            4133        Return    TRUE
+1220          ct_mr             P23           with        Rec 23     20_ct_stroke_026_123.jpg            5798       Capital    TRUE
+1241          ct_mr             P25           with        Rec 25         1_ct_norma_013_2.jpg            4468       Capital    TRUE
+1242          ct_mr             P25           with        Rec 25       2_ct_norma_010_80S.jpg            2901       Capital    TRUE
+1243          ct_mr             P25           with        Rec 25      3_ct_stroke_039_101.jpg            3726       Capital    TRUE
+1244          ct_mr             P25           with        Rec 25           4_ct_ich_007_5.jpg            4850       Capital    TRUE
+1245          ct_mr             P25           with        Rec 25          5_ct_ich_024_28.jpg            9156       Capital    TRUE
+1246          ct_mr             P25           with        Rec 25      6_mr_stroke_035_106.jpg            2875        Return    TRUE
+1247          ct_mr             P25           with        Rec 25      7_ct_stroke_015_151.jpg            4886       Capital    TRUE
+1248          ct_mr             P25           with        Rec 25         8_ct_norma_014_4.jpg            4970       Capital    TRUE
+1249          ct_mr             P25           with        Rec 25          9_ct_ich_040_57.jpg            3595        Return   FALSE
+1250          ct_mr             P25           with        Rec 25        10_ct_ich_005_178.jpg            2908       Capital    TRUE
+1251          ct_mr             P25           with        Rec 25     11_ct_stroke_005_180.jpg            2423       Capital    TRUE
+1252          ct_mr             P25           with        Rec 25         12_mr_ich_005_25.jpg            1642        Return    TRUE
+1253          ct_mr             P25           with        Rec 25     13_mr_stroke_033_111.jpg            2359        Return    TRUE
+1254          ct_mr             P25           with        Rec 25     14_ct_stroke_036_107.jpg            2735       Capital    TRUE
+1255          ct_mr             P25           with        Rec 25       15_mr_norma_030_39.jpg            2511        Return    TRUE
+1256          ct_mr             P25           with        Rec 25       16_ct_norma_029_42.jpg            1506       Capital    TRUE
+1257          ct_mr             P25           with        Rec 25     17_ct_stroke_035_108.jpg            2357       Capital    TRUE
+1258          ct_mr             P25           with        Rec 25        18_mr_norma_012_8.jpg            1815        Return    TRUE
+1259          ct_mr             P25           with        Rec 25       19_mr_norma_015_12.jpg            1408        Return    TRUE
+1260          ct_mr             P25           with        Rec 25     20_ct_stroke_026_123.jpg            1643       Capital    TRUE
+1281          ct_mr             P27           with        Rec 27         1_ct_norma_013_2.jpg            6095       Capital    TRUE
+1282          ct_mr             P27           with        Rec 27       2_ct_norma_010_80S.jpg            2402       Capital    TRUE
+1283          ct_mr             P27           with        Rec 27      3_ct_stroke_039_101.jpg            1907       Capital    TRUE
+1284          ct_mr             P27           with        Rec 27           4_ct_ich_007_5.jpg            1554       Capital    TRUE
+1285          ct_mr             P27           with        Rec 27          5_ct_ich_024_28.jpg            2822       Capital    TRUE
+1286          ct_mr             P27           with        Rec 27      6_mr_stroke_035_106.jpg             888        Return    TRUE
+1287          ct_mr             P27           with        Rec 27      7_ct_stroke_015_151.jpg            1550       Capital    TRUE
+1288          ct_mr             P27           with        Rec 27         8_ct_norma_014_4.jpg            1445       Capital    TRUE
+1289          ct_mr             P27           with        Rec 27          9_ct_ich_040_57.jpg            1069        Return   FALSE
+1290          ct_mr             P27           with        Rec 27        10_ct_ich_005_178.jpg            2754       Capital    TRUE
+1291          ct_mr             P27           with        Rec 27     11_ct_stroke_005_180.jpg             924       Capital    TRUE
+1292          ct_mr             P27           with        Rec 27         12_mr_ich_005_25.jpg            1833        Return    TRUE
+1293          ct_mr             P27           with        Rec 27     13_mr_stroke_033_111.jpg            1961        Return    TRUE
+1294          ct_mr             P27           with        Rec 27     14_ct_stroke_036_107.jpg            1264       Capital    TRUE
+1295          ct_mr             P27           with        Rec 27       15_mr_norma_030_39.jpg             900        Return    TRUE
+1296          ct_mr             P27           with        Rec 27       16_ct_norma_029_42.jpg            1428       Capital    TRUE
+1297          ct_mr             P27           with        Rec 27     17_ct_stroke_035_108.jpg            1092       Capital    TRUE
+1298          ct_mr             P27           with        Rec 27        18_mr_norma_012_8.jpg            1507        Return    TRUE
+1299          ct_mr             P27           with        Rec 27       19_mr_norma_015_12.jpg            2648        Return    TRUE
+1300          ct_mr             P27           with        Rec 27     20_ct_stroke_026_123.jpg            1183       Capital    TRUE
+1321          ct_mr             P29           with        Rec 29         1_ct_norma_013_2.jpg            5627       Capital    TRUE
+1322          ct_mr             P29           with        Rec 29       2_ct_norma_010_80S.jpg            1930       Capital    TRUE
+1323          ct_mr             P29           with        Rec 29      3_ct_stroke_039_101.jpg            4951       Capital    TRUE
+1324          ct_mr             P29           with        Rec 29           4_ct_ich_007_5.jpg            6107       Capital    TRUE
+1325          ct_mr             P29           with        Rec 29          5_ct_ich_024_28.jpg            3250        Return   FALSE
+1326          ct_mr             P29           with        Rec 29      6_mr_stroke_035_106.jpg            1823        Return    TRUE
+1327          ct_mr             P29           with        Rec 29      7_ct_stroke_015_151.jpg            9245        Return   FALSE
+1328          ct_mr             P29           with        Rec 29         8_ct_norma_014_4.jpg            1553       Capital    TRUE
+1329          ct_mr             P29           with        Rec 29          9_ct_ich_040_57.jpg            7544        Return   FALSE
+1330          ct_mr             P29           with        Rec 29        10_ct_ich_005_178.jpg            4406       Capital    TRUE
+1331          ct_mr             P29           with        Rec 29     11_ct_stroke_005_180.jpg            1792       Capital    TRUE
+1332          ct_mr             P29           with        Rec 29         12_mr_ich_005_25.jpg            1236        Return    TRUE
+1333          ct_mr             P29           with        Rec 29     13_mr_stroke_033_111.jpg            2492        Return    TRUE
+1334          ct_mr             P29           with        Rec 29     14_ct_stroke_036_107.jpg           12512        Return   FALSE
+1335          ct_mr             P29           with        Rec 29       15_mr_norma_030_39.jpg             868        Return    TRUE
+1336          ct_mr             P29           with        Rec 29       16_ct_norma_029_42.jpg            3766       Capital    TRUE
+1337          ct_mr             P29           with        Rec 29     17_ct_stroke_035_108.jpg            2379       Capital    TRUE
+1338          ct_mr             P29           with        Rec 29        18_mr_norma_012_8.jpg            1160        Return    TRUE
+1339          ct_mr             P29           with        Rec 29       19_mr_norma_015_12.jpg            1331        Return    TRUE
+1340          ct_mr             P29           with        Rec 29     20_ct_stroke_026_123.jpg            1452       Capital    TRUE
+1361          ct_mr             P31           with        Rec 31         1_ct_norma_013_2.jpg            3420       Capital    TRUE
+1362          ct_mr             P31           with        Rec 31       2_ct_norma_010_80S.jpg            5522       Capital    TRUE
+1363          ct_mr             P31           with        Rec 31      3_ct_stroke_039_101.jpg            3024       Capital    TRUE
+1364          ct_mr             P31           with        Rec 31           4_ct_ich_007_5.jpg           11385        Return   FALSE
+1365          ct_mr             P31           with        Rec 31          5_ct_ich_024_28.jpg            4329        Return   FALSE
+1366          ct_mr             P31           with        Rec 31      6_mr_stroke_035_106.jpg            2039        Return    TRUE
+1367          ct_mr             P31           with        Rec 31      7_ct_stroke_015_151.jpg            8076        Return   FALSE
+1368          ct_mr             P31           with        Rec 31         8_ct_norma_014_4.jpg            1659       Capital    TRUE
+1369          ct_mr             P31           with        Rec 31          9_ct_ich_040_57.jpg            1337        Return   FALSE
+1370          ct_mr             P31           with        Rec 31        10_ct_ich_005_178.jpg            6762        Return   FALSE
+1371          ct_mr             P31           with        Rec 31     11_ct_stroke_005_180.jpg            3279       Capital    TRUE
+1372          ct_mr             P31           with        Rec 31         12_mr_ich_005_25.jpg            1688        Return    TRUE
+1373          ct_mr             P31           with        Rec 31     13_mr_stroke_033_111.jpg            5108        Return    TRUE
+1374          ct_mr             P31           with        Rec 31     14_ct_stroke_036_107.jpg           13788        Return   FALSE
+1375          ct_mr             P31           with        Rec 31       15_mr_norma_030_39.jpg             744        Return    TRUE
+1376          ct_mr             P31           with        Rec 31       16_ct_norma_029_42.jpg             804       Capital    TRUE
+1377          ct_mr             P31           with        Rec 31     17_ct_stroke_035_108.jpg            2196       Capital    TRUE
+1378          ct_mr             P31           with        Rec 31        18_mr_norma_012_8.jpg            4030        Return    TRUE
+1379          ct_mr             P31           with        Rec 31       19_mr_norma_015_12.jpg            1154        Return    TRUE
+1380          ct_mr             P31           with        Rec 31     20_ct_stroke_026_123.jpg             898       Capital    TRUE
+1401          ct_mr             P33           with        Rec 33         1_ct_norma_013_2.jpg            4990       Capital    TRUE
+1402          ct_mr             P33           with        Rec 33       2_ct_norma_010_80S.jpg            2378       Capital    TRUE
+1403          ct_mr             P33           with        Rec 33      3_ct_stroke_039_101.jpg            1301       Capital    TRUE
+1404          ct_mr             P33           with        Rec 33           4_ct_ich_007_5.jpg            1896       Capital    TRUE
+1405          ct_mr             P33           with        Rec 33          5_ct_ich_024_28.jpg            2808       Capital    TRUE
+1406          ct_mr             P33           with        Rec 33      6_mr_stroke_035_106.jpg            1026        Return    TRUE
+1407          ct_mr             P33           with        Rec 33      7_ct_stroke_015_151.jpg             656       Capital    TRUE
+1408          ct_mr             P33           with        Rec 33         8_ct_norma_014_4.jpg             812       Capital    TRUE
+1409          ct_mr             P33           with        Rec 33          9_ct_ich_040_57.jpg            1849       Capital    TRUE
+1410          ct_mr             P33           with        Rec 33        10_ct_ich_005_178.jpg            3127       Capital    TRUE
+1411          ct_mr             P33           with        Rec 33     11_ct_stroke_005_180.jpg            1475       Capital    TRUE
+1412          ct_mr             P33           with        Rec 33         12_mr_ich_005_25.jpg             694        Return    TRUE
+1413          ct_mr             P33           with        Rec 33     13_mr_stroke_033_111.jpg             733        Return    TRUE
+1414          ct_mr             P33           with        Rec 33     14_ct_stroke_036_107.jpg             682       Capital    TRUE
+1415          ct_mr             P33           with        Rec 33       15_mr_norma_030_39.jpg             924        Return    TRUE
+1416          ct_mr             P33           with        Rec 33       16_ct_norma_029_42.jpg             538       Capital    TRUE
+1417          ct_mr             P33           with        Rec 33     17_ct_stroke_035_108.jpg            1693       Capital    TRUE
+1418          ct_mr             P33           with        Rec 33        18_mr_norma_012_8.jpg             559        Return    TRUE
+1419          ct_mr             P33           with        Rec 33       19_mr_norma_015_12.jpg            1267        Return    TRUE
+1420          ct_mr             P33           with        Rec 33     20_ct_stroke_026_123.jpg             509       Capital    TRUE
+1441          ct_mr             P35           with        Rec 35         1_ct_norma_013_2.jpg            5963       Capital    TRUE
+1442          ct_mr             P35           with        Rec 35       2_ct_norma_010_80S.jpg            3048       Capital    TRUE
+1443          ct_mr             P35           with        Rec 35      3_ct_stroke_039_101.jpg            5130       Capital    TRUE
+1444          ct_mr             P35           with        Rec 35           4_ct_ich_007_5.jpg            6256       Capital    TRUE
+1445          ct_mr             P35           with        Rec 35          5_ct_ich_024_28.jpg            6279        Return   FALSE
+1446          ct_mr             P35           with        Rec 35      6_mr_stroke_035_106.jpg            2346        Return    TRUE
+1447          ct_mr             P35           with        Rec 35      7_ct_stroke_015_151.jpg            3581       Capital    TRUE
+1448          ct_mr             P35           with        Rec 35         8_ct_norma_014_4.jpg            2748       Capital    TRUE
+1449          ct_mr             P35           with        Rec 35          9_ct_ich_040_57.jpg            6938       Capital    TRUE
+1450          ct_mr             P35           with        Rec 35        10_ct_ich_005_178.jpg            1768       Capital    TRUE
+1451          ct_mr             P35           with        Rec 35     11_ct_stroke_005_180.jpg            2074       Capital    TRUE
+1452          ct_mr             P35           with        Rec 35         12_mr_ich_005_25.jpg            1436        Return    TRUE
+1453          ct_mr             P35           with        Rec 35     13_mr_stroke_033_111.jpg            6843        Return    TRUE
+1454          ct_mr             P35           with        Rec 35     14_ct_stroke_036_107.jpg            1872       Capital    TRUE
+1455          ct_mr             P35           with        Rec 35       15_mr_norma_030_39.jpg            2911        Return    TRUE
+1456          ct_mr             P35           with        Rec 35       16_ct_norma_029_42.jpg            1021       Capital    TRUE
+1457          ct_mr             P35           with        Rec 35     17_ct_stroke_035_108.jpg            1004       Capital    TRUE
+1458          ct_mr             P35           with        Rec 35        18_mr_norma_012_8.jpg            1471        Return    TRUE
+1459          ct_mr             P35           with        Rec 35       19_mr_norma_015_12.jpg            1185        Return    TRUE
+1460          ct_mr             P35           with        Rec 35     20_ct_stroke_026_123.jpg            1083       Capital    TRUE
+1481          ct_mr             P37           with        Rec 37         1_ct_norma_013_2.jpg            3142       Capital    TRUE
+1482          ct_mr             P37           with        Rec 37       2_ct_norma_010_80S.jpg            8580       Capital    TRUE
+1483          ct_mr             P37           with        Rec 37      3_ct_stroke_039_101.jpg           10921       Capital    TRUE
+1484          ct_mr             P37           with        Rec 37           4_ct_ich_007_5.jpg            1632        Return   FALSE
+1485          ct_mr             P37           with        Rec 37          5_ct_ich_024_28.jpg            7937        Return   FALSE
+1486          ct_mr             P37           with        Rec 37      6_mr_stroke_035_106.jpg            1095        Return    TRUE
+1487          ct_mr             P37           with        Rec 37      7_ct_stroke_015_151.jpg           17843        Return   FALSE
+1488          ct_mr             P37           with        Rec 37         8_ct_norma_014_4.jpg            1611       Capital    TRUE
+1489          ct_mr             P37           with        Rec 37          9_ct_ich_040_57.jpg            3664        Return   FALSE
+1490          ct_mr             P37           with        Rec 37        10_ct_ich_005_178.jpg            2914       Capital    TRUE
+1491          ct_mr             P37           with        Rec 37     11_ct_stroke_005_180.jpg            2687       Capital    TRUE
+1492          ct_mr             P37           with        Rec 37         12_mr_ich_005_25.jpg            1170        Return    TRUE
+1493          ct_mr             P37           with        Rec 37     13_mr_stroke_033_111.jpg            1258        Return    TRUE
+1494          ct_mr             P37           with        Rec 37     14_ct_stroke_036_107.jpg            2866       Capital    TRUE
+1495          ct_mr             P37           with        Rec 37       15_mr_norma_030_39.jpg            1434        Return    TRUE
+1496          ct_mr             P37           with        Rec 37       16_ct_norma_029_42.jpg            1868       Capital    TRUE
+1497          ct_mr             P37           with        Rec 37     17_ct_stroke_035_108.jpg            7289       Capital    TRUE
+1498          ct_mr             P37           with        Rec 37        18_mr_norma_012_8.jpg            1233        Return    TRUE
+1499          ct_mr             P37           with        Rec 37       19_mr_norma_015_12.jpg             768        Return    TRUE
+1500          ct_mr             P37           with        Rec 37     20_ct_stroke_026_123.jpg            3530       Capital    TRUE
+1521     ich_stroke             P01           with        Rec 01     41_mr_stroke_022_136.jpg           12331        Return    TRUE
+1522     ich_stroke             P01           with        Rec 01 42_121_mr_stroke_031_128.jpg            6014        Return    TRUE
+1523     ich_stroke             P01           with        Rec 01 43_122_mr_stroke_014_160.jpg           16882        Return    TRUE
+1524     ich_stroke             P01           with        Rec 01 44_124_ct_stroke_014_149.jpg           20559        Return    TRUE
+1525     ich_stroke             P01           with        Rec 01         45_ct_ich_018_12.jpg            4943       Capital    TRUE
+1526     ich_stroke             P01           with        Rec 01     46_125_ct_ich_029_39.jpg            9411       Capital    TRUE
+1527     ich_stroke             P01           with        Rec 01     47_mr_stroke_020_137.jpg           13325        Return    TRUE
+1528     ich_stroke             P01           with        Rec 01 48_126_ct_stroke_004_183.jpg           27792        Return    TRUE
+1529     ich_stroke             P01           with        Rec 01        49_ct_ich_003_186.jpg            7336       Capital    TRUE
+1530     ich_stroke             P01           with        Rec 01         50_ct_ich_020_19.jpg            2635       Capital    TRUE
+1531     ich_stroke             P01           with        Rec 01     51_127_mr_ich_004_22.jpg            7430       Capital    TRUE
+1532     ich_stroke             P01           with        Rec 01     52_ct_stroke_010_161.jpg            4408        Return    TRUE
+1533     ich_stroke             P01           with        Rec 01         53_ct_ich_026_29.jpg            2676       Capital    TRUE
+1534     ich_stroke             P01           with        Rec 01         54_ct_stroke_001.jpg           13999       Capital   FALSE
+1535     ich_stroke             P01           with        Rec 01     55_mr_stroke_032_116.jpg           18832       Capital   FALSE
+1536     ich_stroke             P01           with        Rec 01     56_129_ct_ich_023_24.jpg            4479       Capital    TRUE
+1537     ich_stroke             P01           with        Rec 01     57_ct_stroke_029_118.jpg            6987        Return    TRUE
+1538     ich_stroke             P01           with        Rec 01      58_142_mr_ich_003_7.jpg           29652       Capital    TRUE
+1539     ich_stroke             P01           with        Rec 01     59_ct_stroke_011_158.jpg            7744        Return    TRUE
+1540     ich_stroke             P01           with        Rec 01          60_ct_ich_010_3.jpg            7156       Capital    TRUE
+1561     ich_stroke             P03           with        Rec 04     41_mr_stroke_022_136.jpg            4282        Return    TRUE
+1562     ich_stroke             P03           with        Rec 04 42_121_mr_stroke_031_128.jpg            8210       Capital   FALSE
+1563     ich_stroke             P03           with        Rec 04 43_122_mr_stroke_014_160.jpg            6574        Return    TRUE
+1564     ich_stroke             P03           with        Rec 04 44_124_ct_stroke_014_149.jpg            9897       Capital   FALSE
+1565     ich_stroke             P03           with        Rec 04         45_ct_ich_018_12.jpg            6159       Capital    TRUE
+1566     ich_stroke             P03           with        Rec 04     46_125_ct_ich_029_39.jpg            3176       Capital    TRUE
+1567     ich_stroke             P03           with        Rec 04     47_mr_stroke_020_137.jpg            8447        Return    TRUE
+1568     ich_stroke             P03           with        Rec 04 48_126_ct_stroke_004_183.jpg            4487       Capital   FALSE
+1569     ich_stroke             P03           with        Rec 04        49_ct_ich_003_186.jpg            4616        Return   FALSE
+1570     ich_stroke             P03           with        Rec 04         50_ct_ich_020_19.jpg            1487       Capital    TRUE
+1571     ich_stroke             P03           with        Rec 04     51_127_mr_ich_004_22.jpg           14213       Capital    TRUE
+1572     ich_stroke             P03           with        Rec 04     52_ct_stroke_010_161.jpg            2675       Capital   FALSE
+1573     ich_stroke             P03           with        Rec 04         53_ct_ich_026_29.jpg            5266       Capital    TRUE
+1574     ich_stroke             P03           with        Rec 04         54_ct_stroke_001.jpg            4222        Return    TRUE
+1575     ich_stroke             P03           with        Rec 04     55_mr_stroke_032_116.jpg           17994        Return    TRUE
+1576     ich_stroke             P03           with        Rec 04     56_129_ct_ich_023_24.jpg            1221       Capital    TRUE
+1577     ich_stroke             P03           with        Rec 04     57_ct_stroke_029_118.jpg            9018        Return    TRUE
+1578     ich_stroke             P03           with        Rec 04      58_142_mr_ich_003_7.jpg            7578       Capital    TRUE
+1579     ich_stroke             P03           with        Rec 04     59_ct_stroke_011_158.jpg            9733        Return    TRUE
+1580     ich_stroke             P03           with        Rec 04          60_ct_ich_010_3.jpg            3484       Capital    TRUE
+1601     ich_stroke             P05           with        Rec 05     41_mr_stroke_022_136.jpg            6578        Return    TRUE
+1602     ich_stroke             P05           with        Rec 05 42_121_mr_stroke_031_128.jpg            1495        Return    TRUE
+1603     ich_stroke             P05           with        Rec 05 43_122_mr_stroke_014_160.jpg            2166       Capital   FALSE
+1604     ich_stroke             P05           with        Rec 05 44_124_ct_stroke_014_149.jpg            2481        Return    TRUE
+1605     ich_stroke             P05           with        Rec 05         45_ct_ich_018_12.jpg            1213       Capital    TRUE
+1606     ich_stroke             P05           with        Rec 05     46_125_ct_ich_029_39.jpg            1905       Capital    TRUE
+1607     ich_stroke             P05           with        Rec 05     47_mr_stroke_020_137.jpg            1734        Return    TRUE
+1608     ich_stroke             P05           with        Rec 05 48_126_ct_stroke_004_183.jpg            2736        Return    TRUE
+1609     ich_stroke             P05           with        Rec 05        49_ct_ich_003_186.jpg            3235       Capital    TRUE
+1610     ich_stroke             P05           with        Rec 05         50_ct_ich_020_19.jpg            1572       Capital    TRUE
+1611     ich_stroke             P05           with        Rec 05     51_127_mr_ich_004_22.jpg            4032        Return   FALSE
+1612     ich_stroke             P05           with        Rec 05     52_ct_stroke_010_161.jpg            5780        Return    TRUE
+1613     ich_stroke             P05           with        Rec 05         53_ct_ich_026_29.jpg            2677       Capital    TRUE
+1614     ich_stroke             P05           with        Rec 05         54_ct_stroke_001.jpg            4897        Return    TRUE
+1615     ich_stroke             P05           with        Rec 05     55_mr_stroke_032_116.jpg            5633        Return    TRUE
+1616     ich_stroke             P05           with        Rec 05     56_129_ct_ich_023_24.jpg            7983       Capital    TRUE
+1617     ich_stroke             P05           with        Rec 05     57_ct_stroke_029_118.jpg            6629        Return    TRUE
+1618     ich_stroke             P05           with        Rec 05      58_142_mr_ich_003_7.jpg            4053        Return   FALSE
+1619     ich_stroke             P05           with        Rec 05     59_ct_stroke_011_158.jpg            2271        Return    TRUE
+1620     ich_stroke             P05           with        Rec 05          60_ct_ich_010_3.jpg            3460       Capital    TRUE
+1641     ich_stroke             P07           with        Rec 07     41_mr_stroke_022_136.jpg            4905        Return    TRUE
+1642     ich_stroke             P07           with        Rec 07 42_121_mr_stroke_031_128.jpg            3084        Return    TRUE
+1643     ich_stroke             P07           with        Rec 07 43_122_mr_stroke_014_160.jpg            5832       Capital   FALSE
+1644     ich_stroke             P07           with        Rec 07 44_124_ct_stroke_014_149.jpg            8454        Return    TRUE
+1645     ich_stroke             P07           with        Rec 07         45_ct_ich_018_12.jpg            3102       Capital    TRUE
+1646     ich_stroke             P07           with        Rec 07     46_125_ct_ich_029_39.jpg            1842       Capital    TRUE
+1647     ich_stroke             P07           with        Rec 07     47_mr_stroke_020_137.jpg           14709        Return    TRUE
+1648     ich_stroke             P07           with        Rec 07 48_126_ct_stroke_004_183.jpg            7546        Return    TRUE
+1649     ich_stroke             P07           with        Rec 07        49_ct_ich_003_186.jpg           18090        Return   FALSE
+1650     ich_stroke             P07           with        Rec 07         50_ct_ich_020_19.jpg            2362       Capital    TRUE
+1651     ich_stroke             P07           with        Rec 07     51_127_mr_ich_004_22.jpg            1996       Capital    TRUE
+1652     ich_stroke             P07           with        Rec 07     52_ct_stroke_010_161.jpg            3742        Return    TRUE
+1653     ich_stroke             P07           with        Rec 07         53_ct_ich_026_29.jpg            1825       Capital    TRUE
+1654     ich_stroke             P07           with        Rec 07         54_ct_stroke_001.jpg            8676        Return    TRUE
+1655     ich_stroke             P07           with        Rec 07     55_mr_stroke_032_116.jpg           13104        Return    TRUE
+1656     ich_stroke             P07           with        Rec 07     56_129_ct_ich_023_24.jpg            2377       Capital    TRUE
+1657     ich_stroke             P07           with        Rec 07     57_ct_stroke_029_118.jpg           13615        Return    TRUE
+1658     ich_stroke             P07           with        Rec 07      58_142_mr_ich_003_7.jpg            1519       Capital    TRUE
+1659     ich_stroke             P07           with        Rec 07     59_ct_stroke_011_158.jpg           10965        Return    TRUE
+1660     ich_stroke             P07           with        Rec 07          60_ct_ich_010_3.jpg            2128       Capital    TRUE
+1681     ich_stroke             P09           with        Rec 09     41_mr_stroke_022_136.jpg           21239       Capital   FALSE
+1682     ich_stroke             P09           with        Rec 09 42_121_mr_stroke_031_128.jpg           38048       Capital   FALSE
+1683     ich_stroke             P09           with        Rec 09 43_122_mr_stroke_014_160.jpg           44967       Capital   FALSE
+1684     ich_stroke             P09           with        Rec 09 44_124_ct_stroke_014_149.jpg            9828        Return    TRUE
+1685     ich_stroke             P09           with        Rec 09         45_ct_ich_018_12.jpg           19631       Capital    TRUE
+1686     ich_stroke             P09           with        Rec 09     46_125_ct_ich_029_39.jpg            6594       Capital    TRUE
+1687     ich_stroke             P09           with        Rec 09     47_mr_stroke_020_137.jpg           20433        Return    TRUE
+1688     ich_stroke             P09           with        Rec 09 48_126_ct_stroke_004_183.jpg            6429        Return    TRUE
+1689     ich_stroke             P09           with        Rec 09        49_ct_ich_003_186.jpg           22733        Return   FALSE
+1690     ich_stroke             P09           with        Rec 09         50_ct_ich_020_19.jpg            4474       Capital    TRUE
+1691     ich_stroke             P09           with        Rec 09     51_127_mr_ich_004_22.jpg           31108       Capital    TRUE
+1692     ich_stroke             P09           with        Rec 09     52_ct_stroke_010_161.jpg           11288        Return    TRUE
+1693     ich_stroke             P09           with        Rec 09         53_ct_ich_026_29.jpg            5176       Capital    TRUE
+1694     ich_stroke             P09           with        Rec 09         54_ct_stroke_001.jpg           24828        Return    TRUE
+1695     ich_stroke             P09           with        Rec 09     55_mr_stroke_032_116.jpg           13481       Capital   FALSE
+1696     ich_stroke             P09           with        Rec 09     56_129_ct_ich_023_24.jpg            7264       Capital    TRUE
+1697     ich_stroke             P09           with        Rec 09     57_ct_stroke_029_118.jpg           25200        Return    TRUE
+1698     ich_stroke             P09           with        Rec 09      58_142_mr_ich_003_7.jpg            7744        Return   FALSE
+1699     ich_stroke             P09           with        Rec 09     59_ct_stroke_011_158.jpg           13197        Return    TRUE
+1700     ich_stroke             P09           with        Rec 09          60_ct_ich_010_3.jpg            8095       Capital    TRUE
+1701     ich_stroke             P10           with        Rec 10     41_mr_stroke_022_136.jpg           12402        Return    TRUE
+1702     ich_stroke             P10           with        Rec 10 42_121_mr_stroke_031_128.jpg           11494        Return    TRUE
+1703     ich_stroke             P10           with        Rec 10 43_122_mr_stroke_014_160.jpg            9111       Capital   FALSE
+1704     ich_stroke             P10           with        Rec 10 44_124_ct_stroke_014_149.jpg           11813       Capital   FALSE
+1705     ich_stroke             P10           with        Rec 10         45_ct_ich_018_12.jpg           10818       Capital    TRUE
+1706     ich_stroke             P10           with        Rec 10     46_125_ct_ich_029_39.jpg            2087       Capital    TRUE
+1707     ich_stroke             P10           with        Rec 10     47_mr_stroke_020_137.jpg            3562        Return    TRUE
+1708     ich_stroke             P10           with        Rec 10 48_126_ct_stroke_004_183.jpg            2219        Return    TRUE
+1709     ich_stroke             P10           with        Rec 10        49_ct_ich_003_186.jpg            6288        Return   FALSE
+1710     ich_stroke             P10           with        Rec 10         50_ct_ich_020_19.jpg           11259       Capital    TRUE
+1711     ich_stroke             P10           with        Rec 10     51_127_mr_ich_004_22.jpg            3055       Capital    TRUE
+1712     ich_stroke             P10           with        Rec 10     52_ct_stroke_010_161.jpg            4233        Return    TRUE
+1713     ich_stroke             P10           with        Rec 10         53_ct_ich_026_29.jpg            2018        Return   FALSE
+1714     ich_stroke             P10           with        Rec 10         54_ct_stroke_001.jpg            7766        Return    TRUE
+1715     ich_stroke             P10           with        Rec 10     55_mr_stroke_032_116.jpg            6651        Return    TRUE
+1716     ich_stroke             P10           with        Rec 10     56_129_ct_ich_023_24.jpg            2323       Capital    TRUE
+1717     ich_stroke             P10           with        Rec 10     57_ct_stroke_029_118.jpg            6086        Return    TRUE
+1718     ich_stroke             P10           with        Rec 10      58_142_mr_ich_003_7.jpg            3630       Capital    TRUE
+1719     ich_stroke             P10           with        Rec 10     59_ct_stroke_011_158.jpg            4603        Return    TRUE
+1720     ich_stroke             P10           with        Rec 10          60_ct_ich_010_3.jpg            2087       Capital    TRUE
+1761     ich_stroke             P13           with        Rec 13     41_mr_stroke_022_136.jpg           11567       Capital   FALSE
+1762     ich_stroke             P13           with        Rec 13 42_121_mr_stroke_031_128.jpg            9612        Return    TRUE
+1763     ich_stroke             P13           with        Rec 13 43_122_mr_stroke_014_160.jpg            5639       Capital   FALSE
+1764     ich_stroke             P13           with        Rec 13 44_124_ct_stroke_014_149.jpg            9916        Return    TRUE
+1765     ich_stroke             P13           with        Rec 13         45_ct_ich_018_12.jpg            2048       Capital    TRUE
+1766     ich_stroke             P13           with        Rec 13     46_125_ct_ich_029_39.jpg            1397       Capital    TRUE
+1767     ich_stroke             P13           with        Rec 13     47_mr_stroke_020_137.jpg           10672        Return    TRUE
+1768     ich_stroke             P13           with        Rec 13 48_126_ct_stroke_004_183.jpg           13786       Capital   FALSE
+1769     ich_stroke             P13           with        Rec 13        49_ct_ich_003_186.jpg            7278       Capital    TRUE
+1770     ich_stroke             P13           with        Rec 13         50_ct_ich_020_19.jpg            3991       Capital    TRUE
+1771     ich_stroke             P13           with        Rec 13     51_127_mr_ich_004_22.jpg            5156       Capital    TRUE
+1772     ich_stroke             P13           with        Rec 13     52_ct_stroke_010_161.jpg            5650        Return    TRUE
+1773     ich_stroke             P13           with        Rec 13         53_ct_ich_026_29.jpg            2045       Capital    TRUE
+1774     ich_stroke             P13           with        Rec 13         54_ct_stroke_001.jpg            7889        Return    TRUE
+1775     ich_stroke             P13           with        Rec 13     55_mr_stroke_032_116.jpg           11740        Return    TRUE
+1776     ich_stroke             P13           with        Rec 13     56_129_ct_ich_023_24.jpg            1342       Capital    TRUE
+1777     ich_stroke             P13           with        Rec 13     57_ct_stroke_029_118.jpg            7291        Return    TRUE
+1778     ich_stroke             P13           with        Rec 13      58_142_mr_ich_003_7.jpg            1489       Capital    TRUE
+1779     ich_stroke             P13           with        Rec 13     59_ct_stroke_011_158.jpg            7037        Return    TRUE
+1780     ich_stroke             P13           with        Rec 13          60_ct_ich_010_3.jpg            3600       Capital    TRUE
+1801     ich_stroke             P15           with        Rec 15     41_mr_stroke_022_136.jpg            3272       Capital   FALSE
+1802     ich_stroke             P15           with        Rec 15 42_121_mr_stroke_031_128.jpg            2599        Return    TRUE
+1803     ich_stroke             P15           with        Rec 15 43_122_mr_stroke_014_160.jpg            3664        Return    TRUE
+1804     ich_stroke             P15           with        Rec 15 44_124_ct_stroke_014_149.jpg            3682       Capital   FALSE
+1805     ich_stroke             P15           with        Rec 15         45_ct_ich_018_12.jpg            1572       Capital    TRUE
+1806     ich_stroke             P15           with        Rec 15     46_125_ct_ich_029_39.jpg            1011       Capital    TRUE
+1807     ich_stroke             P15           with        Rec 15     47_mr_stroke_020_137.jpg            2347        Return    TRUE
+1808     ich_stroke             P15           with        Rec 15 48_126_ct_stroke_004_183.jpg            2115        Return    TRUE
+1809     ich_stroke             P15           with        Rec 15        49_ct_ich_003_186.jpg            1428       Capital    TRUE
+1810     ich_stroke             P15           with        Rec 15         50_ct_ich_020_19.jpg             810       Capital    TRUE
+1811     ich_stroke             P15           with        Rec 15     51_127_mr_ich_004_22.jpg            1531        Return   FALSE
+1812     ich_stroke             P15           with        Rec 15     52_ct_stroke_010_161.jpg            1742        Return    TRUE
+1813     ich_stroke             P15           with        Rec 15         53_ct_ich_026_29.jpg             806       Capital    TRUE
+1814     ich_stroke             P15           with        Rec 15         54_ct_stroke_001.jpg            2510        Return    TRUE
+1815     ich_stroke             P15           with        Rec 15     55_mr_stroke_032_116.jpg            4689       Capital   FALSE
+1816     ich_stroke             P15           with        Rec 15     56_129_ct_ich_023_24.jpg             850       Capital    TRUE
+1817     ich_stroke             P15           with        Rec 15     57_ct_stroke_029_118.jpg            1376        Return    TRUE
+1818     ich_stroke             P15           with        Rec 15      58_142_mr_ich_003_7.jpg             794       Capital    TRUE
+1819     ich_stroke             P15           with        Rec 15     59_ct_stroke_011_158.jpg             949        Return    TRUE
+1820     ich_stroke             P15           with        Rec 15          60_ct_ich_010_3.jpg            1078       Capital    TRUE
+1841     ich_stroke             P17           with        Rec 17     41_mr_stroke_022_136.jpg            8423        Return    TRUE
+1842     ich_stroke             P17           with        Rec 17 42_121_mr_stroke_031_128.jpg            4472        Return    TRUE
+1843     ich_stroke             P17           with        Rec 17 43_122_mr_stroke_014_160.jpg            5305       Capital   FALSE
+1844     ich_stroke             P17           with        Rec 17 44_124_ct_stroke_014_149.jpg            5704        Return    TRUE
+1845     ich_stroke             P17           with        Rec 17         45_ct_ich_018_12.jpg            6447       Capital    TRUE
+1846     ich_stroke             P17           with        Rec 17     46_125_ct_ich_029_39.jpg            8561       Capital    TRUE
+1847     ich_stroke             P17           with        Rec 17     47_mr_stroke_020_137.jpg            6511        Return    TRUE
+1848     ich_stroke             P17           with        Rec 17 48_126_ct_stroke_004_183.jpg            9351       Capital   FALSE
+1849     ich_stroke             P17           with        Rec 17        49_ct_ich_003_186.jpg            6849       Capital    TRUE
+1850     ich_stroke             P17           with        Rec 17         50_ct_ich_020_19.jpg            7498       Capital    TRUE
+1851     ich_stroke             P17           with        Rec 17     51_127_mr_ich_004_22.jpg            5504        Return   FALSE
+1852     ich_stroke             P17           with        Rec 17     52_ct_stroke_010_161.jpg           11189        Return    TRUE
+1853     ich_stroke             P17           with        Rec 17         53_ct_ich_026_29.jpg            4137       Capital    TRUE
+1854     ich_stroke             P17           with        Rec 17         54_ct_stroke_001.jpg            6677        Return    TRUE
+1855     ich_stroke             P17           with        Rec 17     55_mr_stroke_032_116.jpg            8236        Return    TRUE
+1856     ich_stroke             P17           with        Rec 17     56_129_ct_ich_023_24.jpg            2744       Capital    TRUE
+1857     ich_stroke             P17           with        Rec 17     57_ct_stroke_029_118.jpg            8911        Return    TRUE
+1858     ich_stroke             P17           with        Rec 17      58_142_mr_ich_003_7.jpg            3490       Capital    TRUE
+1859     ich_stroke             P17           with        Rec 17     59_ct_stroke_011_158.jpg            6971       Capital   FALSE
+1860     ich_stroke             P17           with        Rec 17          60_ct_ich_010_3.jpg            3037       Capital    TRUE
+1881     ich_stroke             P19           with        Rec 19     41_mr_stroke_022_136.jpg            5248        Return    TRUE
+1882     ich_stroke             P19           with        Rec 19 42_121_mr_stroke_031_128.jpg            2680        Return    TRUE
+1883     ich_stroke             P19           with        Rec 19 43_122_mr_stroke_014_160.jpg            7234       Capital   FALSE
+1884     ich_stroke             P19           with        Rec 19 44_124_ct_stroke_014_149.jpg            6247        Return    TRUE
+1885     ich_stroke             P19           with        Rec 19         45_ct_ich_018_12.jpg            3289       Capital    TRUE
+1886     ich_stroke             P19           with        Rec 19     46_125_ct_ich_029_39.jpg            2346       Capital    TRUE
+1887     ich_stroke             P19           with        Rec 19     47_mr_stroke_020_137.jpg           15152        Return    TRUE
+1888     ich_stroke             P19           with        Rec 19 48_126_ct_stroke_004_183.jpg            2942        Return    TRUE
+1889     ich_stroke             P19           with        Rec 19        49_ct_ich_003_186.jpg           10316        Return   FALSE
+1890     ich_stroke             P19           with        Rec 19         50_ct_ich_020_19.jpg            5504       Capital    TRUE
+1891     ich_stroke             P19           with        Rec 19     51_127_mr_ich_004_22.jpg            3360       Capital    TRUE
+1892     ich_stroke             P19           with        Rec 19     52_ct_stroke_010_161.jpg            4083        Return    TRUE
+1893     ich_stroke             P19           with        Rec 19         53_ct_ich_026_29.jpg            3759       Capital    TRUE
+1894     ich_stroke             P19           with        Rec 19         54_ct_stroke_001.jpg            3404        Return    TRUE
+1895     ich_stroke             P19           with        Rec 19     55_mr_stroke_032_116.jpg            8627       Capital   FALSE
+1896     ich_stroke             P19           with        Rec 19     56_129_ct_ich_023_24.jpg            2589       Capital    TRUE
+1897     ich_stroke             P19           with        Rec 19     57_ct_stroke_029_118.jpg            2894        Return    TRUE
+1898     ich_stroke             P19           with        Rec 19      58_142_mr_ich_003_7.jpg            2463       Capital    TRUE
+1899     ich_stroke             P19           with        Rec 19     59_ct_stroke_011_158.jpg            6354        Return    TRUE
+1900     ich_stroke             P19           with        Rec 19          60_ct_ich_010_3.jpg            4021       Capital    TRUE
+1921     ich_stroke             P21           with        Rec 21     41_mr_stroke_022_136.jpg            4140        Return    TRUE
+1922     ich_stroke             P21           with        Rec 21 42_121_mr_stroke_031_128.jpg            7613        Return    TRUE
+1923     ich_stroke             P21           with        Rec 21 43_122_mr_stroke_014_160.jpg            5732       Capital   FALSE
+1924     ich_stroke             P21           with        Rec 21 44_124_ct_stroke_014_149.jpg            4968        Return    TRUE
+1925     ich_stroke             P21           with        Rec 21         45_ct_ich_018_12.jpg            3688       Capital    TRUE
+1926     ich_stroke             P21           with        Rec 21     46_125_ct_ich_029_39.jpg            1109       Capital    TRUE
+1927     ich_stroke             P21           with        Rec 21     47_mr_stroke_020_137.jpg           10547        Return    TRUE
+1928     ich_stroke             P21           with        Rec 21 48_126_ct_stroke_004_183.jpg            3077        Return    TRUE
+1929     ich_stroke             P21           with        Rec 21        49_ct_ich_003_186.jpg           16253        Return   FALSE
+1930     ich_stroke             P21           with        Rec 21         50_ct_ich_020_19.jpg            2237       Capital    TRUE
+1931     ich_stroke             P21           with        Rec 21     51_127_mr_ich_004_22.jpg            7052        Return   FALSE
+1932     ich_stroke             P21           with        Rec 21     52_ct_stroke_010_161.jpg            2156        Return    TRUE
+1933     ich_stroke             P21           with        Rec 21         53_ct_ich_026_29.jpg            2357       Capital    TRUE
+1934     ich_stroke             P21           with        Rec 21         54_ct_stroke_001.jpg           22170        Return    TRUE
+1935     ich_stroke             P21           with        Rec 21     55_mr_stroke_032_116.jpg           14081       Capital   FALSE
+1936     ich_stroke             P21           with        Rec 21     56_129_ct_ich_023_24.jpg            1747       Capital    TRUE
+1937     ich_stroke             P21           with        Rec 21     57_ct_stroke_029_118.jpg            2319        Return    TRUE
+1938     ich_stroke             P21           with        Rec 21      58_142_mr_ich_003_7.jpg           14456       Capital    TRUE
+1939     ich_stroke             P21           with        Rec 21     59_ct_stroke_011_158.jpg            4172       Capital   FALSE
+1940     ich_stroke             P21           with        Rec 21          60_ct_ich_010_3.jpg            6678       Capital    TRUE
+1961     ich_stroke             P23           with        Rec 23     41_mr_stroke_022_136.jpg            8016        Return    TRUE
+1962     ich_stroke             P23           with        Rec 23 42_121_mr_stroke_031_128.jpg            6581        Return    TRUE
+1963     ich_stroke             P23           with        Rec 23 43_122_mr_stroke_014_160.jpg            8447        Return    TRUE
+1964     ich_stroke             P23           with        Rec 23 44_124_ct_stroke_014_149.jpg            9294       Capital   FALSE
+1965     ich_stroke             P23           with        Rec 23         45_ct_ich_018_12.jpg            8924       Capital    TRUE
+1966     ich_stroke             P23           with        Rec 23     46_125_ct_ich_029_39.jpg            3469       Capital    TRUE
+1967     ich_stroke             P23           with        Rec 23     47_mr_stroke_020_137.jpg            6387        Return    TRUE
+1968     ich_stroke             P23           with        Rec 23 48_126_ct_stroke_004_183.jpg            5442        Return    TRUE
+1969     ich_stroke             P23           with        Rec 23        49_ct_ich_003_186.jpg            6413       Capital    TRUE
+1970     ich_stroke             P23           with        Rec 23         50_ct_ich_020_19.jpg            3934       Capital    TRUE
+1971     ich_stroke             P23           with        Rec 23     51_127_mr_ich_004_22.jpg            7407       Capital    TRUE
+1972     ich_stroke             P23           with        Rec 23     52_ct_stroke_010_161.jpg            4656        Return    TRUE
+1973     ich_stroke             P23           with        Rec 23         53_ct_ich_026_29.jpg            4635       Capital    TRUE
+1974     ich_stroke             P23           with        Rec 23         54_ct_stroke_001.jpg           11041        Return    TRUE
+1975     ich_stroke             P23           with        Rec 23     55_mr_stroke_032_116.jpg           11859        Return    TRUE
+1976     ich_stroke             P23           with        Rec 23     56_129_ct_ich_023_24.jpg            3009       Capital    TRUE
+1977     ich_stroke             P23           with        Rec 23     57_ct_stroke_029_118.jpg           13459        Return    TRUE
+1978     ich_stroke             P23           with        Rec 23      58_142_mr_ich_003_7.jpg            3870        Return   FALSE
+1979     ich_stroke             P23           with        Rec 23     59_ct_stroke_011_158.jpg            9600       Capital   FALSE
+1980     ich_stroke             P23           with        Rec 23          60_ct_ich_010_3.jpg            3392        Return   FALSE
+2001     ich_stroke             P25           with        Rec 25     41_mr_stroke_022_136.jpg           31336        Return    TRUE
+2002     ich_stroke             P25           with        Rec 25 42_121_mr_stroke_031_128.jpg           18652        Return    TRUE
+2003     ich_stroke             P25           with        Rec 25 43_122_mr_stroke_014_160.jpg           14656       Capital   FALSE
+2004     ich_stroke             P25           with        Rec 25 44_124_ct_stroke_014_149.jpg           15773        Return    TRUE
+2005     ich_stroke             P25           with        Rec 25         45_ct_ich_018_12.jpg            5135       Capital    TRUE
+2006     ich_stroke             P25           with        Rec 25     46_125_ct_ich_029_39.jpg            5571       Capital    TRUE
+2007     ich_stroke             P25           with        Rec 25     47_mr_stroke_020_137.jpg           11456        Return    TRUE
+2008     ich_stroke             P25           with        Rec 25 48_126_ct_stroke_004_183.jpg            6755        Return    TRUE
+2009     ich_stroke             P25           with        Rec 25        49_ct_ich_003_186.jpg           12789       Capital    TRUE
+2010     ich_stroke             P25           with        Rec 25         50_ct_ich_020_19.jpg            3808       Capital    TRUE
+2011     ich_stroke             P25           with        Rec 25     51_127_mr_ich_004_22.jpg           22508        Return   FALSE
+2012     ich_stroke             P25           with        Rec 25     52_ct_stroke_010_161.jpg            6564        Return    TRUE
+2013     ich_stroke             P25           with        Rec 25         53_ct_ich_026_29.jpg            3137       Capital    TRUE
+2014     ich_stroke             P25           with        Rec 25         54_ct_stroke_001.jpg           15583        Return    TRUE
+2015     ich_stroke             P25           with        Rec 25     55_mr_stroke_032_116.jpg           24063        Return    TRUE
+2016     ich_stroke             P25           with        Rec 25     56_129_ct_ich_023_24.jpg            3863       Capital    TRUE
+2017     ich_stroke             P25           with        Rec 25     57_ct_stroke_029_118.jpg           10821        Return    TRUE
+2018     ich_stroke             P25           with        Rec 25      58_142_mr_ich_003_7.jpg            7933        Return   FALSE
+2019     ich_stroke             P25           with        Rec 25     59_ct_stroke_011_158.jpg           13055       Capital   FALSE
+2020     ich_stroke             P25           with        Rec 25          60_ct_ich_010_3.jpg            5755       Capital    TRUE
+2041     ich_stroke             P27           with        Rec 27     41_mr_stroke_022_136.jpg           19958        Return    TRUE
+2042     ich_stroke             P27           with        Rec 27 42_121_mr_stroke_031_128.jpg            9519        Return    TRUE
+2043     ich_stroke             P27           with        Rec 27 43_122_mr_stroke_014_160.jpg           11155        Return    TRUE
+2044     ich_stroke             P27           with        Rec 27 44_124_ct_stroke_014_149.jpg           13976        Return    TRUE
+2045     ich_stroke             P27           with        Rec 27         45_ct_ich_018_12.jpg            7079       Capital    TRUE
+2046     ich_stroke             P27           with        Rec 27     46_125_ct_ich_029_39.jpg            2670       Capital    TRUE
+2047     ich_stroke             P27           with        Rec 27     47_mr_stroke_020_137.jpg           24533        Return    TRUE
+2048     ich_stroke             P27           with        Rec 27 48_126_ct_stroke_004_183.jpg           11230        Return    TRUE
+2049     ich_stroke             P27           with        Rec 27        49_ct_ich_003_186.jpg           12657       Capital    TRUE
+2050     ich_stroke             P27           with        Rec 27         50_ct_ich_020_19.jpg            4767       Capital    TRUE
+2051     ich_stroke             P27           with        Rec 27     51_127_mr_ich_004_22.jpg            5221        Return   FALSE
+2052     ich_stroke             P27           with        Rec 27     52_ct_stroke_010_161.jpg            9653        Return    TRUE
+2053     ich_stroke             P27           with        Rec 27         53_ct_ich_026_29.jpg            4853       Capital    TRUE
+2054     ich_stroke             P27           with        Rec 27         54_ct_stroke_001.jpg           21414        Return    TRUE
+2055     ich_stroke             P27           with        Rec 27     55_mr_stroke_032_116.jpg           19133        Return    TRUE
+2056     ich_stroke             P27           with        Rec 27     56_129_ct_ich_023_24.jpg            6113       Capital    TRUE
+2057     ich_stroke             P27           with        Rec 27     57_ct_stroke_029_118.jpg           39948        Return    TRUE
+2058     ich_stroke             P27           with        Rec 27      58_142_mr_ich_003_7.jpg            4827        Return   FALSE
+2059     ich_stroke             P27           with        Rec 27     59_ct_stroke_011_158.jpg           12930        Return    TRUE
+2060     ich_stroke             P27           with        Rec 27          60_ct_ich_010_3.jpg            4443       Capital    TRUE
+2081     ich_stroke             P29           with        Rec 29     41_mr_stroke_022_136.jpg           14205        Return    TRUE
+2082     ich_stroke             P29           with        Rec 29 42_121_mr_stroke_031_128.jpg            5595        Return    TRUE
+2083     ich_stroke             P29           with        Rec 29 43_122_mr_stroke_014_160.jpg           26150        Return    TRUE
+2084     ich_stroke             P29           with        Rec 29 44_124_ct_stroke_014_149.jpg            5199        Return    TRUE
+2085     ich_stroke             P29           with        Rec 29         45_ct_ich_018_12.jpg            5771       Capital    TRUE
+2086     ich_stroke             P29           with        Rec 29     46_125_ct_ich_029_39.jpg            2190       Capital    TRUE
+2087     ich_stroke             P29           with        Rec 29     47_mr_stroke_020_137.jpg            6140        Return    TRUE
+2088     ich_stroke             P29           with        Rec 29 48_126_ct_stroke_004_183.jpg            5555        Return    TRUE
+2089     ich_stroke             P29           with        Rec 29        49_ct_ich_003_186.jpg            7280        Return   FALSE
+2090     ich_stroke             P29           with        Rec 29         50_ct_ich_020_19.jpg            1907       Capital    TRUE
+2091     ich_stroke             P29           with        Rec 29     51_127_mr_ich_004_22.jpg            6347       Capital    TRUE
+2092     ich_stroke             P29           with        Rec 29     52_ct_stroke_010_161.jpg            2740        Return    TRUE
+2093     ich_stroke             P29           with        Rec 29         53_ct_ich_026_29.jpg            2464       Capital    TRUE
+2094     ich_stroke             P29           with        Rec 29         54_ct_stroke_001.jpg            5427        Return    TRUE
+2095     ich_stroke             P29           with        Rec 29     55_mr_stroke_032_116.jpg            9886       Capital   FALSE
+2096     ich_stroke             P29           with        Rec 29     56_129_ct_ich_023_24.jpg            1859       Capital    TRUE
+2097     ich_stroke             P29           with        Rec 29     57_ct_stroke_029_118.jpg            3216        Return    TRUE
+2098     ich_stroke             P29           with        Rec 29      58_142_mr_ich_003_7.jpg            6221        Return   FALSE
+2099     ich_stroke             P29           with        Rec 29     59_ct_stroke_011_158.jpg            3188        Return    TRUE
+2100     ich_stroke             P29           with        Rec 29          60_ct_ich_010_3.jpg            2156       Capital    TRUE
+2121     ich_stroke             P31           with        Rec 31     41_mr_stroke_022_136.jpg           10449        Return    TRUE
+2122     ich_stroke             P31           with        Rec 31 42_121_mr_stroke_031_128.jpg            5789       Capital   FALSE
+2123     ich_stroke             P31           with        Rec 31 43_122_mr_stroke_014_160.jpg           11016       Capital   FALSE
+2124     ich_stroke             P31           with        Rec 31 44_124_ct_stroke_014_149.jpg            6987        Return    TRUE
+2125     ich_stroke             P31           with        Rec 31         45_ct_ich_018_12.jpg            6868       Capital    TRUE
+2126     ich_stroke             P31           with        Rec 31     46_125_ct_ich_029_39.jpg           14706        Return   FALSE
+2127     ich_stroke             P31           with        Rec 31     47_mr_stroke_020_137.jpg           17528        Return    TRUE
+2128     ich_stroke             P31           with        Rec 31 48_126_ct_stroke_004_183.jpg            2872       Capital   FALSE
+2129     ich_stroke             P31           with        Rec 31        49_ct_ich_003_186.jpg            3521        Return   FALSE
+2130     ich_stroke             P31           with        Rec 31         50_ct_ich_020_19.jpg           10894       Capital    TRUE
+2131     ich_stroke             P31           with        Rec 31     51_127_mr_ich_004_22.jpg           10194        Return   FALSE
+2132     ich_stroke             P31           with        Rec 31     52_ct_stroke_010_161.jpg           15489        Return    TRUE
+2133     ich_stroke             P31           with        Rec 31         53_ct_ich_026_29.jpg            7369        Return   FALSE
+2134     ich_stroke             P31           with        Rec 31         54_ct_stroke_001.jpg            6835       Capital   FALSE
+2135     ich_stroke             P31           with        Rec 31     55_mr_stroke_032_116.jpg            6064        Return    TRUE
+2136     ich_stroke             P31           with        Rec 31     56_129_ct_ich_023_24.jpg            1273       Capital    TRUE
+2137     ich_stroke             P31           with        Rec 31     57_ct_stroke_029_118.jpg           13684        Return    TRUE
+2138     ich_stroke             P31           with        Rec 31      58_142_mr_ich_003_7.jpg            5370       Capital    TRUE
+2139     ich_stroke             P31           with        Rec 31     59_ct_stroke_011_158.jpg           14432       Capital   FALSE
+2140     ich_stroke             P31           with        Rec 31          60_ct_ich_010_3.jpg            3146        Return   FALSE
+2161     ich_stroke             P33           with        Rec 33     41_mr_stroke_022_136.jpg            5966        Return    TRUE
+2162     ich_stroke             P33           with        Rec 33 42_121_mr_stroke_031_128.jpg            3476        Return    TRUE
+2163     ich_stroke             P33           with        Rec 33 43_122_mr_stroke_014_160.jpg           21855       Capital   FALSE
+2164     ich_stroke             P33           with        Rec 33 44_124_ct_stroke_014_149.jpg           16087        Return    TRUE
+2165     ich_stroke             P33           with        Rec 33         45_ct_ich_018_12.jpg            4605       Capital    TRUE
+2166     ich_stroke             P33           with        Rec 33     46_125_ct_ich_029_39.jpg            3041       Capital    TRUE
+2167     ich_stroke             P33           with        Rec 33     47_mr_stroke_020_137.jpg            9608       Capital   FALSE
+2168     ich_stroke             P33           with        Rec 33 48_126_ct_stroke_004_183.jpg           14816        Return    TRUE
+2169     ich_stroke             P33           with        Rec 33        49_ct_ich_003_186.jpg            7404       Capital    TRUE
+2170     ich_stroke             P33           with        Rec 33         50_ct_ich_020_19.jpg            1615       Capital    TRUE
+2171     ich_stroke             P33           with        Rec 33     51_127_mr_ich_004_22.jpg            2860       Capital    TRUE
+2172     ich_stroke             P33           with        Rec 33     52_ct_stroke_010_161.jpg            2103        Return    TRUE
+2173     ich_stroke             P33           with        Rec 33         53_ct_ich_026_29.jpg            1565       Capital    TRUE
+2174     ich_stroke             P33           with        Rec 33         54_ct_stroke_001.jpg            8509        Return    TRUE
+2175     ich_stroke             P33           with        Rec 33     55_mr_stroke_032_116.jpg            9962        Return    TRUE
+2176     ich_stroke             P33           with        Rec 33     56_129_ct_ich_023_24.jpg            1915       Capital    TRUE
+2177     ich_stroke             P33           with        Rec 33     57_ct_stroke_029_118.jpg            9195        Return    TRUE
+2178     ich_stroke             P33           with        Rec 33      58_142_mr_ich_003_7.jpg            3365       Capital    TRUE
+2179     ich_stroke             P33           with        Rec 33     59_ct_stroke_011_158.jpg           18039        Return    TRUE
+2180     ich_stroke             P33           with        Rec 33          60_ct_ich_010_3.jpg            2045       Capital    TRUE
+2201     ich_stroke             P35           with        Rec 35     41_mr_stroke_022_136.jpg            6350        Return    TRUE
+2202     ich_stroke             P35           with        Rec 35 42_121_mr_stroke_031_128.jpg            7433        Return    TRUE
+2203     ich_stroke             P35           with        Rec 35 43_122_mr_stroke_014_160.jpg            5131        Return    TRUE
+2204     ich_stroke             P35           with        Rec 35 44_124_ct_stroke_014_149.jpg            9413        Return    TRUE
+2205     ich_stroke             P35           with        Rec 35         45_ct_ich_018_12.jpg            4801       Capital    TRUE
+2206     ich_stroke             P35           with        Rec 35     46_125_ct_ich_029_39.jpg            5711       Capital    TRUE
+2207     ich_stroke             P35           with        Rec 35     47_mr_stroke_020_137.jpg            3067        Return    TRUE
+2208     ich_stroke             P35           with        Rec 35 48_126_ct_stroke_004_183.jpg            3142        Return    TRUE
+2209     ich_stroke             P35           with        Rec 35        49_ct_ich_003_186.jpg            6151       Capital    TRUE
+2210     ich_stroke             P35           with        Rec 35         50_ct_ich_020_19.jpg            2587       Capital    TRUE
+2211     ich_stroke             P35           with        Rec 35     51_127_mr_ich_004_22.jpg            1696        Return   FALSE
+2212     ich_stroke             P35           with        Rec 35     52_ct_stroke_010_161.jpg            2192        Return    TRUE
+2213     ich_stroke             P35           with        Rec 35         53_ct_ich_026_29.jpg            1780       Capital    TRUE
+2214     ich_stroke             P35           with        Rec 35         54_ct_stroke_001.jpg           15572        Return    TRUE
+2215     ich_stroke             P35           with        Rec 35     55_mr_stroke_032_116.jpg            3395        Return    TRUE
+2216     ich_stroke             P35           with        Rec 35     56_129_ct_ich_023_24.jpg            2921       Capital    TRUE
+2217     ich_stroke             P35           with        Rec 35     57_ct_stroke_029_118.jpg           10327       Capital   FALSE
+2218     ich_stroke             P35           with        Rec 35      58_142_mr_ich_003_7.jpg            1940        Return   FALSE
+2219     ich_stroke             P35           with        Rec 35     59_ct_stroke_011_158.jpg            7174       Capital   FALSE
+2220     ich_stroke             P35           with        Rec 35          60_ct_ich_010_3.jpg            3314        Return   FALSE
+2241     ich_stroke             P37           with        Rec 37     41_mr_stroke_022_136.jpg           28363        Return    TRUE
+2242     ich_stroke             P37           with        Rec 37 42_121_mr_stroke_031_128.jpg            9609        Return    TRUE
+2243     ich_stroke             P37           with        Rec 37 43_122_mr_stroke_014_160.jpg           20001        Return    TRUE
+2244     ich_stroke             P37           with        Rec 37 44_124_ct_stroke_014_149.jpg           28630        Return    TRUE
+2245     ich_stroke             P37           with        Rec 37         45_ct_ich_018_12.jpg           12265       Capital    TRUE
+2246     ich_stroke             P37           with        Rec 37     46_125_ct_ich_029_39.jpg            1477       Capital    TRUE
+2247     ich_stroke             P37           with        Rec 37     47_mr_stroke_020_137.jpg            4762        Return    TRUE
+2248     ich_stroke             P37           with        Rec 37 48_126_ct_stroke_004_183.jpg            9459        Return    TRUE
+2249     ich_stroke             P37           with        Rec 37        49_ct_ich_003_186.jpg           12795        Return   FALSE
+2250     ich_stroke             P37           with        Rec 37         50_ct_ich_020_19.jpg            3414       Capital    TRUE
+2251     ich_stroke             P37           with        Rec 37     51_127_mr_ich_004_22.jpg            3418       Capital    TRUE
+2252     ich_stroke             P37           with        Rec 37     52_ct_stroke_010_161.jpg           12964        Return    TRUE
+2253     ich_stroke             P37           with        Rec 37         53_ct_ich_026_29.jpg            2512       Capital    TRUE
+2254     ich_stroke             P37           with        Rec 37         54_ct_stroke_001.jpg            9905        Return    TRUE
+2255     ich_stroke             P37           with        Rec 37     55_mr_stroke_032_116.jpg           13727        Return    TRUE
+2256     ich_stroke             P37           with        Rec 37     56_129_ct_ich_023_24.jpg            2125       Capital    TRUE
+2257     ich_stroke             P37           with        Rec 37     57_ct_stroke_029_118.jpg            9106        Return    TRUE
+2258     ich_stroke             P37           with        Rec 37      58_142_mr_ich_003_7.jpg            8016       Capital    TRUE
+2259     ich_stroke             P37           with        Rec 37     59_ct_stroke_011_158.jpg           11890       Capital   FALSE
+2260     ich_stroke             P37           with        Rec 37          60_ct_ich_010_3.jpg            5485       Capital    TRUE
+[1] 0.7894737
+ [1]  TRUE  TRUE  TRUE FALSE  TRUE FALSE  TRUE  TRUE  TRUE  TRUE  TRUE FALSE  TRUE  TRUE  TRUE  TRUE  TRUE FALSE  TRUE  TRUE  TRUE  TRUE  TRUE FALSE  TRUE
+[26]  TRUE  TRUE  TRUE  TRUE FALSE  TRUE FALSE  TRUE  TRUE  TRUE FALSE  TRUE  TRUE
