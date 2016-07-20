@@ -1,0 +1,107 @@
+Number of correct answers in each test 
+
+
+	Wilcoxon rank sum test with continuity correction
+
+data:  group_with$ct_mr_Correct and group_without$ct_mr_Correct
+W = 323.5, p-value = 2.681e-05
+alternative hypothesis: true location shift is not equal to 0
+
+
+	Wilcoxon rank sum test with continuity correction
+
+data:  group_with$norm_pat_Correct and group_without$norm_pat_Correct
+W = 216.5, p-value = 0.2905
+alternative hypothesis: true location shift is not equal to 0
+
+
+	Wilcoxon rank sum test with continuity correction
+
+data:  group_with$ich_stroke_Correct and group_without$ich_stroke_Correct
+W = 249.5, p-value = 0.04274
+alternative hypothesis: true location shift is not equal to 0
+
+
+	Pearson's Chi-squared test with Yates' continuity correction
+
+data:  chisq_ct_mr
+X-squared = 62.226, df = 1, p-value = 3.062e-15
+
+
+	Pearson's Chi-squared test with Yates' continuity correction
+
+data:  chisq_norm_pat
+X-squared = 0.030437, df = 1, p-value = 0.8615
+
+
+	Pearson's Chi-squared test with Yates' continuity correction
+
+data:  chisq_ich_stroke
+X-squared = 21.078, df = 1, p-value = 4.409e-06
+
+Time to any answer in each test
+
+[1] "Mean time to answer ct_mr *with*: 3225.255882"
+[1] "Mean time to answer ct_mr *without*: 6627.210526"
+
+	Wilcoxon rank sum test with continuity correction
+
+data:  ct_mr_durations_with and ct_mr_durations_without
+W = 34549, p-value < 2.2e-16
+alternative hypothesis: true location shift is not equal to 0
+
+
+
+[1] "Mean time to answer norm_pat *with*: 5719.492105"
+[1] "Mean time to answer norm_pat *without*: 8058.542105"
+
+	Wilcoxon rank sum test with continuity correction
+
+data:  norm_pat_durations_with and norm_pat_durations_without
+W = 56356, p-value = 1.645e-07
+alternative hypothesis: true location shift is not equal to 0
+
+
+
+[1] "Mean time to answer ich_stroke *with*: 7755.805263"
+[1] "Mean time to answer ich_stroke *without*: 10624.805263"
+
+	Wilcoxon rank sum test with continuity correction
+
+data:  ich_stroke_durations_with and ich_stroke_durations_without
+W = 57446, p-value = 1.086e-06
+alternative hypothesis: true location shift is not equal to 0
+
+Time to correct answer in each test 
+
+[1] "Mean time to correct answer ct_mr *with*: 2922.486486"
+[1] "Mean time to correct answer ct_mr *without*: 6482.672269"
+
+	Wilcoxon rank sum test with continuity correction
+
+data:  ct_mr_corr_time_with and ct_mr_corr_time_without
+W = 20708, p-value < 2.2e-16
+alternative hypothesis: true location shift is not equal to 0
+
+
+
+[1] "Mean time to correct answer norm_pat *with*: 5189.612245"
+[1] "Mean time to correct answer norm_pat *without*: 7188.323232"
+
+	Wilcoxon rank sum test with continuity correction
+
+data:  norm_pat_corr_time_with and norm_pat_corr_time_without
+W = 34378, p-value = 7.76e-06
+alternative hypothesis: true location shift is not equal to 0
+
+
+
+[1] "Mean time to correct answer ich_stroke *with*: 7328.628664"
+[1] "Mean time to correct answer ich_stroke *without*: 10109.176000"
+
+	Wilcoxon rank sum test with continuity correction
+
+data:  ich_stroke_corr_time_with and ich_stroke_corr_time_without
+W = 29848, p-value = 6.387e-06
+alternative hypothesis: true location shift is not equal to 0
+
