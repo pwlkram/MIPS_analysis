@@ -795,13 +795,6 @@ hist(group_without$norm_pat_Correct)
 hist(group_with$ich_stroke_Correct)
 hist(group_without$ich_stroke_Correct)
 
-(dataset[dataset$X.Images.Value == "with",])
-
-image1 <- dataset[which(dataset$MediaName == 'ct_mr_01'),]
-
-image1 <- filter(dataset, MediaName == 'ct_mr_01')
-length(image1[image1$Correct == TRUE,1])/length(image1$Correct)
-image1$Correct
 #check how many timestamps do repeat (TODO: import to Ogama)
 #x <- 0
 #for (time_num in seq(2, length(full$RecordingTimestamp))){
