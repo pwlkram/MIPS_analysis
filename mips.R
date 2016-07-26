@@ -360,6 +360,40 @@ scatterplot(TotalCorrect ~ TotalTime | X.Images.Value, data = time_vs_ans, boxpl
 dev.off()
 
 
+# difficulty and discrimination of each stimuli
+# difficulty is defined as number of correct answers by all participants/number of participants (d)
+# discrimination factor - D = d(i)/d(ni), where d(i) = number of correct answers in "with" group / number of participants in "with" group
+# and d(ni) - the same in "without" group
+
+#create data.frame with following parameters for each image (stimulus):
+# difficulty in with group (d(i))
+# difficulty in without group(d(ni))
+# difficulty in all participants (d)
+# discrimination factor (D = d(i)/d(ni))
+
+diff_images <- data.frame(ImageName = levels(dataset$MediaName),
+                          with_diff = NA*length(levels(dataset$MediaName)),
+                          without_diff = NA*length(levels(dataset$MediaName)),
+                          Difficulty = NA*length(levels(dataset$MediaName)),
+                          Discrimination = NA*length(levels(dataset$MediaName)))
+
+for (i in seq_along(diff_images$ImageName)){
+    image <- filter(dataset, MediaName == diff_images$ImageName[i])
+    diff_images$with_diff[i] <- nrow(filter(image, X.Images.Value == "with" & Correct == TRUE))/num_with
+    diff_images$without_diff[i] <- nrow(filter(image, X.Images.Value == "without" & Correct == TRUE))/num_without
+    diff_images$Difficulty[i] <- nrow(filter(image, Correct == TRUE))/(num_with + num_without)
+    diff_images$Discrimination[i] <- diff_images$with_diff[i]/diff_images$without_diff[i]
+    }
+rm(i)
+
+#scatterplot difficulty vs. discrimination
+png("results\\image_diff_scatter.png", width = 1960, height = 1960)
+par(cex.lab = 1.5, cex.axis=1.5, cex.main=1.5, cex.sub=1.5)
+scatterplot(Difficulty ~ Discrimination, data = diff_images, labels = diff_images$ImageName, id.n = length(diff_images$ImageName),
+            main = "Difficulty and Discrimination Factor of MIPS stimuli")
+dev.off()
+
+
 ##### FIXATION AND EYE-TRACKING DATA
 #read all data with AOIs etc. as full
 full <- read.table(file = aoi_file, header = TRUE, sep = "\t", fileEncoding = "UTF-8-BOM")
@@ -761,13 +795,6 @@ hist(group_without$norm_pat_Correct)
 hist(group_with$ich_stroke_Correct)
 hist(group_without$ich_stroke_Correct)
 
-(dataset[dataset$X.Images.Value == "with",])
-
-image1 <- dataset[which(dataset$MediaName == '1_ct_norma_013_2.jpg'),]
-
-image1 <- filter(dataset, MediaName == '1_ct_norma_013_2.jpg')
-length(image1[image1$Correct == TRUE,1])/length(image1$Correct)
-image1$Correct
 #check how many timestamps do repeat (TODO: import to Ogama)
 #x <- 0
 #for (time_num in seq(2, length(full$RecordingTimestamp))){
