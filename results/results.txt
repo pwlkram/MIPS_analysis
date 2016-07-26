@@ -3,12 +3,12 @@
 [1] "Number of participants in *without* group: 19"
 Number of correct answers in *ct_mr* test:
 
-        ct_mr_1 ct_mr_2 ct_mr_3 ct_mr_4 ct_mr_5 ct_mr_6 ct_mr_7 ct_mr_8 ct_mr_9 ct_mr_10 ct_mr_11 ct_mr_12 ct_mr_13 ct_mr_14 ct_mr_15
-with         19      18      18      13      12      19      10      17       7       17       18       19       18       15       19
-without      11       7      10      10       8      13      14      10       8        9       16       12       17       12       12
-        ct_mr_16 ct_mr_17 ct_mr_18 ct_mr_19 ct_mr_20
-with          19       18       19       19       19
-without       14       15       11       14       15
+        ct_mr_1 ct_mr_2 ct_mr_3 ct_mr_4 ct_mr_5 ct_mr_6 ct_mr_7 ct_mr_8 ct_mr_9 ct_mr_10 ct_mr_11 ct_mr_12 ct_mr_13 ct_mr_14
+with         19      18      18      13      12      19      10      17       7       17       18       19       18       15
+without      11       7      10      10       8      13      14      10       8        9       16       12       17       12
+        ct_mr_15 ct_mr_16 ct_mr_17 ct_mr_18 ct_mr_19 ct_mr_20
+with          19       19       18       19       19       19
+without       12       14       15       11       14       15
 
 
 Number of correct answers in *norm_pat* test:
@@ -26,12 +26,12 @@ Number of correct answers in *ich_stroke* test:
         ich_stroke_1 ich_stroke_2 ich_stroke_3 ich_stroke_4 ich_stroke_5 ich_stroke_6 ich_stroke_7 ich_stroke_8 ich_stroke_9
 with              16           16            8           15           19           18           18           15           10
 without           12           10           10           11           15           14           13           14           12
-        ich_stroke_10 ich_stroke_11 ich_stroke_12 ich_stroke_13 ich_stroke_14 ich_stroke_15 ich_stroke_16 ich_stroke_17 ich_stroke_18
-with               19            11            18            17            17            13            19            18            12
-without            14            10            13            12            11            13            15            15            11
-        ich_stroke_19 ich_stroke_20
-with               12            16
-without            14            11
+        ich_stroke_10 ich_stroke_11 ich_stroke_12 ich_stroke_13 ich_stroke_14 ich_stroke_15 ich_stroke_16 ich_stroke_17
+with               19            11            18            17            17            13            19            18
+without            14            10            13            12            11            13            15            15
+        ich_stroke_18 ich_stroke_19 ich_stroke_20
+with               12            12            16
+without            11            14            11
 
 
 Number of correct answers by participant
@@ -192,23 +192,29 @@ without                       7515.333                       4439.455           
         ich_stroke_7_MeanTimeToCorrAns ich_stroke_7_SDofTimeToCorrAns ich_stroke_8_MeanTimeToCorrAns ich_stroke_8_SDofTimeToCorrAns
 with                          10072.89                        6533.44                       7417.000                       6716.569
 without                       12745.08                       11438.01                       8058.286                       5911.023
-        ich_stroke_9_MeanTimeToCorrAns ich_stroke_9_SDofTimeToCorrAns ich_stroke_10_MeanTimeToCorrAns ich_stroke_10_SDofTimeToCorrAns
-with                          7154.000                       3526.739                        4039.737                        2962.660
-without                       9680.833                       5043.070                        5334.429                        3345.194
-        ich_stroke_11_MeanTimeToCorrAns ich_stroke_11_SDofTimeToCorrAns ich_stroke_12_MeanTimeToCorrAns ich_stroke_12_SDofTimeToCorrAns
-with                             7850.0                        8445.566                        6146.222                        4175.095
-without                         10411.1                        8226.774                        9906.692                        9841.946
-        ich_stroke_13_MeanTimeToCorrAns ich_stroke_13_SDofTimeToCorrAns ich_stroke_14_MeanTimeToCorrAns ich_stroke_14_SDofTimeToCorrAns
-with                           3039.412                        1361.063                        10617.06                        6889.783
-without                        6270.167                        2931.013                        12049.91                        7499.398
-        ich_stroke_15_MeanTimeToCorrAns ich_stroke_15_SDofTimeToCorrAns ich_stroke_16_MeanTimeToCorrAns ich_stroke_16_SDofTimeToCorrAns
-with                           11658.54                        5998.962                        3052.474                        2041.289
-without                        15383.54                       12850.835                        6304.400                        5710.139
-        ich_stroke_17_MeanTimeToCorrAns ich_stroke_17_SDofTimeToCorrAns ich_stroke_18_MeanTimeToCorrAns ich_stroke_18_SDofTimeToCorrAns
-with                           10541.94                        9198.789                        6818.500                        8139.324
-without                        11264.53                        8667.331                        6055.818                        4444.730
-        ich_stroke_19_MeanTimeToCorrAns ich_stroke_19_SDofTimeToCorrAns ich_stroke_20_MeanTimeToCorrAns ich_stroke_20_SDofTimeToCorrAns
-with                           8084.167                        5087.775                         4044.25                        2064.320
-without                       10661.429                       10747.525                         6320.00                        2757.952
+        ich_stroke_9_MeanTimeToCorrAns ich_stroke_9_SDofTimeToCorrAns ich_stroke_10_MeanTimeToCorrAns
+with                          7154.000                       3526.739                        4039.737
+without                       9680.833                       5043.070                        5334.429
+        ich_stroke_10_SDofTimeToCorrAns ich_stroke_11_MeanTimeToCorrAns ich_stroke_11_SDofTimeToCorrAns
+with                           2962.660                          7850.0                        8445.566
+without                        3345.194                         10411.1                        8226.774
+        ich_stroke_12_MeanTimeToCorrAns ich_stroke_12_SDofTimeToCorrAns ich_stroke_13_MeanTimeToCorrAns
+with                           6146.222                        4175.095                        3039.412
+without                        9906.692                        9841.946                        6270.167
+        ich_stroke_13_SDofTimeToCorrAns ich_stroke_14_MeanTimeToCorrAns ich_stroke_14_SDofTimeToCorrAns
+with                           1361.063                        10617.06                        6889.783
+without                        2931.013                        12049.91                        7499.398
+        ich_stroke_15_MeanTimeToCorrAns ich_stroke_15_SDofTimeToCorrAns ich_stroke_16_MeanTimeToCorrAns
+with                           11658.54                        5998.962                        3052.474
+without                        15383.54                       12850.835                        6304.400
+        ich_stroke_16_SDofTimeToCorrAns ich_stroke_17_MeanTimeToCorrAns ich_stroke_17_SDofTimeToCorrAns
+with                           2041.289                        10541.94                        9198.789
+without                        5710.139                        11264.53                        8667.331
+        ich_stroke_18_MeanTimeToCorrAns ich_stroke_18_SDofTimeToCorrAns ich_stroke_19_MeanTimeToCorrAns
+with                           6818.500                        8139.324                        8084.167
+without                        6055.818                        4444.730                       10661.429
+        ich_stroke_19_SDofTimeToCorrAns ich_stroke_20_MeanTimeToCorrAns ich_stroke_20_SDofTimeToCorrAns
+with                           5087.775                         4044.25                        2064.320
+without                       10747.525                         6320.00                        2757.952
 
 
