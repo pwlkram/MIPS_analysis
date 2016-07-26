@@ -1,6 +1,7 @@
 library(reshape)
 library(plyr)
 library(dplyr)
+library(car)
 #SET CORRECT DIRECTIORIES TO TOBII STUDIO SOURCE FILES
 datafile <- "D:\\R\\MIPS\\0616\\06072016.tsv"
 aoi_file <- "D:\\R\\MIPS\\0616\\06072016aois.tsv"
@@ -148,6 +149,20 @@ rm(temp)
 #correct order of columns
 participants_correct_answers <- participants_correct_answers[c("ParticipantName","X.Images.Value", 
                                                                "ct_mr_Correct", "norm_pat_Correct", "ich_stroke_Correct")]
+
+# create data.frame of total times to answer for each participant in each test
+
+temp <- melt(dataset, id.vars = c("StudioTestName", "ParticipantName", "X.Images.Value"), measure.vars = "SegmentDuration")
+participants_total_time <- cast(temp, formula = ParticipantName + X.Images.Value ~ ..., fun.aggregate = sum)
+rm(temp)
+names(participants_total_time)[names(participants_total_time) == "ct_mr_SegmentDuration"] <- "ct_mr_TotalTime"
+names(participants_total_time)[names(participants_total_time) == "norm_pat_SegmentDuration"] <- "norm_pat_TotalTime"
+names(participants_total_time)[names(participants_total_time) == "ich_stroke_SegmentDuration"] <- "ich_stroke_TotalTime"
+
+#correct order of columns
+participants_total_time <- participants_total_time[c("ParticipantName","X.Images.Value", 
+                                                               "ct_mr_TotalTime", "norm_pat_TotalTime", "ich_stroke_TotalTime")]
+
 cat("Number of correct answers by participant\n")
 print(participants_correct_answers)
 cat("\n\n")
@@ -309,7 +324,41 @@ for(test in c("ct_mr", "norm_pat", "ich_stroke")){
 }
 dev.off()
 
+# time vs correctness
+# create scatterplots for each test - total time to answer vs number of correct answers. Two participant groups
+# (with and without images) have different color and markers
+time_vs_ans <- cbind(participants_correct_answers, participants_total_time[c("ct_mr_TotalTime", "norm_pat_TotalTime", "ich_stroke_TotalTime")])
+time_vs_ans$TotalCorrect <- time_vs_ans$ct_mr_Correct + time_vs_ans$norm_pat_Correct + time_vs_ans$ich_stroke_Correct
+time_vs_ans$TotalTime <- time_vs_ans$ct_mr_TotalTime + time_vs_ans$norm_pat_TotalTime +  + time_vs_ans$ich_stroke_TotalTime
 
+
+
+
+# time vs correct - CT_MR TEST
+png("results\\time_vs_correct_ct_mr.png", width = 960, height = 960)
+scatterplot(ct_mr_Correct ~ ct_mr_TotalTime | X.Images.Value, data = time_vs_ans, boxplots = "xy", main = "Time to ans / Correctness - all tests", xlab = "Total time to answer [ms]", ylab = "N of correct answers",
+            legend.title = "Participant group")
+dev.off()
+
+# time vs correct - NORM_PAT TEST
+png("results\\time_vs_correct_norm_pat.png", width = 960, height = 960)
+scatterplot(norm_pat_Correct ~ norm_pat_TotalTime | X.Images.Value, data = time_vs_ans, boxplots = "xy", main = "Time to ans / Correctness - all tests", xlab = "Total time to answer [ms]", ylab = "N of correct answers",
+            legend.title = "Participant group")
+dev.off()
+
+# time vs correct - ICH_STROKE TEST
+png("results\\time_vs_correct_ich_stroke.png", width = 960, height = 960)
+scatterplot(ich_stroke_Correct ~ ich_stroke_TotalTime | X.Images.Value, data = time_vs_ans, boxplots = "xy", main = "Time to ans / Correctness - all tests", xlab = "Total time to answer [ms]", ylab = "N of correct answers",
+            legend.title = "Participant group")
+dev.off()
+
+# time vs correct - ALL TESTS
+png("results\\time_vs_correct_all.png", width = 960, height = 960)
+scatterplot(TotalCorrect ~ TotalTime | X.Images.Value, data = time_vs_ans, boxplots = "xy", main = "Time to ans / Correctness - all tests", xlab = "Total time to answer [ms]", ylab = "N of correct answers",
+            legend.title = "Participant group")
+dev.off()
+
+##### FIXATION AND EYE-TRACKING DATA
 #read all data with AOIs etc. as full
 full <- read.table(file = aoi_file, header = TRUE, sep = "\t", fileEncoding = "UTF-8-BOM")
 
