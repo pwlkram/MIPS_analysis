@@ -785,15 +785,29 @@ wilcox.test(ich_stroke_corr_time_with, ich_stroke_corr_time_without)
 
 sink()
 
+png("results\\correct_tests_hist.png", width = 2000, height = 2000)
+par(mfrow = c(4, 2), oma = c(0,0,5,0), cex.lab=1.5, cex.axis=1.5, cex.main=1.5, cex.sub=1.5)
 
-hist(group_with$ct_mr_Correct)
-hist(group_without$ct_mr_Correct)
+hist(group_with$ct_mr_Correct, breaks = seq(0,21), ylim = c(0,max(c(table(group_with$ct_mr_Correct), table(group_without$ct_mr_Correct)))),
+     xlab = "N of Correct answers", main = paste("ct_mr - with group"), xlim = c(0,20))
+hist(group_without$ct_mr_Correct, breaks = seq(0,21), ylim = c(0,max(c(table(group_with$ct_mr_Correct), table(group_without$ct_mr_Correct)))),
+     xlab = "N of Correct answers", main = paste("ct_mr - without group"), xlim = c(0,20))
 
-hist(group_with$norm_pat_Correct)
-hist(group_without$norm_pat_Correct)
+hist(group_with$norm_pat_Correct, breaks = seq(0,21), ylim = c(0,max(c(table(group_with$norm_pat_Correct), table(group_without$norm_pat_Correct)))),
+     xlab = "N of Correct answers", main = paste("norm_pat - with group"), xlim = c(0,20))
+hist(group_without$norm_pat_Correct, breaks = seq(0,21), ylim = c(0,max(c(table(group_with$norm_pat_Correct), table(group_without$norm_pat_Correct)))),
+     xlab = "N of Correct answers", main = paste("norm_pat - without group"), xlim = c(0,20))
 
-hist(group_with$ich_stroke_Correct)
-hist(group_without$ich_stroke_Correct)
+hist(group_with$ich_stroke_Correct, breaks = seq(0,21), ylim = c(0,max(c(table(group_with$ich_stroke_Correct), table(group_without$ich_stroke_Correct)))),
+     xlab = "N of Correct answers", main = paste("ich_stroke - with group"), xlim = c(0,20))
+hist(group_without$ich_stroke_Correct, breaks = seq(0,21), ylim = c(0,max(c(table(group_with$ich_stroke_Correct), table(group_without$ich_stroke_Correct)))),
+     xlab = "N of Correct answers", main = paste("ich_stroke - without group"), xlim = c(0,20))
+
+hist(rowSums(group_with), breaks = seq(0,60, 5), ylim = c(0, 10), xlab = "N of Correct answers", main = paste("all tests - with group"), xlim = c(0,60))
+hist(rowSums(group_without), breaks = seq(0,60, 5), ylim = c(0, 10), xlab = "N of Correct answers", main = paste("all tests - without group"), xlim = c(0,60))
+mtext("Number of correct answers", outer = TRUE, cex = 3)
+dev.off()
+
 
 #check how many timestamps do repeat (TODO: import to Ogama)
 #x <- 0
