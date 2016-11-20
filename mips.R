@@ -162,6 +162,9 @@ names(participants_total_time)[names(participants_total_time) == "ich_stroke_Seg
 #correct order of columns
 participants_total_time <- participants_total_time[c("ParticipantName","X.Images.Value", 
                                                                "ct_mr_TotalTime", "norm_pat_TotalTime", "ich_stroke_TotalTime")]
+participants_total_time$ct_mr_TotalTime <- participants_total_time$ct_mr_TotalTime/1000
+participants_total_time$norm_pat_TotalTime <- participants_total_time$norm_pat_TotalTime/1000
+participants_total_time$ich_stroke_TotalTime <- participants_total_time$ich_stroke_TotalTime/1000
 
 cat("Number of correct answers by participant\n")
 print(participants_correct_answers)
@@ -334,21 +337,21 @@ time_vs_ans$TotalTime <- time_vs_ans$ct_mr_TotalTime + time_vs_ans$norm_pat_Tota
 # time vs correct - CT_MR TEST
 png("results\\time_vs_correct_ct_mr.png", width = 960, height = 960)
 par(cex.lab=1.5, cex.axis=1.5, cex.main=1.5, cex.sub=1.5)
-scatterplot(ct_mr_Correct ~ ct_mr_TotalTime | X.Images.Value, data = time_vs_ans, boxplots = "xy", main = "Time to ans vs. Correctness - ct_mr", xlab = "Total time to answer [ms]", ylab = "N of correct answers",
+scatterplot(ct_mr_Correct ~ ct_mr_TotalTime | X.Images.Value, data = time_vs_ans, boxplots = "xy", main = "Time to ans vs. Correctness - ct_mr", xlab = "Total time to answer [s]", ylab = "N of correct answers",
             legend.title = "Participant group", legend.coords = "topright")
 dev.off()
 
 # time vs correct - NORM_PAT TEST
 png("results\\time_vs_correct_norm_pat.png", width = 960, height = 960)
 par(cex.lab=1.5, cex.axis=1.5, cex.main=1.5, cex.sub=1.5)
-scatterplot(norm_pat_Correct ~ norm_pat_TotalTime | X.Images.Value, data = time_vs_ans, boxplots = "xy", main = "Time to ans vs. Correctness - norm_pat", xlab = "Total time to answer [ms]", ylab = "N of correct answers",
+scatterplot(norm_pat_Correct ~ norm_pat_TotalTime | X.Images.Value, data = time_vs_ans, boxplots = "xy", main = "Time to ans vs. Correctness - norm_pat", xlab = "Total time to answer [s]", ylab = "N of correct answers",
             legend.title = "Participant group", legend.coords = "topright")
 dev.off()
 
 # time vs correct - ICH_STROKE TEST
 png("results\\time_vs_correct_ich_stroke.png", width = 960, height = 960)
 par(cex.lab=1.5, cex.axis=1.5, cex.main=1.5, cex.sub=1.5)
-scatterplot(ich_stroke_Correct ~ ich_stroke_TotalTime | X.Images.Value, data = time_vs_ans, boxplots = "xy", main = "Time to ans vs. Correctness - ich_stroke", xlab = "Total time to answer [ms]", ylab = "N of correct answers",
+scatterplot(ich_stroke_Correct ~ ich_stroke_TotalTime | X.Images.Value, data = time_vs_ans, boxplots = "xy", main = "Time to ans vs. Correctness - ich_stroke", xlab = "Total time to answer [s]", ylab = "N of correct answers",
             legend.title = "Participant group", legend.coords = "topright")
 dev.off()
 
