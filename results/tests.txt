@@ -105,3 +105,36 @@ data:  ich_stroke_corr_time_with and ich_stroke_corr_time_without
 W = 29848, p-value = 6.387e-06
 alternative hypothesis: true location shift is not equal to 0
 
+Fixations/sec in each test
+
+[1] "Mean fixations/sec ct_mr *with*: 3.178529"
+[1] "Mean fixations/sec ct_mr *without*: 2.869166"
+
+	Wilcoxon rank sum test with continuity correction
+
+data:  ct_mr_fix_time_with and ct_mr_fix_time_without
+W = 83752, p-value = 6.263e-09
+alternative hypothesis: true location shift is not equal to 0
+
+
+
+[1] "Mean fixations/sec norm_pat *with*: 3.025193"
+[1] "Mean fixations/sec norm_pat *without*: 2.714834"
+
+	Wilcoxon rank sum test with continuity correction
+
+data:  norm_pat_fix_time_with and norm_pat_fix_time_without
+W = 86658, p-value = 6.071e-10
+alternative hypothesis: true location shift is not equal to 0
+
+
+
+[1] "Mean fixations/sec ich_stroke *with*: 2.677871"
+[1] "Mean fixations/sec ich_stroke *without*: 2.471788"
+
+	Wilcoxon rank sum test with continuity correction
+
+data:  ich_stroke_fix_time_with and ich_stroke_fix_time_without
+W = 78115, p-value = 0.000517
+alternative hypothesis: true location shift is not equal to 0
+

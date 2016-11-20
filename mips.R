@@ -521,6 +521,21 @@ for (i in seq(1, 20)){
 }
 ich_stroke_fix_before2[ich_stroke_fix_before2 == Inf] <- NA
 
+# time to answer and fixations/sec
+norm_pat_durations <- cast(melt(full[full$StudioTestName == "norm_pat",], id.vars = c("ParticipantName", "X.Images.Value", "SegmentName"), measure.vars = "SegmentDuration"),
+                           formula = ParticipantName + X.Images.Value ~ ..., fun.aggregate = max, na.rm = TRUE)
+norm_pat_fix_time <- data.frame(cbind(norm_pat_durations[,c(1,2)],(norm_pat_tot_fix[,3:22]/norm_pat_durations[,3:22])*1000))
+names(norm_pat_fix_time) <- sapply(names(norm_pat_fix_time), gsub, pattern = "FixationIndex", replacement = "FixPerSec")
+
+ct_mr_durations <- cast(melt(full[full$StudioTestName == "ct_mr",], id.vars = c("ParticipantName", "X.Images.Value", "SegmentName"), measure.vars = "SegmentDuration"),
+                        formula = ParticipantName + X.Images.Value ~ ..., fun.aggregate = max, na.rm = TRUE)
+ct_mr_fix_time <- data.frame(cbind(ct_mr_durations[,c(1,2)],(ct_mr_tot_fix[,3:22]/ct_mr_durations[,3:22])*1000))
+names(ct_mr_fix_time) <- sapply(names(ct_mr_fix_time), gsub, pattern = "FixationIndex", replacement = "FixPerSec")
+
+ich_stroke_durations <- cast(melt(full[full$StudioTestName == "ich_stroke",], id.vars = c("ParticipantName", "X.Images.Value", "SegmentName"), measure.vars = "SegmentDuration"),
+                             formula = ParticipantName + X.Images.Value ~ ..., fun.aggregate = max, na.rm = TRUE)
+ich_stroke_fix_time <- data.frame(cbind(ich_stroke_durations[,c(1,2)],(ich_stroke_tot_fix[,3:22]/ich_stroke_durations[,3:22])*1000))
+names(ich_stroke_fix_time) <- sapply(names(ich_stroke_fix_time), gsub, pattern = "FixationIndex", replacement = "FixPerSec")
 
 #images and plots - eyetracking data
 png("results\\ct_mr_tot_fix.png", width = 2000, height = 2000)
@@ -568,22 +583,32 @@ for (i in seq(1,20)){
 }
 dev.off()
 
-# time to answer and fixations/sec
-norm_pat_durations <- cast(melt(full[full$StudioTestName == "norm_pat",], id.vars = c("ParticipantName", "X.Images.Value", "SegmentName"), measure.vars = "SegmentDuration"),
-                       formula = ParticipantName + X.Images.Value ~ ..., fun.aggregate = max, na.rm = TRUE)
-norm_pat_fix_time <- data.frame(cbind(norm_pat_durations[,c(1,2)],(norm_pat_tot_fix[,3:22]/norm_pat_durations[,3:22])*1000))
-names(norm_pat_fix_time) <- sapply(names(norm_pat_fix_time), gsub, pattern = "FixationIndex", replacement = "FixPerSec")
+png("results\\ct_mr_fix_time.png", width = 2000, height = 2000)
+par(mfrow = c(5, 4), cex.axis = 1.5, cex.lab = 1.5)
+for (i in seq(1,20)){
+    boxplot(ct_mr_fix_time[ct_mr_fix_time$X.Images.Value == "with",i + 2],ct_mr_fix_time[ct_mr_fix_time$X.Images.Value == "without",i + 2],
+            names = c("with", "without"), main = paste0("ct_mr ", names(ct_mr_fix_time)[i+2]), ylab = "fixations/s", ylim = c(0,6), varwidth = TRUE)
+    
+}
+dev.off()
 
-ct_mr_durations <- cast(melt(full[full$StudioTestName == "ct_mr",], id.vars = c("ParticipantName", "X.Images.Value", "SegmentName"), measure.vars = "SegmentDuration"),
-                           formula = ParticipantName + X.Images.Value ~ ..., fun.aggregate = max, na.rm = TRUE)
-ct_mr_fix_time <- data.frame(cbind(ct_mr_durations[,c(1,2)],(ct_mr_tot_fix[,3:22]/ct_mr_durations[,3:22])*1000))
-names(ct_mr_fix_time) <- sapply(names(ct_mr_fix_time), gsub, pattern = "FixationIndex", replacement = "FixPerSec")
+png("results\\norm_pat_fix_time.png", width = 2000, height = 2000)
+par(mfrow = c(5, 4), cex.axis = 1.5, cex.lab = 1.5)
+for (i in seq(1,20)){
+    boxplot(norm_pat_fix_time[norm_pat_fix_time$X.Images.Value == "with",i + 2],norm_pat_fix_time[norm_pat_fix_time$X.Images.Value == "without",i + 2],
+            names = c("with", "without"), main = paste0("norm_pat ", names(norm_pat_fix_time)[i+2]), ylab = "fixations/s", ylim = c(0,6), varwidth = TRUE)
+    
+}
+dev.off()
 
-ich_stroke_durations <- cast(melt(full[full$StudioTestName == "ich_stroke",], id.vars = c("ParticipantName", "X.Images.Value", "SegmentName"), measure.vars = "SegmentDuration"),
-                           formula = ParticipantName + X.Images.Value ~ ..., fun.aggregate = max, na.rm = TRUE)
-ich_stroke_fix_time <- data.frame(cbind(ich_stroke_durations[,c(1,2)],(ich_stroke_tot_fix[,3:22]/ich_stroke_durations[,3:22])*1000))
-names(ich_stroke_fix_time) <- sapply(names(ich_stroke_fix_time), gsub, pattern = "FixationIndex", replacement = "FixPerSec")
-
+png("results\\ich_stroke_fix_time.png", width = 2000, height = 2000)
+par(mfrow = c(5, 4), cex.axis = 1.5, cex.lab = 1.5)
+for (i in seq(1,20)){
+    boxplot(ich_stroke_fix_time[ich_stroke_fix_time$X.Images.Value == "with",i + 2],ich_stroke_fix_time[ich_stroke_fix_time$X.Images.Value == "without",i + 2],
+            names = c("with", "without"), main = paste0("ich_stroke ", names(ich_stroke_fix_time)[i+2]), ylab = "fixations/s", ylim = c(0,6), varwidth = TRUE)
+    
+}
+dev.off()
 
 # list of correct answers in each trial
 norm_pat_full_corr <- filter(dataset, StudioTestName == "norm_pat") %>% select(
@@ -797,7 +822,18 @@ norm_pat_fix_time_without <- filter(norm_pat_fix_time, X.Images.Value == "withou
 ich_stroke_fix_time_with <- filter(ich_stroke_fix_time, X.Images.Value == "with")[,3:22] %>% unlist()
 ich_stroke_fix_time_without <- filter(ich_stroke_fix_time, X.Images.Value == "without")[,3:22] %>% unlist()
 
-
+cat("Fixations/sec in each test\n\n")
+sprintf("Mean fixations/sec ct_mr *with*: %f", mean(ct_mr_fix_time_with, na.rm = T))
+sprintf("Mean fixations/sec ct_mr *without*: %f", mean(ct_mr_fix_time_without, na.rm = T))
+wilcox.test(ct_mr_fix_time_with, ct_mr_fix_time_without)
+cat("\n\n")
+sprintf("Mean fixations/sec norm_pat *with*: %f", mean(norm_pat_fix_time_with, na.rm = T))
+sprintf("Mean fixations/sec norm_pat *without*: %f", mean(norm_pat_fix_time_without, na.rm = T))
+wilcox.test(norm_pat_fix_time_with, norm_pat_fix_time_without)
+cat("\n\n")
+sprintf("Mean fixations/sec ich_stroke *with*: %f", mean(ich_stroke_fix_time_with, na.rm = T))
+sprintf("Mean fixations/sec ich_stroke *without*: %f", mean(ich_stroke_fix_time_without, na.rm = T))
+wilcox.test(ich_stroke_fix_time_with, ich_stroke_fix_time_without)
 
 sink()
 
