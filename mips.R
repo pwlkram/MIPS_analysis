@@ -397,6 +397,10 @@ dev.off()
 ##### FIXATION AND EYE-TRACKING DATA
 #read all data with AOIs etc. as full
 full <- read.table(file = aoi_file, header = TRUE, sep = "\t", fileEncoding = "UTF-8-BOM")
+#MISTAKES
+full$ParticipantName[full$RecordingName == "Rec 23"] <- "P23"
+full$ParticipantName[full$RecordingName == "Rec 31"] <- "P31"
+
 
 #total number of fixations for each media for each participant
 ct_mr_tot_fix <- cast(melt(full[full$StudioTestName == "ct_mr",], id.vars = c("ParticipantName", "X.Images.Value", "SegmentName"), measure.vars = "FixationIndex"), formula = ParticipantName + X.Images.Value ~ SegmentName + variable, fun.aggregate = max, na.rm = TRUE)
@@ -564,7 +568,7 @@ for (i in seq(1,20)){
 }
 dev.off()
 
-# time to answer
+# time to answer and fixations/sec
 norm_pat_durations <- cast(melt(full[full$StudioTestName == "norm_pat",], id.vars = c("ParticipantName", "X.Images.Value", "SegmentName"), measure.vars = "SegmentDuration"),
                        formula = ParticipantName + X.Images.Value ~ ..., fun.aggregate = max, na.rm = TRUE)
 norm_pat_fix_time <- data.frame(cbind(norm_pat_durations[,c(1,2)],(norm_pat_tot_fix[,3:22]/norm_pat_durations[,3:22])*1000))
@@ -782,6 +786,18 @@ cat("\n\n")
 sprintf("Mean time to correct answer ich_stroke *with*: %f", mean(ich_stroke_corr_time_with))
 sprintf("Mean time to correct answer ich_stroke *without*: %f", mean(ich_stroke_corr_time_without))
 wilcox.test(ich_stroke_corr_time_with, ich_stroke_corr_time_without)
+
+# fixations per second
+ct_mr_fix_time_with <- filter(ct_mr_fix_time, X.Images.Value == "with")[,3:22] %>% unlist()
+ct_mr_fix_time_without <- filter(ct_mr_fix_time, X.Images.Value == "without")[,3:22] %>% unlist()
+
+norm_pat_fix_time_with <- filter(norm_pat_fix_time, X.Images.Value == "with")[,3:22] %>% unlist()
+norm_pat_fix_time_without <- filter(norm_pat_fix_time, X.Images.Value == "without")[,3:22] %>% unlist()
+
+ich_stroke_fix_time_with <- filter(ich_stroke_fix_time, X.Images.Value == "with")[,3:22] %>% unlist()
+ich_stroke_fix_time_without <- filter(ich_stroke_fix_time, X.Images.Value == "without")[,3:22] %>% unlist()
+
+
 
 sink()
 
