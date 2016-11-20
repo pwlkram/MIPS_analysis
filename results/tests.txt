@@ -41,13 +41,13 @@ X-squared = 21.078, df = 1, p-value = 4.409e-06
 
 Time to any answer in each test
 
-[1] "Mean time to answer ct_mr *with*: 3225.255882"
+[1] "Mean time to answer ct_mr *with*: 3205.913158"
 [1] "Mean time to answer ct_mr *without*: 6627.210526"
 
 	Wilcoxon rank sum test with continuity correction
 
 data:  ct_mr_durations_with and ct_mr_durations_without
-W = 34549, p-value < 2.2e-16
+W = 38613, p-value < 2.2e-16
 alternative hypothesis: true location shift is not equal to 0
 
 
