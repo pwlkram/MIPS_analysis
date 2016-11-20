@@ -8,12 +8,14 @@ Done:
 - N of correct answers in each test histograms
 - N of correct answers by participant plots
 - Total N of fixations boxplots (each test)
+- fix/s boxplots
 - N of fixations before ROI hit (ich_stroke and norm_pat tests)
 - Total time of answer vs. N of correct answers scatterplots (each test and total)
 - Statistical tests:
   - time to answer
   - time to correct answer
   - N of correct answers
+  - fix/s
 
 TODO:
 - Scatterplots:
