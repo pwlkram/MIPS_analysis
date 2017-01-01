@@ -864,6 +864,76 @@ mtext("Number of correct answers", outer = TRUE, cex = 3)
 dev.off()
 
 
+# ROC analysis ?
+# Participants answered by pressing either CapsLock (Capital) or Enter(Return)
+# I code Capital as negative and Return as positive
+# Therefore:
+# - in ct_mr test: ct is negative and mr is positive
+# - in norm_pat test: normal is negative and pat is positive
+# - in ich_stroke test: intracranial haemorrhage is negative and stroke is positive 
+
+# create dataframe with participants' answers and correct answers
+roc_answers_all <- data.frame(TestName = raw_data$StudioTestName, Participant = raw_data$ParticipantName,
+                              Group = raw_data$X.Images.Value, Stimuli = raw_data$MediaName, Answer = raw_data$KeyPressEvent,
+                              Correct_answer = as.character(ans_key))
+
+# create columns with values for confusion matrices:
+# TP - true positive, FP - false positive, TN - true negative, FN - false negative
+
+roc_answers_all$TN <- (roc_answers_all$Answer == "Capital" & roc_answers_all$Correct_answer == "Capital")
+roc_answers_all$FN <- (roc_answers_all$Answer == "Capital" & roc_answers_all$Correct_answer == "Return")
+roc_answers_all$TP <- (roc_answers_all$Answer == "Return" & roc_answers_all$Correct_answer == "Return")
+roc_answers_all$FP <- (roc_answers_all$Answer == "Return" & roc_answers_all$Correct_answer == "Capital")
+
+# group the rows to give one row per participant per test
+roc_participants <- cast( melt(roc_answers_all, id.vars = c("TestName", "Participant", "Group"), measure.vars = c("TN", "FN", "TP", "FP")),
+                          formula = TestName + Participant + Group ~ ..., fun.aggregate = sum)
+
+# add sensitivity and specificity columns
+
+roc_participants$Sensivity <- roc_participants$TP/(roc_participants$TP + roc_participants$FN)
+roc_participants$Specificity <- roc_participants$TN/(roc_participants$FP + roc_participants$TN)
+
+# create ROC for each test and group
+png("ROC_graphs.png", width = 1000, height = 1500)
+par(mfrow = c(3,2))
+pos_vector = c(1,2,3,4,1,2,3,4,1,2,3,4,1,2,3,4,1,2,3,4)
+# CT_MR
+temp_roc_with <- roc_participants[roc_participants$Group == "with" & roc_participants$TestName == "ct_mr",]
+temp_roc_without <- roc_participants[roc_participants$Group == "without" & roc_participants$TestName == "ct_mr",]
+
+plot(1-temp_roc_without$Specificity, temp_roc_without$Sensivity, main = "ct_mr test - without group",
+     xlab = "False positive rate", ylab = "True positive rate", xlim = c(0,1), ylim = c(0,1), xaxs = "i", yaxs = "i")
+text(1-temp_roc_without$Specificity, temp_roc_without$Sensivity, labels = temp_roc_without$Participant, cex = 1.2, pos = pos_vector)
+
+plot(1-temp_roc_with$Specificity, temp_roc_with$Sensivity, main = "ct_mr test - with group",
+     xlab = "False positive rate", ylab = "True positive rate", xlim = c(0,1), ylim = c(0,1), xaxs = "i", yaxs = "i")
+text(1-temp_roc_with$Specificity, temp_roc_with$Sensivity, labels = temp_roc_with$Participant, cex = 1.2, pos = pos_vector)
+
+#NORM_PAT
+temp_roc_with <- roc_participants[roc_participants$Group == "with" & roc_participants$TestName == "norm_pat",]
+temp_roc_without <- roc_participants[roc_participants$Group == "without" & roc_participants$TestName == "norm_pat",]
+
+plot(1-temp_roc_without$Specificity, temp_roc_without$Sensivity, main = "norm_pat test - without group",
+     xlab = "False positive rate", ylab = "True positive rate", xlim = c(0,1), ylim = c(0,1), xaxs = "i", yaxs = "i")
+text(1-temp_roc_without$Specificity, temp_roc_without$Sensivity, labels = temp_roc_without$Participant, cex = 1.2, pos = pos_vector)
+
+plot(1-temp_roc_with$Specificity, temp_roc_with$Sensivity, main = "norm_pat test - with group",
+     xlab = "False positive rate", ylab = "True positive rate", xlim = c(0,1), ylim = c(0,1), xaxs = "i", yaxs = "i")
+text(1-temp_roc_with$Specificity, temp_roc_with$Sensivity, labels = temp_roc_with$Participant, cex = 1.2, pos = pos_vector)
+
+#ICH_STROKE
+temp_roc_with <- roc_participants[roc_participants$Group == "with" & roc_participants$TestName == "ich_stroke",]
+temp_roc_without <- roc_participants[roc_participants$Group == "without" & roc_participants$TestName == "ich_stroke",]
+
+plot(1-temp_roc_without$Specificity, temp_roc_without$Sensivity, main = "ich_stroke test - without group",
+     xlab = "False positive rate", ylab = "True positive rate", xlim = c(0,1), ylim = c(0,1), xaxs = "i", yaxs = "i")
+text(1-temp_roc_without$Specificity, temp_roc_without$Sensivity, labels = temp_roc_without$Participant, cex = 1.2, pos = pos_vector)
+
+plot(1-temp_roc_with$Specificity, temp_roc_with$Sensivity, main = "ich_stroke test - with group",
+     xlab = "False positive rate", ylab = "True positive rate", xlim = c(0,1), ylim = c(0,1), xaxs = "i", yaxs = "i")
+text(1-temp_roc_with$Specificity, temp_roc_with$Sensivity, labels = temp_roc_with$Participant, cex = 1.2, pos = pos_vector)
+dev.off()
 #check how many timestamps do repeat (TODO: import to Ogama)
 #x <- 0
 #for (time_num in seq(2, length(full$RecordingTimestamp))){
