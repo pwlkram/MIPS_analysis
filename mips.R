@@ -895,8 +895,8 @@ roc_participants$Sensivity <- roc_participants$TP/(roc_participants$TP + roc_par
 roc_participants$Specificity <- roc_participants$TN/(roc_participants$FP + roc_participants$TN)
 
 # create ROC for each test and group
-png("ROC_graphs.png", width = 1000, height = 1500)
-par(mfrow = c(3,2))
+png("results\\ROC_graphs.png", width = 1000, height = 1500)
+par(mfrow = c(3,2), oma = c(0,0,5,0), cex.lab=1.5, cex.axis=1.5, cex.main=1.5, cex.sub=1.5)
 pos_vector = c(1,2,3,4,1,2,3,4,1,2,3,4,1,2,3,4,1,2,3,4)
 # CT_MR
 temp_roc_with <- roc_participants[roc_participants$Group == "with" & roc_participants$TestName == "ct_mr",]
@@ -905,10 +905,12 @@ temp_roc_without <- roc_participants[roc_participants$Group == "without" & roc_p
 plot(1-temp_roc_without$Specificity, temp_roc_without$Sensivity, main = "ct_mr test - without group",
      xlab = "False positive rate", ylab = "True positive rate", xlim = c(0,1), ylim = c(0,1), xaxs = "i", yaxs = "i")
 text(1-temp_roc_without$Specificity, temp_roc_without$Sensivity, labels = temp_roc_without$Participant, cex = 1.2, pos = pos_vector)
+abline(0,1, lty = 3)
 
 plot(1-temp_roc_with$Specificity, temp_roc_with$Sensivity, main = "ct_mr test - with group",
      xlab = "False positive rate", ylab = "True positive rate", xlim = c(0,1), ylim = c(0,1), xaxs = "i", yaxs = "i")
 text(1-temp_roc_with$Specificity, temp_roc_with$Sensivity, labels = temp_roc_with$Participant, cex = 1.2, pos = pos_vector)
+abline(0,1, lty = 3)
 
 #NORM_PAT
 temp_roc_with <- roc_participants[roc_participants$Group == "with" & roc_participants$TestName == "norm_pat",]
@@ -917,10 +919,12 @@ temp_roc_without <- roc_participants[roc_participants$Group == "without" & roc_p
 plot(1-temp_roc_without$Specificity, temp_roc_without$Sensivity, main = "norm_pat test - without group",
      xlab = "False positive rate", ylab = "True positive rate", xlim = c(0,1), ylim = c(0,1), xaxs = "i", yaxs = "i")
 text(1-temp_roc_without$Specificity, temp_roc_without$Sensivity, labels = temp_roc_without$Participant, cex = 1.2, pos = pos_vector)
+abline(0,1, lty = 3)
 
 plot(1-temp_roc_with$Specificity, temp_roc_with$Sensivity, main = "norm_pat test - with group",
      xlab = "False positive rate", ylab = "True positive rate", xlim = c(0,1), ylim = c(0,1), xaxs = "i", yaxs = "i")
 text(1-temp_roc_with$Specificity, temp_roc_with$Sensivity, labels = temp_roc_with$Participant, cex = 1.2, pos = pos_vector)
+abline(0,1, lty = 3)
 
 #ICH_STROKE
 temp_roc_with <- roc_participants[roc_participants$Group == "with" & roc_participants$TestName == "ich_stroke",]
@@ -929,10 +933,14 @@ temp_roc_without <- roc_participants[roc_participants$Group == "without" & roc_p
 plot(1-temp_roc_without$Specificity, temp_roc_without$Sensivity, main = "ich_stroke test - without group",
      xlab = "False positive rate", ylab = "True positive rate", xlim = c(0,1), ylim = c(0,1), xaxs = "i", yaxs = "i")
 text(1-temp_roc_without$Specificity, temp_roc_without$Sensivity, labels = temp_roc_without$Participant, cex = 1.2, pos = pos_vector)
+abline(0,1, lty = 3)
 
 plot(1-temp_roc_with$Specificity, temp_roc_with$Sensivity, main = "ich_stroke test - with group",
      xlab = "False positive rate", ylab = "True positive rate", xlim = c(0,1), ylim = c(0,1), xaxs = "i", yaxs = "i")
 text(1-temp_roc_with$Specificity, temp_roc_with$Sensivity, labels = temp_roc_with$Participant, cex = 1.2, pos = pos_vector)
+abline(0,1, lty = 3)
+
+mtext("Receiver operating characteristic graphs", outer = TRUE, cex = 3)
 dev.off()
 #check how many timestamps do repeat (TODO: import to Ogama)
 #x <- 0
