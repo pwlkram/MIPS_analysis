@@ -2,6 +2,7 @@ library(reshape)
 library(plyr)
 library(dplyr)
 library(car)
+library(ROCR)
 #SET CORRECT DIRECTIORIES TO TOBII STUDIO SOURCE FILES
 datafile <- "D:\\R\\MIPS\\0616\\06072016.tsv"
 aoi_file <- "D:\\R\\MIPS\\0616\\06072016aois.tsv"
@@ -942,6 +943,60 @@ abline(0,1, lty = 3)
 
 mtext("Receiver operating characteristic graphs", outer = TRUE, cex = 3)
 dev.off()
+
+# ROCR - first try
+
+# all_answers_correct
+
+roc_correct_all <- data.frame(participants_correct_answers[,2:5], All_tests = rowSums(participants_correct_answers[,3:5]))
+roc_correct_all$Labels <- as.numeric(roc_correct_all$X.Images.Value == 'with')
+pred_all <- prediction(roc_correct_all$All_tests, roc_correct_all$Labels)
+perf_all <- performance(pred_all, 'tpr', 'fpr')
+plot(perf_all, colorize = T, main = "all tests")
+abline(0,1, lty = 3)
+
+# single tests
+pred_ct_mr <- prediction(roc_correct_all$ct_mr_Correct, roc_correct_all$Labels)
+perf_ct_mr <- performance(pred_ct_mr, 'tpr', 'fpr')
+plot(perf_ct_mr, colorize = T, main = "ct_mr test")
+abline(0,1, lty = 3)
+
+pred_norm_pat <- prediction(roc_correct_all$norm_pat_Correct, roc_correct_all$Labels)
+perf_norm_pat <- performance(pred_norm_pat, 'tpr', 'fpr')
+plot(perf_norm_pat, colorize = T, main = "norm_pat test")
+abline(0,1, lty = 3)
+
+pred_ich_stroke <- prediction(roc_correct_all$ich_stroke_Correct, roc_correct_all$Labels)
+perf_ich_stroke <- performance(pred_ich_stroke, 'tpr', 'fpr')
+plot(perf_ich_stroke, colorize = T, main = "ich_stroke test")
+abline(0,1, lty = 3)
+
+# total time
+
+roc_time_all <- data.frame(participants_total_time[,2:5], All_tests = rowSums(participants_total_time[,3:5]))
+roc_time_all$Labels <- as.numeric(roc_time_all$X.Images.Value == 'with')
+pred_time_all <- prediction(roc_time_all$All_tests, roc_time_all$Labels, label.ordering = c(1, 0))
+perf_time_all <- performance(pred_time_all, 'tpr', 'fpr')
+plot(perf_time_all, colorize = T, main = "all tests")
+abline(0,1, lty = 3)
+
+pred_time_ct_mr <- prediction(roc_time_all$ct_mr_TotalTime, roc_time_all$Labels, label.ordering = c(1, 0))
+perf_time_ct_mr <- performance(pred_time_ct_mr, 'tpr', 'fpr')
+plot(perf_time_ct_mr, colorize = T, main = "ct_mr tests")
+abline(0,1, lty = 3)
+
+pred_time_norm_pat <- prediction(roc_time_all$norm_pat_TotalTime, roc_time_all$Labels, label.ordering = c(1, 0))
+perf_time_norm_pat <- performance(pred_time_norm_pat, 'tpr', 'fpr')
+plot(perf_time_norm_pat, colorize = T, main = "norm_pat tests")
+abline(0,1, lty = 3)
+
+pred_time_ich_stroke <- prediction(roc_time_all$ich_stroke_TotalTime, roc_time_all$Labels, label.ordering = c(1, 0))
+perf_time_ich_stroke <- performance(pred_time_ich_stroke, 'tpr', 'fpr')
+plot(perf_time_ich_stroke, colorize = T, main = "ich_stroke tests")
+abline(0,1, lty = 3)
+
+
+
 #check how many timestamps do repeat (TODO: import to Ogama)
 #x <- 0
 #for (time_num in seq(2, length(full$RecordingTimestamp))){
