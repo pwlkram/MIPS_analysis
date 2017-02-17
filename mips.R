@@ -948,55 +948,91 @@ dev.off()
 
 # all_answers_correct
 
+png("results\\ROC_Correct.png", width = 1000, height = 1000)
+par(mfrow = c(2,2), cex.lab=1.5, cex.axis=1.5, cex.main=1.5, cex.sub=1.5)
+
 roc_correct_all <- data.frame(participants_correct_answers[,2:5], All_tests = rowSums(participants_correct_answers[,3:5]))
 roc_correct_all$Labels <- as.numeric(roc_correct_all$X.Images.Value == 'with')
 pred_all <- prediction(roc_correct_all$All_tests, roc_correct_all$Labels)
 perf_all <- performance(pred_all, 'tpr', 'fpr')
-plot(perf_all, colorize = T, main = "all tests")
+plot(perf_all, colorize = T, main = "N of correct answers - all tests")
 abline(0,1, lty = 3)
 
 # single tests
 pred_ct_mr <- prediction(roc_correct_all$ct_mr_Correct, roc_correct_all$Labels)
 perf_ct_mr <- performance(pred_ct_mr, 'tpr', 'fpr')
-plot(perf_ct_mr, colorize = T, main = "ct_mr test")
+plot(perf_ct_mr, colorize = T, main = "N of correct answers - ct_mr test")
 abline(0,1, lty = 3)
 
 pred_norm_pat <- prediction(roc_correct_all$norm_pat_Correct, roc_correct_all$Labels)
 perf_norm_pat <- performance(pred_norm_pat, 'tpr', 'fpr')
-plot(perf_norm_pat, colorize = T, main = "norm_pat test")
+plot(perf_norm_pat, colorize = T, main = "N of correct answers - norm_pat test")
 abline(0,1, lty = 3)
 
 pred_ich_stroke <- prediction(roc_correct_all$ich_stroke_Correct, roc_correct_all$Labels)
 perf_ich_stroke <- performance(pred_ich_stroke, 'tpr', 'fpr')
-plot(perf_ich_stroke, colorize = T, main = "ich_stroke test")
+plot(perf_ich_stroke, colorize = T, main = "N of correct answers - ich_stroke test")
 abline(0,1, lty = 3)
 
+dev.off()
+
 # total time
+
+png("results\\ROC_Time.png", width = 1000, height = 1000)
+par(mfrow = c(2,2), cex.lab=1.5, cex.axis=1.5, cex.main=1.5, cex.sub=1.5)
 
 roc_time_all <- data.frame(participants_total_time[,2:5], All_tests = rowSums(participants_total_time[,3:5]))
 roc_time_all$Labels <- as.numeric(roc_time_all$X.Images.Value == 'with')
 pred_time_all <- prediction(roc_time_all$All_tests, roc_time_all$Labels, label.ordering = c(1, 0))
 perf_time_all <- performance(pred_time_all, 'tpr', 'fpr')
-plot(perf_time_all, colorize = T, main = "all tests")
+plot(perf_time_all, colorize = T, main = "Total time to answer - all tests")
 abline(0,1, lty = 3)
 
 pred_time_ct_mr <- prediction(roc_time_all$ct_mr_TotalTime, roc_time_all$Labels, label.ordering = c(1, 0))
 perf_time_ct_mr <- performance(pred_time_ct_mr, 'tpr', 'fpr')
-plot(perf_time_ct_mr, colorize = T, main = "ct_mr tests")
+plot(perf_time_ct_mr, colorize = T, main = "Total time to answer - ct_mr test")
 abline(0,1, lty = 3)
 
 pred_time_norm_pat <- prediction(roc_time_all$norm_pat_TotalTime, roc_time_all$Labels, label.ordering = c(1, 0))
 perf_time_norm_pat <- performance(pred_time_norm_pat, 'tpr', 'fpr')
-plot(perf_time_norm_pat, colorize = T, main = "norm_pat tests")
+plot(perf_time_norm_pat, colorize = T, main = "Total time to answer - norm_pat test")
 abline(0,1, lty = 3)
 
 pred_time_ich_stroke <- prediction(roc_time_all$ich_stroke_TotalTime, roc_time_all$Labels, label.ordering = c(1, 0))
 perf_time_ich_stroke <- performance(pred_time_ich_stroke, 'tpr', 'fpr')
-plot(perf_time_ich_stroke, colorize = T, main = "ich_stroke tests")
+plot(perf_time_ich_stroke, colorize = T, main = "Total time to answer - ich_stroke test")
 abline(0,1, lty = 3)
 
+dev.off()
+# total N of fixations
 
+png("results\\ROC_TotFix.png", width = 1000, height = 1000)
+par(mfrow = c(2,2), cex.lab=1.5, cex.axis=1.5, cex.main=1.5, cex.sub=1.5)
 
+roc_fix_all <- data.frame(ct_mr_tot_fix[,1:2], ct_mr_TotalFix = rowSums(ct_mr_tot_fix[,3:22]),
+                          norm_pat_TotalFix = rowSums(norm_pat_tot_fix[,3:22]), ich_stroke_TotalFix = rowSums(ich_stroke_tot_fix[,3:22]))
+roc_fix_all <- data.frame(roc_fix_all, All_tests = rowSums(roc_fix_all[,3:5]), Labels = as.numeric(roc_fix_all$X.Images.Value == 'with'))
+
+pred_fix_all <- prediction(roc_fix_all$All_tests, roc_fix_all$Labels, label.ordering = c(1, 0))
+perf_fix_all <- performance(pred_fix_all, 'tpr', 'fpr')
+plot(perf_fix_all, colorize = T, main = "Total N of fixations - all tests")
+abline(0,1, lty = 3)
+
+pred_fix_ct_mr <- prediction(roc_fix_all$ct_mr_TotalFix, roc_fix_all$Labels, label.ordering = c(1, 0))
+perf_fix_ct_mr <- performance(pred_fix_ct_mr, 'tpr', 'fpr')
+plot(perf_fix_ct_mr, colorize = T, main = "Total N of fixations - ct_mr test")
+abline(0,1, lty = 3)
+
+pred_fix_norm_pat <- prediction(roc_fix_all$norm_pat_TotalFix, roc_fix_all$Labels, label.ordering = c(1, 0))
+perf_fix_norm_pat <- performance(pred_fix_norm_pat, 'tpr', 'fpr')
+plot(perf_fix_norm_pat, colorize = T, main = "Total N of fixations - norm_pat test")
+abline(0,1, lty = 3)
+
+pred_fix_ich_stroke <- prediction(roc_fix_all$ich_stroke_TotalFix, roc_fix_all$Labels, label.ordering = c(1, 0))
+perf_fix_ich_stroke <- performance(pred_fix_ich_stroke, 'tpr', 'fpr')
+plot(perf_fix_ich_stroke, colorize = T, main = "Total N of fixations - ich_stroke test")
+abline(0,1, lty = 3)
+dev.off()
 #check how many timestamps do repeat (TODO: import to Ogama)
 #x <- 0
 #for (time_num in seq(2, length(full$RecordingTimestamp))){
