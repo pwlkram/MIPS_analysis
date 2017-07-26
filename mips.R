@@ -2,6 +2,7 @@ library(reshape)
 library(plyr)
 library(dplyr)
 library(car)
+library(ROCR)
 #SET CORRECT DIRECTIORIES TO TOBII STUDIO SOURCE FILES
 datafile <- "D:\\R\\MIPS\\0616\\06072016.tsv"
 aoi_file <- "D:\\R\\MIPS\\0616\\06072016aois.tsv"
@@ -864,6 +865,174 @@ mtext("Number of correct answers", outer = TRUE, cex = 3)
 dev.off()
 
 
+# ROC analysis ?
+# Participants answered by pressing either CapsLock (Capital) or Enter(Return)
+# I code Capital as negative and Return as positive
+# Therefore:
+# - in ct_mr test: ct is negative and mr is positive
+# - in norm_pat test: normal is negative and pat is positive
+# - in ich_stroke test: intracranial haemorrhage is negative and stroke is positive 
+
+# create dataframe with participants' answers and correct answers
+roc_answers_all <- data.frame(TestName = raw_data$StudioTestName, Participant = raw_data$ParticipantName,
+                              Group = raw_data$X.Images.Value, Stimuli = raw_data$MediaName, Answer = raw_data$KeyPressEvent,
+                              Correct_answer = as.character(ans_key))
+
+# create columns with values for confusion matrices:
+# TP - true positive, FP - false positive, TN - true negative, FN - false negative
+
+roc_answers_all$TN <- (roc_answers_all$Answer == "Capital" & roc_answers_all$Correct_answer == "Capital")
+roc_answers_all$FN <- (roc_answers_all$Answer == "Capital" & roc_answers_all$Correct_answer == "Return")
+roc_answers_all$TP <- (roc_answers_all$Answer == "Return" & roc_answers_all$Correct_answer == "Return")
+roc_answers_all$FP <- (roc_answers_all$Answer == "Return" & roc_answers_all$Correct_answer == "Capital")
+
+# group the rows to give one row per participant per test
+roc_participants <- cast( melt(roc_answers_all, id.vars = c("TestName", "Participant", "Group"), measure.vars = c("TN", "FN", "TP", "FP")),
+                          formula = TestName + Participant + Group ~ ..., fun.aggregate = sum)
+
+# add sensitivity and specificity columns
+
+roc_participants$Sensivity <- roc_participants$TP/(roc_participants$TP + roc_participants$FN)
+roc_participants$Specificity <- roc_participants$TN/(roc_participants$FP + roc_participants$TN)
+
+# create ROC for each test and group
+png("results\\ROC_graphs.png", width = 1000, height = 1500)
+par(mfrow = c(3,2), oma = c(0,0,5,0), cex.lab=1.5, cex.axis=1.5, cex.main=1.5, cex.sub=1.5)
+pos_vector = c(1,2,3,4,1,2,3,4,1,2,3,4,1,2,3,4,1,2,3,4)
+# CT_MR
+temp_roc_with <- roc_participants[roc_participants$Group == "with" & roc_participants$TestName == "ct_mr",]
+temp_roc_without <- roc_participants[roc_participants$Group == "without" & roc_participants$TestName == "ct_mr",]
+
+plot(1-temp_roc_without$Specificity, temp_roc_without$Sensivity, main = "ct_mr test - without group",
+     xlab = "False positive rate", ylab = "True positive rate", xlim = c(0,1), ylim = c(0,1), xaxs = "i", yaxs = "i")
+text(1-temp_roc_without$Specificity, temp_roc_without$Sensivity, labels = temp_roc_without$Participant, cex = 1.2, pos = pos_vector)
+abline(0,1, lty = 3)
+
+plot(1-temp_roc_with$Specificity, temp_roc_with$Sensivity, main = "ct_mr test - with group",
+     xlab = "False positive rate", ylab = "True positive rate", xlim = c(0,1), ylim = c(0,1), xaxs = "i", yaxs = "i")
+text(1-temp_roc_with$Specificity, temp_roc_with$Sensivity, labels = temp_roc_with$Participant, cex = 1.2, pos = pos_vector)
+abline(0,1, lty = 3)
+
+#NORM_PAT
+temp_roc_with <- roc_participants[roc_participants$Group == "with" & roc_participants$TestName == "norm_pat",]
+temp_roc_without <- roc_participants[roc_participants$Group == "without" & roc_participants$TestName == "norm_pat",]
+
+plot(1-temp_roc_without$Specificity, temp_roc_without$Sensivity, main = "norm_pat test - without group",
+     xlab = "False positive rate", ylab = "True positive rate", xlim = c(0,1), ylim = c(0,1), xaxs = "i", yaxs = "i")
+text(1-temp_roc_without$Specificity, temp_roc_without$Sensivity, labels = temp_roc_without$Participant, cex = 1.2, pos = pos_vector)
+abline(0,1, lty = 3)
+
+plot(1-temp_roc_with$Specificity, temp_roc_with$Sensivity, main = "norm_pat test - with group",
+     xlab = "False positive rate", ylab = "True positive rate", xlim = c(0,1), ylim = c(0,1), xaxs = "i", yaxs = "i")
+text(1-temp_roc_with$Specificity, temp_roc_with$Sensivity, labels = temp_roc_with$Participant, cex = 1.2, pos = pos_vector)
+abline(0,1, lty = 3)
+
+#ICH_STROKE
+temp_roc_with <- roc_participants[roc_participants$Group == "with" & roc_participants$TestName == "ich_stroke",]
+temp_roc_without <- roc_participants[roc_participants$Group == "without" & roc_participants$TestName == "ich_stroke",]
+
+plot(1-temp_roc_without$Specificity, temp_roc_without$Sensivity, main = "ich_stroke test - without group",
+     xlab = "False positive rate", ylab = "True positive rate", xlim = c(0,1), ylim = c(0,1), xaxs = "i", yaxs = "i")
+text(1-temp_roc_without$Specificity, temp_roc_without$Sensivity, labels = temp_roc_without$Participant, cex = 1.2, pos = pos_vector)
+abline(0,1, lty = 3)
+
+plot(1-temp_roc_with$Specificity, temp_roc_with$Sensivity, main = "ich_stroke test - with group",
+     xlab = "False positive rate", ylab = "True positive rate", xlim = c(0,1), ylim = c(0,1), xaxs = "i", yaxs = "i")
+text(1-temp_roc_with$Specificity, temp_roc_with$Sensivity, labels = temp_roc_with$Participant, cex = 1.2, pos = pos_vector)
+abline(0,1, lty = 3)
+
+mtext("Receiver operating characteristic graphs", outer = TRUE, cex = 3)
+dev.off()
+
+# ROCR - first try
+
+# all_answers_correct
+
+png("results\\ROC_Correct.png", width = 1000, height = 1000)
+par(mfrow = c(2,2), cex.lab=1.5, cex.axis=1.5, cex.main=1.5, cex.sub=1.5)
+
+roc_correct_all <- data.frame(participants_correct_answers[,2:5], All_tests = rowSums(participants_correct_answers[,3:5]))
+roc_correct_all$Labels <- as.numeric(roc_correct_all$X.Images.Value == 'with')
+pred_all <- prediction(roc_correct_all$All_tests, roc_correct_all$Labels)
+perf_all <- performance(pred_all, 'tpr', 'fpr')
+plot(perf_all, colorize = T, main = "N of correct answers - all tests")
+abline(0,1, lty = 3)
+
+# single tests
+pred_ct_mr <- prediction(roc_correct_all$ct_mr_Correct, roc_correct_all$Labels)
+perf_ct_mr <- performance(pred_ct_mr, 'tpr', 'fpr')
+plot(perf_ct_mr, colorize = T, main = "N of correct answers - ct_mr test")
+abline(0,1, lty = 3)
+
+pred_norm_pat <- prediction(roc_correct_all$norm_pat_Correct, roc_correct_all$Labels)
+perf_norm_pat <- performance(pred_norm_pat, 'tpr', 'fpr')
+plot(perf_norm_pat, colorize = T, main = "N of correct answers - norm_pat test")
+abline(0,1, lty = 3)
+
+pred_ich_stroke <- prediction(roc_correct_all$ich_stroke_Correct, roc_correct_all$Labels)
+perf_ich_stroke <- performance(pred_ich_stroke, 'tpr', 'fpr')
+plot(perf_ich_stroke, colorize = T, main = "N of correct answers - ich_stroke test")
+abline(0,1, lty = 3)
+
+dev.off()
+
+# total time
+
+png("results\\ROC_Time.png", width = 1000, height = 1000)
+par(mfrow = c(2,2), cex.lab=1.5, cex.axis=1.5, cex.main=1.5, cex.sub=1.5)
+
+roc_time_all <- data.frame(participants_total_time[,2:5], All_tests = rowSums(participants_total_time[,3:5]))
+roc_time_all$Labels <- as.numeric(roc_time_all$X.Images.Value == 'with')
+pred_time_all <- prediction(roc_time_all$All_tests, roc_time_all$Labels, label.ordering = c(1, 0))
+perf_time_all <- performance(pred_time_all, 'tpr', 'fpr')
+plot(perf_time_all, colorize = T, main = "Total time to answer - all tests")
+abline(0,1, lty = 3)
+
+pred_time_ct_mr <- prediction(roc_time_all$ct_mr_TotalTime, roc_time_all$Labels, label.ordering = c(1, 0))
+perf_time_ct_mr <- performance(pred_time_ct_mr, 'tpr', 'fpr')
+plot(perf_time_ct_mr, colorize = T, main = "Total time to answer - ct_mr test")
+abline(0,1, lty = 3)
+
+pred_time_norm_pat <- prediction(roc_time_all$norm_pat_TotalTime, roc_time_all$Labels, label.ordering = c(1, 0))
+perf_time_norm_pat <- performance(pred_time_norm_pat, 'tpr', 'fpr')
+plot(perf_time_norm_pat, colorize = T, main = "Total time to answer - norm_pat test")
+abline(0,1, lty = 3)
+
+pred_time_ich_stroke <- prediction(roc_time_all$ich_stroke_TotalTime, roc_time_all$Labels, label.ordering = c(1, 0))
+perf_time_ich_stroke <- performance(pred_time_ich_stroke, 'tpr', 'fpr')
+plot(perf_time_ich_stroke, colorize = T, main = "Total time to answer - ich_stroke test")
+abline(0,1, lty = 3)
+
+dev.off()
+# total N of fixations
+
+png("results\\ROC_TotFix.png", width = 1000, height = 1000)
+par(mfrow = c(2,2), cex.lab=1.5, cex.axis=1.5, cex.main=1.5, cex.sub=1.5)
+
+roc_fix_all <- data.frame(ct_mr_tot_fix[,1:2], ct_mr_TotalFix = rowSums(ct_mr_tot_fix[,3:22]),
+                          norm_pat_TotalFix = rowSums(norm_pat_tot_fix[,3:22]), ich_stroke_TotalFix = rowSums(ich_stroke_tot_fix[,3:22]))
+roc_fix_all <- data.frame(roc_fix_all, All_tests = rowSums(roc_fix_all[,3:5]), Labels = as.numeric(roc_fix_all$X.Images.Value == 'with'))
+
+pred_fix_all <- prediction(roc_fix_all$All_tests, roc_fix_all$Labels, label.ordering = c(1, 0))
+perf_fix_all <- performance(pred_fix_all, 'tpr', 'fpr')
+plot(perf_fix_all, colorize = T, main = "Total N of fixations - all tests")
+abline(0,1, lty = 3)
+
+pred_fix_ct_mr <- prediction(roc_fix_all$ct_mr_TotalFix, roc_fix_all$Labels, label.ordering = c(1, 0))
+perf_fix_ct_mr <- performance(pred_fix_ct_mr, 'tpr', 'fpr')
+plot(perf_fix_ct_mr, colorize = T, main = "Total N of fixations - ct_mr test")
+abline(0,1, lty = 3)
+
+pred_fix_norm_pat <- prediction(roc_fix_all$norm_pat_TotalFix, roc_fix_all$Labels, label.ordering = c(1, 0))
+perf_fix_norm_pat <- performance(pred_fix_norm_pat, 'tpr', 'fpr')
+plot(perf_fix_norm_pat, colorize = T, main = "Total N of fixations - norm_pat test")
+abline(0,1, lty = 3)
+
+pred_fix_ich_stroke <- prediction(roc_fix_all$ich_stroke_TotalFix, roc_fix_all$Labels, label.ordering = c(1, 0))
+perf_fix_ich_stroke <- performance(pred_fix_ich_stroke, 'tpr', 'fpr')
+plot(perf_fix_ich_stroke, colorize = T, main = "Total N of fixations - ich_stroke test")
+abline(0,1, lty = 3)
+dev.off()
 #check how many timestamps do repeat (TODO: import to Ogama)
 #x <- 0
 #for (time_num in seq(2, length(full$RecordingTimestamp))){
