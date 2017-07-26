@@ -3,32 +3,38 @@
 [1] "Number of participants in *without* group: 19"
 Number of correct answers in *ct_mr* test:
 
-        ct_mr_1 ct_mr_2 ct_mr_3 ct_mr_4 ct_mr_5 ct_mr_6 ct_mr_7 ct_mr_8 ct_mr_9 ct_mr_10 ct_mr_11 ct_mr_12 ct_mr_13 ct_mr_14 ct_mr_15 ct_mr_16 ct_mr_17
-with         19      18      18      13      12      19      10      17       7       17       18       19       18       15       19       19       18
-without      11       7      10      10       8      13      14      10       8        9       16       12       17       12       12       14       15
-        ct_mr_18 ct_mr_19 ct_mr_20
-with          19       19       19
-without       11       14       15
+        ct_mr_1 ct_mr_2 ct_mr_3 ct_mr_4 ct_mr_5 ct_mr_6 ct_mr_7 ct_mr_8 ct_mr_9 ct_mr_10 ct_mr_11 ct_mr_12 ct_mr_13
+with         19      18      18      13      12      19      10      17       7       17       18       19       18
+without      11       7      10      10       8      13      14      10       8        9       16       12       17
+        ct_mr_14 ct_mr_15 ct_mr_16 ct_mr_17 ct_mr_18 ct_mr_19 ct_mr_20
+with          15       19       19       18       19       19       19
+without       12       12       14       15       11       14       15
 
 
 Number of correct answers in *norm_pat* test:
 
-        norm_pat_1 norm_pat_2 norm_pat_3 norm_pat_4 norm_pat_5 norm_pat_6 norm_pat_7 norm_pat_8 norm_pat_9 norm_pat_10 norm_pat_11 norm_pat_12 norm_pat_13
-with            18          9         11         17         18         18         12         17         18          16          17          16           1
-without         15          4          9         15         19         19         15         17         14          17          19          19           4
-        norm_pat_14 norm_pat_15 norm_pat_16 norm_pat_17 norm_pat_18 norm_pat_19 norm_pat_20
-with             12          17          18          17          12          16          14
-without          14          18          17          15          14          19          14
+        norm_pat_1 norm_pat_2 norm_pat_3 norm_pat_4 norm_pat_5 norm_pat_6 norm_pat_7 norm_pat_8 norm_pat_9 norm_pat_10
+with            18          9         11         17         18         18         12         17         18          16
+without         15          4          9         15         19         19         15         17         14          17
+        norm_pat_11 norm_pat_12 norm_pat_13 norm_pat_14 norm_pat_15 norm_pat_16 norm_pat_17 norm_pat_18 norm_pat_19
+with             17          16           1          12          17          18          17          12          16
+without          19          19           4          14          18          17          15          14          19
+        norm_pat_20
+with             14
+without          14
 
 
 Number of correct answers in *ich_stroke* test:
 
-        ich_stroke_1 ich_stroke_2 ich_stroke_3 ich_stroke_4 ich_stroke_5 ich_stroke_6 ich_stroke_7 ich_stroke_8 ich_stroke_9 ich_stroke_10 ich_stroke_11
-with              16           16            8           15           19           18           18           15           10            19            11
-without           12           10           10           11           15           14           13           14           12            14            10
-        ich_stroke_12 ich_stroke_13 ich_stroke_14 ich_stroke_15 ich_stroke_16 ich_stroke_17 ich_stroke_18 ich_stroke_19 ich_stroke_20
-with               18            17            17            13            19            18            12            12            16
-without            13            12            11            13            15            15            11            14            11
+        ich_stroke_1 ich_stroke_2 ich_stroke_3 ich_stroke_4 ich_stroke_5 ich_stroke_6 ich_stroke_7 ich_stroke_8
+with              16           16            8           15           19           18           18           15
+without           12           10           10           11           15           14           13           14
+        ich_stroke_9 ich_stroke_10 ich_stroke_11 ich_stroke_12 ich_stroke_13 ich_stroke_14 ich_stroke_15 ich_stroke_16
+with              10            19            11            18            17            17            13            19
+without           12            14            10            13            12            11            13            15
+        ich_stroke_17 ich_stroke_18 ich_stroke_19 ich_stroke_20
+with               18            12            12            16
+without            15            11            14            11
 
 
 Number of correct answers by participant
@@ -109,91 +115,127 @@ Mean time to correct answer in each test  StudioTestName X.Images.Value SegmentD
 
 Mean time to correct answer in *ct_mr* test:
 
-        ct_mr_1_MeanTimeToCorrAns ct_mr_1_SDofTimeToCorrAns ct_mr_2_MeanTimeToCorrAns ct_mr_2_SDofTimeToCorrAns ct_mr_3_MeanTimeToCorrAns
-with                     6409.421                  6086.887                  4229.111                  2580.109                  3787.944
-without                  9488.182                  4705.659                  8692.143                  6260.736                  7274.400
-        ct_mr_3_SDofTimeToCorrAns ct_mr_4_MeanTimeToCorrAns ct_mr_4_SDofTimeToCorrAns ct_mr_5_MeanTimeToCorrAns ct_mr_5_SDofTimeToCorrAns
-with                     2567.955                  4786.692                  3632.168                  5031.417                  5028.503
-without                  5243.950                  5898.500                  6150.979                  7040.750                  3341.567
-        ct_mr_6_MeanTimeToCorrAns ct_mr_6_SDofTimeToCorrAns ct_mr_7_MeanTimeToCorrAns ct_mr_7_SDofTimeToCorrAns ct_mr_8_MeanTimeToCorrAns
-with                     1741.684                  858.6912                  3712.800                  2230.992                  2177.941
-without                  7427.462                 5569.6309                  5605.214                  3601.045                  6584.800
-        ct_mr_8_SDofTimeToCorrAns ct_mr_9_MeanTimeToCorrAns ct_mr_9_SDofTimeToCorrAns ct_mr_10_MeanTimeToCorrAns ct_mr_10_SDofTimeToCorrAns
-with                     1506.809                  7239.143                  4585.083                   3704.059                   3520.307
-without                  5279.367                 12290.625                  8859.674                   6861.667                   6937.024
-        ct_mr_11_MeanTimeToCorrAns ct_mr_11_SDofTimeToCorrAns ct_mr_12_MeanTimeToCorrAns ct_mr_12_SDofTimeToCorrAns ct_mr_13_MeanTimeToCorrAns
-with                      1815.278                   1043.387                   1849.579                   1135.564                   2537.056
-without                   5125.562                   5203.160                   6980.250                   6147.214                   4363.647
-        ct_mr_13_SDofTimeToCorrAns ct_mr_14_MeanTimeToCorrAns ct_mr_14_SDofTimeToCorrAns ct_mr_15_MeanTimeToCorrAns ct_mr_15_SDofTimeToCorrAns
-with                      1734.831                    2716.40                   2007.015                   2193.895                   1554.550
-without                   3515.970                    8847.25                  12491.282                   9592.417                   9126.675
-        ct_mr_16_MeanTimeToCorrAns ct_mr_16_SDofTimeToCorrAns ct_mr_17_MeanTimeToCorrAns ct_mr_17_SDofTimeToCorrAns ct_mr_18_MeanTimeToCorrAns
-with                      1905.632                   1399.593                   1967.000                   1519.098                   1860.842
-without                   5674.786                   4339.288                   4603.467                   3263.140                   4135.636
-        ct_mr_18_SDofTimeToCorrAns ct_mr_19_MeanTimeToCorrAns ct_mr_19_SDofTimeToCorrAns ct_mr_20_MeanTimeToCorrAns ct_mr_20_SDofTimeToCorrAns
-with                      1631.553                   1505.579                   915.8006                   1690.579                   1343.459
-without                   3426.710                   4514.857                  4488.3088                   4681.267                   6118.008
+        ct_mr_1_MeanTimeToCorrAns ct_mr_1_SDofTimeToCorrAns ct_mr_2_MeanTimeToCorrAns ct_mr_2_SDofTimeToCorrAns
+with                     6409.421                  6086.887                  4229.111                  2580.109
+without                  9488.182                  4705.659                  8692.143                  6260.736
+        ct_mr_3_MeanTimeToCorrAns ct_mr_3_SDofTimeToCorrAns ct_mr_4_MeanTimeToCorrAns ct_mr_4_SDofTimeToCorrAns
+with                     3787.944                  2567.955                  4786.692                  3632.168
+without                  7274.400                  5243.950                  5898.500                  6150.979
+        ct_mr_5_MeanTimeToCorrAns ct_mr_5_SDofTimeToCorrAns ct_mr_6_MeanTimeToCorrAns ct_mr_6_SDofTimeToCorrAns
+with                     5031.417                  5028.503                  1741.684                  858.6912
+without                  7040.750                  3341.567                  7427.462                 5569.6309
+        ct_mr_7_MeanTimeToCorrAns ct_mr_7_SDofTimeToCorrAns ct_mr_8_MeanTimeToCorrAns ct_mr_8_SDofTimeToCorrAns
+with                     3712.800                  2230.992                  2177.941                  1506.809
+without                  5605.214                  3601.045                  6584.800                  5279.367
+        ct_mr_9_MeanTimeToCorrAns ct_mr_9_SDofTimeToCorrAns ct_mr_10_MeanTimeToCorrAns ct_mr_10_SDofTimeToCorrAns
+with                     7239.143                  4585.083                   3704.059                   3520.307
+without                 12290.625                  8859.674                   6861.667                   6937.024
+        ct_mr_11_MeanTimeToCorrAns ct_mr_11_SDofTimeToCorrAns ct_mr_12_MeanTimeToCorrAns ct_mr_12_SDofTimeToCorrAns
+with                      1815.278                   1043.387                   1849.579                   1135.564
+without                   5125.562                   5203.160                   6980.250                   6147.214
+        ct_mr_13_MeanTimeToCorrAns ct_mr_13_SDofTimeToCorrAns ct_mr_14_MeanTimeToCorrAns ct_mr_14_SDofTimeToCorrAns
+with                      2537.056                   1734.831                    2716.40                   2007.015
+without                   4363.647                   3515.970                    8847.25                  12491.282
+        ct_mr_15_MeanTimeToCorrAns ct_mr_15_SDofTimeToCorrAns ct_mr_16_MeanTimeToCorrAns ct_mr_16_SDofTimeToCorrAns
+with                      2193.895                   1554.550                   1905.632                   1399.593
+without                   9592.417                   9126.675                   5674.786                   4339.288
+        ct_mr_17_MeanTimeToCorrAns ct_mr_17_SDofTimeToCorrAns ct_mr_18_MeanTimeToCorrAns ct_mr_18_SDofTimeToCorrAns
+with                      1967.000                   1519.098                   1860.842                   1631.553
+without                   4603.467                   3263.140                   4135.636                   3426.710
+        ct_mr_19_MeanTimeToCorrAns ct_mr_19_SDofTimeToCorrAns ct_mr_20_MeanTimeToCorrAns ct_mr_20_SDofTimeToCorrAns
+with                      1505.579                   915.8006                   1690.579                   1343.459
+without                   4514.857                  4488.3088                   4681.267                   6118.008
 
 
 Mean time to correct answer in *norm_pat* test:
 
-        norm_pat_1_MeanTimeToCorrAns norm_pat_1_SDofTimeToCorrAns norm_pat_2_MeanTimeToCorrAns norm_pat_2_SDofTimeToCorrAns norm_pat_3_MeanTimeToCorrAns
-with                        5143.667                     2567.603                     11628.56                     5541.682                     8274.182
-without                     9652.267                     6363.967                      8497.00                     2021.487                    15044.667
-        norm_pat_3_SDofTimeToCorrAns norm_pat_4_MeanTimeToCorrAns norm_pat_4_SDofTimeToCorrAns norm_pat_5_MeanTimeToCorrAns norm_pat_5_SDofTimeToCorrAns
-with                         6444.17                     4593.588                     2831.436                     3649.500                     1323.986
-without                     18385.66                     9387.800                     6297.313                     3392.263                     1856.823
-        norm_pat_6_MeanTimeToCorrAns norm_pat_6_SDofTimeToCorrAns norm_pat_7_MeanTimeToCorrAns norm_pat_7_SDofTimeToCorrAns norm_pat_8_MeanTimeToCorrAns
-with                        4546.444                     4313.348                     9837.583                     7542.154                     2562.765
-without                     5023.579                     3039.607                     9636.333                     6360.961                     5149.882
-        norm_pat_8_SDofTimeToCorrAns norm_pat_9_MeanTimeToCorrAns norm_pat_9_SDofTimeToCorrAns norm_pat_10_MeanTimeToCorrAns norm_pat_10_SDofTimeToCorrAns
-with                        1252.753                     6252.222                     3172.804                      3382.750                      2099.257
-without                     3572.970                     7304.857                     6391.175                      6040.588                      3709.878
-        norm_pat_11_MeanTimeToCorrAns norm_pat_11_SDofTimeToCorrAns norm_pat_12_MeanTimeToCorrAns norm_pat_12_SDofTimeToCorrAns norm_pat_13_MeanTimeToCorrAns
-with                         6001.529                      3290.102                      2022.500                      1010.296                       2834.00
-without                      8650.158                      4839.027                      2854.684                      1787.841                       7314.75
-        norm_pat_13_SDofTimeToCorrAns norm_pat_14_MeanTimeToCorrAns norm_pat_14_SDofTimeToCorrAns norm_pat_15_MeanTimeToCorrAns norm_pat_15_SDofTimeToCorrAns
-with                               NA                      9626.417                      6648.247                      1846.059                      1260.651
-without                      6818.539                      8348.286                      3710.624                      3162.056                      1905.797
-        norm_pat_16_MeanTimeToCorrAns norm_pat_16_SDofTimeToCorrAns norm_pat_17_MeanTimeToCorrAns norm_pat_17_SDofTimeToCorrAns norm_pat_18_MeanTimeToCorrAns
-with                         2008.889                      986.3271                      5218.882                      3521.345                      7889.250
-without                      3682.471                     3111.8503                     11737.400                     11036.875                      8439.071
-        norm_pat_18_SDofTimeToCorrAns norm_pat_19_MeanTimeToCorrAns norm_pat_19_SDofTimeToCorrAns norm_pat_20_MeanTimeToCorrAns norm_pat_20_SDofTimeToCorrAns
-with                         7217.115                      5748.875                      2978.426                      6280.929                      2913.604
-without                      5317.528                      9830.632                     12555.517                      8410.929                      8958.143
+        norm_pat_1_MeanTimeToCorrAns norm_pat_1_SDofTimeToCorrAns norm_pat_2_MeanTimeToCorrAns
+with                        5143.667                     2567.603                     11628.56
+without                     9652.267                     6363.967                      8497.00
+        norm_pat_2_SDofTimeToCorrAns norm_pat_3_MeanTimeToCorrAns norm_pat_3_SDofTimeToCorrAns
+with                        5541.682                     8274.182                      6444.17
+without                     2021.487                    15044.667                     18385.66
+        norm_pat_4_MeanTimeToCorrAns norm_pat_4_SDofTimeToCorrAns norm_pat_5_MeanTimeToCorrAns
+with                        4593.588                     2831.436                     3649.500
+without                     9387.800                     6297.313                     3392.263
+        norm_pat_5_SDofTimeToCorrAns norm_pat_6_MeanTimeToCorrAns norm_pat_6_SDofTimeToCorrAns
+with                        1323.986                     4546.444                     4313.348
+without                     1856.823                     5023.579                     3039.607
+        norm_pat_7_MeanTimeToCorrAns norm_pat_7_SDofTimeToCorrAns norm_pat_8_MeanTimeToCorrAns
+with                        9837.583                     7542.154                     2562.765
+without                     9636.333                     6360.961                     5149.882
+        norm_pat_8_SDofTimeToCorrAns norm_pat_9_MeanTimeToCorrAns norm_pat_9_SDofTimeToCorrAns
+with                        1252.753                     6252.222                     3172.804
+without                     3572.970                     7304.857                     6391.175
+        norm_pat_10_MeanTimeToCorrAns norm_pat_10_SDofTimeToCorrAns norm_pat_11_MeanTimeToCorrAns
+with                         3382.750                      2099.257                      6001.529
+without                      6040.588                      3709.878                      8650.158
+        norm_pat_11_SDofTimeToCorrAns norm_pat_12_MeanTimeToCorrAns norm_pat_12_SDofTimeToCorrAns
+with                         3290.102                      2022.500                      1010.296
+without                      4839.027                      2854.684                      1787.841
+        norm_pat_13_MeanTimeToCorrAns norm_pat_13_SDofTimeToCorrAns norm_pat_14_MeanTimeToCorrAns
+with                          2834.00                            NA                      9626.417
+without                       7314.75                      6818.539                      8348.286
+        norm_pat_14_SDofTimeToCorrAns norm_pat_15_MeanTimeToCorrAns norm_pat_15_SDofTimeToCorrAns
+with                         6648.247                      1846.059                      1260.651
+without                      3710.624                      3162.056                      1905.797
+        norm_pat_16_MeanTimeToCorrAns norm_pat_16_SDofTimeToCorrAns norm_pat_17_MeanTimeToCorrAns
+with                         2008.889                      986.3271                      5218.882
+without                      3682.471                     3111.8503                     11737.400
+        norm_pat_17_SDofTimeToCorrAns norm_pat_18_MeanTimeToCorrAns norm_pat_18_SDofTimeToCorrAns
+with                         3521.345                      7889.250                      7217.115
+without                     11036.875                      8439.071                      5317.528
+        norm_pat_19_MeanTimeToCorrAns norm_pat_19_SDofTimeToCorrAns norm_pat_20_MeanTimeToCorrAns
+with                         5748.875                      2978.426                      6280.929
+without                      9830.632                     12555.517                      8410.929
+        norm_pat_20_SDofTimeToCorrAns
+with                         2913.604
+without                      8958.143
 
 
 Mean time to correct answer in *ich_stroke* test:
 
-        ich_stroke_1_MeanTimeToCorrAns ich_stroke_1_SDofTimeToCorrAns ich_stroke_2_MeanTimeToCorrAns ich_stroke_2_SDofTimeToCorrAns
-with                           11434.5                       8370.795                         6870.5                       4334.646
-without                        18065.0                       6796.615                        12810.4                      10336.098
-        ich_stroke_3_MeanTimeToCorrAns ich_stroke_3_SDofTimeToCorrAns ich_stroke_4_MeanTimeToCorrAns ich_stroke_4_SDofTimeToCorrAns
-with                           12250.5                       7991.261                       10948.13                       6972.235
-without                        15910.6                      17987.269                       15331.18                      10386.339
-        ich_stroke_5_MeanTimeToCorrAns ich_stroke_5_SDofTimeToCorrAns ich_stroke_6_MeanTimeToCorrAns ich_stroke_6_SDofTimeToCorrAns
-with                          6229.368                       4362.059                       3531.556                       2555.918
-without                       7515.333                       4439.455                       5926.714                       5680.352
-        ich_stroke_7_MeanTimeToCorrAns ich_stroke_7_SDofTimeToCorrAns ich_stroke_8_MeanTimeToCorrAns ich_stroke_8_SDofTimeToCorrAns
-with                          10072.89                        6533.44                       7417.000                       6716.569
-without                       12745.08                       11438.01                       8058.286                       5911.023
-        ich_stroke_9_MeanTimeToCorrAns ich_stroke_9_SDofTimeToCorrAns ich_stroke_10_MeanTimeToCorrAns ich_stroke_10_SDofTimeToCorrAns
-with                          7154.000                       3526.739                        4039.737                        2962.660
-without                       9680.833                       5043.070                        5334.429                        3345.194
-        ich_stroke_11_MeanTimeToCorrAns ich_stroke_11_SDofTimeToCorrAns ich_stroke_12_MeanTimeToCorrAns ich_stroke_12_SDofTimeToCorrAns
-with                             7850.0                        8445.566                        6146.222                        4175.095
-without                         10411.1                        8226.774                        9906.692                        9841.946
-        ich_stroke_13_MeanTimeToCorrAns ich_stroke_13_SDofTimeToCorrAns ich_stroke_14_MeanTimeToCorrAns ich_stroke_14_SDofTimeToCorrAns
-with                           3039.412                        1361.063                        10617.06                        6889.783
-without                        6270.167                        2931.013                        12049.91                        7499.398
-        ich_stroke_15_MeanTimeToCorrAns ich_stroke_15_SDofTimeToCorrAns ich_stroke_16_MeanTimeToCorrAns ich_stroke_16_SDofTimeToCorrAns
-with                           11658.54                        5998.962                        3052.474                        2041.289
-without                        15383.54                       12850.835                        6304.400                        5710.139
-        ich_stroke_17_MeanTimeToCorrAns ich_stroke_17_SDofTimeToCorrAns ich_stroke_18_MeanTimeToCorrAns ich_stroke_18_SDofTimeToCorrAns
-with                           10541.94                        9198.789                        6818.500                        8139.324
-without                        11264.53                        8667.331                        6055.818                        4444.730
-        ich_stroke_19_MeanTimeToCorrAns ich_stroke_19_SDofTimeToCorrAns ich_stroke_20_MeanTimeToCorrAns ich_stroke_20_SDofTimeToCorrAns
-with                           8084.167                        5087.775                         4044.25                        2064.320
-without                       10661.429                       10747.525                         6320.00                        2757.952
+        ich_stroke_1_MeanTimeToCorrAns ich_stroke_1_SDofTimeToCorrAns ich_stroke_2_MeanTimeToCorrAns
+with                           11434.5                       8370.795                         6870.5
+without                        18065.0                       6796.615                        12810.4
+        ich_stroke_2_SDofTimeToCorrAns ich_stroke_3_MeanTimeToCorrAns ich_stroke_3_SDofTimeToCorrAns
+with                          4334.646                        12250.5                       7991.261
+without                      10336.098                        15910.6                      17987.269
+        ich_stroke_4_MeanTimeToCorrAns ich_stroke_4_SDofTimeToCorrAns ich_stroke_5_MeanTimeToCorrAns
+with                          10948.13                       6972.235                       6229.368
+without                       15331.18                      10386.339                       7515.333
+        ich_stroke_5_SDofTimeToCorrAns ich_stroke_6_MeanTimeToCorrAns ich_stroke_6_SDofTimeToCorrAns
+with                          4362.059                       3531.556                       2555.918
+without                       4439.455                       5926.714                       5680.352
+        ich_stroke_7_MeanTimeToCorrAns ich_stroke_7_SDofTimeToCorrAns ich_stroke_8_MeanTimeToCorrAns
+with                          10072.89                        6533.44                       7417.000
+without                       12745.08                       11438.01                       8058.286
+        ich_stroke_8_SDofTimeToCorrAns ich_stroke_9_MeanTimeToCorrAns ich_stroke_9_SDofTimeToCorrAns
+with                          6716.569                       7154.000                       3526.739
+without                       5911.023                       9680.833                       5043.070
+        ich_stroke_10_MeanTimeToCorrAns ich_stroke_10_SDofTimeToCorrAns ich_stroke_11_MeanTimeToCorrAns
+with                           4039.737                        2962.660                          7850.0
+without                        5334.429                        3345.194                         10411.1
+        ich_stroke_11_SDofTimeToCorrAns ich_stroke_12_MeanTimeToCorrAns ich_stroke_12_SDofTimeToCorrAns
+with                           8445.566                        6146.222                        4175.095
+without                        8226.774                        9906.692                        9841.946
+        ich_stroke_13_MeanTimeToCorrAns ich_stroke_13_SDofTimeToCorrAns ich_stroke_14_MeanTimeToCorrAns
+with                           3039.412                        1361.063                        10617.06
+without                        6270.167                        2931.013                        12049.91
+        ich_stroke_14_SDofTimeToCorrAns ich_stroke_15_MeanTimeToCorrAns ich_stroke_15_SDofTimeToCorrAns
+with                           6889.783                        11658.54                        5998.962
+without                        7499.398                        15383.54                       12850.835
+        ich_stroke_16_MeanTimeToCorrAns ich_stroke_16_SDofTimeToCorrAns ich_stroke_17_MeanTimeToCorrAns
+with                           3052.474                        2041.289                        10541.94
+without                        6304.400                        5710.139                        11264.53
+        ich_stroke_17_SDofTimeToCorrAns ich_stroke_18_MeanTimeToCorrAns ich_stroke_18_SDofTimeToCorrAns
+with                           9198.789                        6818.500                        8139.324
+without                        8667.331                        6055.818                        4444.730
+        ich_stroke_19_MeanTimeToCorrAns ich_stroke_19_SDofTimeToCorrAns ich_stroke_20_MeanTimeToCorrAns
+with                           8084.167                        5087.775                         4044.25
+without                       10661.429                       10747.525                         6320.00
+        ich_stroke_20_SDofTimeToCorrAns
+with                           2064.320
+without                        2757.952
 
 
