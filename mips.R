@@ -203,8 +203,15 @@ cat("\n")
 mean_corr_ans <- cast(melt(dataset[dataset$Correct == TRUE,], id.vars = c("StudioTestName", "X.Images.Value"), measure.vars = "SegmentDuration"),
                       formula = StudioTestName + X.Images.Value ~ ..., fun.aggregate = mean)
 
+sd_corr_ans <- cast(melt(dataset[dataset$Correct == TRUE,], id.vars = c("StudioTestName", "X.Images.Value"), measure.vars = "SegmentDuration"),
+                      formula = StudioTestName + X.Images.Value ~ ..., fun.aggregate = sd)
+
 cat("Mean time to correct answer in each test")
 print(mean_corr_ans)
+cat("\n")
+
+cat("Standard deviation of mean time to correct answer in each test")
+print(sd_corr_ans)
 cat("\n")
 
 
