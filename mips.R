@@ -214,6 +214,22 @@ cat("Standard deviation of mean time to correct answer in each test")
 print(sd_corr_ans)
 cat("\n")
 
+#means to any answers
+
+mean_any_ans <- cast(melt(dataset, id.vars = c("StudioTestName", "X.Images.Value"), measure.vars = "SegmentDuration"),
+                      formula = StudioTestName + X.Images.Value ~ ..., fun.aggregate = mean)
+
+sd_any_ans <- cast(melt(dataset, id.vars = c("StudioTestName", "X.Images.Value"), measure.vars = "SegmentDuration"),
+                    formula = StudioTestName + X.Images.Value ~ ..., fun.aggregate = sd)
+
+cat("Mean time to any answer in each test")
+print(mean_any_ans)
+cat("\n")
+
+cat("Standard deviation of mean time to any answer in each test")
+print(sd_any_ans)
+cat("\n")
+
 
 #creates three data.frames with mean times to correct answer in each of two groups (with and without images) - one for each of three tests
 ct_mr_time_to_corr_ans <- data.frame(row.names = c("with", "without"))

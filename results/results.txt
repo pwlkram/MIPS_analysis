@@ -112,6 +112,22 @@ Standard deviation of mean time to correct answer in each test  StudioTestName X
 5       norm_pat           with        4427.959
 6       norm_pat        without        7173.483
 
+Mean time to any answer in each test  StudioTestName X.Images.Value SegmentDuration
+1          ct_mr           with        3205.913
+2          ct_mr        without        6627.211
+3     ich_stroke           with        7755.805
+4     ich_stroke        without       10624.805
+5       norm_pat           with        5719.492
+6       norm_pat        without        8058.542
+
+Standard deviation of mean time to any answer in each test  StudioTestName X.Images.Value SegmentDuration
+1          ct_mr           with        3168.442
+2          ct_mr        without        5780.104
+3     ich_stroke           with        6604.840
+4     ich_stroke        without        9456.332
+5       norm_pat           with        4742.376
+6       norm_pat        without        7613.794
+
 Mean time to correct answer in *ct_mr* test:
 
         ct_mr_1_MeanTimeToCorrAns ct_mr_1_SDofTimeToCorrAns ct_mr_2_MeanTimeToCorrAns ct_mr_2_SDofTimeToCorrAns ct_mr_3_MeanTimeToCorrAns ct_mr_3_SDofTimeToCorrAns
